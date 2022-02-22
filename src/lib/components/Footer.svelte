@@ -71,7 +71,10 @@ a {
     • Source code is available on
     <a class="hl" href="{github}/elianiva.my.id">Github</a>
   </p>
-  <p>Copyright &copy; {new Date().getFullYear()} <a class="hl" href={github}>Elianiva</a></p>
+  <p>
+    Copyright &copy; {new Date().getFullYear()}
+    <a class="hl" href={github}>Elianiva</a>
+  </p>
 </footer>
 
 <script>
