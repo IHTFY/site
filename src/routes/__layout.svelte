@@ -24,9 +24,11 @@ onMount(() => {
   type Theme = "dark" | "light";
   let preference: Theme;
 
-  // prettier-ignore
-  if (localStorage.getItem("theme")) preference = localStorage.getItem("theme") as Theme
-  else preference = isDarkTheme ? "dark" : "light"
+  preference = localStorage.getItem("theme")
+    ? (localStorage.getItem("theme") as Theme)
+    : isDarkTheme
+    ? ("dark" as Theme)
+    : ("light" as Theme);
 
   theme.set(preference);
 

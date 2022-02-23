@@ -17,6 +17,7 @@ export interface ResourceMetadata {
   slug: string;
   draft: boolean;
   type: string;
+  coverImage: string;
 }
 
 export const getResourcesAsync = async (

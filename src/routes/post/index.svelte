@@ -7,14 +7,14 @@ export async function load({ fetch }) {
 </script>
 
 <script lang="ts">
-import type { zMetadata } from "$lib/utils/fetch-data";
+import type { ResourceMetadata } from "$lib/utils/fetch-data";
 import { fly } from "svelte/transition";
 import SEO from "$lib/components/SEO.svelte";
 import PostCard from "$lib/components/PostCard.svelte";
 import Progress from "$lib/components/Progress.svelte";
 import Tag from "$lib/components/Tag.svelte";
 
-export let posts: Metadata[];
+export let posts: ResourceMetadata[];
 
 let inputBox = null;
 let keyword = "";
@@ -32,7 +32,7 @@ const count = tags.reduce(
 );
 
 $: filteredPosts = posts.filter(post => {
-  const query = keyword.substr(1).toLowerCase();
+  const query = keyword.substring(1).toLowerCase();
 
   const title = post.title.toLowerCase().includes(query);
   const slug = post.slug.toLowerCase().includes(query);
@@ -74,7 +74,7 @@ function filterPost({ currentTarget: { value } }) {
         class="input__autocomplete"
       >
         {#each [...new Set(tags)] as tag}
-          {#if tag.match(new RegExp(tagKeyword.substr(1)))}
+          {#if tag.match(new RegExp(tagKeyword.substring(1)))}
             <!-- prettier-ignore -->
             <span
               class="autocomplete__item"

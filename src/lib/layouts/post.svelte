@@ -37,16 +37,6 @@ onMount(() => {
     }
   );
 });
-
-const getCommentOptions = (/** @type {boolean} */ isDark) => ({
-  src: "https://utteranc.es/client.js",
-  repo: "elianiva/elianiva.my.id",
-  "issue-term": "pathname",
-  label: "Comments",
-  theme: `${isDark ? "dark-blue" : "github-light"}`,
-  crossorigin: "anonymous",
-  async: true,
-});
 </script>
 
 <SEO {desc} {title} />
@@ -77,18 +67,6 @@ const getCommentOptions = (/** @type {boolean} */ isDark) => ({
   {/if}
   <main class="post__content" bind:this={content}>
     <slot />
-    {#if !minimal}
-      <h1>Comments</h1>
-      {#if $theme === "dark"}
-        <div>
-          <script {...getCommentOptions(true)}></script>
-        </div>
-      {:else}
-        <div>
-          <script {...getCommentOptions(false)}></script>
-        </div>
-      {/if}
-    {/if}
   </main>
 </section>
 <Progress />
