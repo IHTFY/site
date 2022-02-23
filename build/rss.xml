@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title><![CDATA[blog.ihtfy.com]]></title>
+    <description><![CDATA[IHTFY]]></description>
+    <link>https://elianiva.my.id</link>
+    <atom:link href="https://elianiva.my.id/feed.xml" rel="self" type="application/rss+xml" />
+    <generator>Svelte-Kit</generator>
+    <lastBuildDate>Wed, 23 Feb 2022 04:52:29 GMT</lastBuildDate>
+    
+    <item>
+      <title>simplify</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/simplify</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/simplify</guid>
+      <pubDate>Sat, 19 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>theming</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/theming</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/theming</guid>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>late</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/late</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/late</guid>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>reredo</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/reredo</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/reredo</guid>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>forgot</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/forgot</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/forgot</guid>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>pseudorandom</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/pseudorandom</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/pseudorandom</guid>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>compression</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/compression</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/compression</guid>
+      <pubDate>Sun, 13 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>calendar progress</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/calendar-progress</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/calendar-progress</guid>
+      <pubDate>Sat, 12 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>plates</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/plates</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/plates</guid>
+      <pubDate>Fri, 11 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>cheese</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/cheese</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/cheese</guid>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>cat</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/cat</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/cat</guid>
+      <pubDate>Wed, 09 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>shortner</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/shortner</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/shortner</guid>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>anodize</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/anodize</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/anodize</guid>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>hdd</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/hdd</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/hdd</guid>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>redo</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/redo</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/redo</guid>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>livestreams</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/livestreams</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/livestreams</guid>
+      <pubDate>Fri, 04 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>soundcloud likes</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/soundcloud-likes</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/soundcloud-likes</guid>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>lingo</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/lingo</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/lingo</guid>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>january retrospective</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/january-retrospective</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/january-retrospective</guid>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>imslp</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/imslp</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/imslp</guid>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>444</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/444</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/444</guid>
+      <pubDate>Sun, 30 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>logo</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/logo</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/logo</guid>
+      <pubDate>Sat, 29 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>fractal</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/fractal</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/fractal</guid>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>asphalt</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/asphalt</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/asphalt</guid>
+      <pubDate>Thu, 27 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>dash cam</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/dash-cam</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/dash-cam</guid>
+      <pubDate>Wed, 26 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>panorama scroll</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/panorama-scroll</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/panorama-scroll</guid>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>watching videos</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/watching-videos</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/watching-videos</guid>
+      <pubDate>Mon, 24 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>headache</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/headache</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/headache</guid>
+      <pubDate>Sun, 23 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>oil change</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/oil-change</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/oil-change</guid>
+      <pubDate>Sat, 22 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>sleep schedule</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/sleep-schedule</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/sleep-schedule</guid>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>blank</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/blank</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/blank</guid>
+      <pubDate>Thu, 20 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>milk tea doppelgangers</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/milk-tea-doppelgangers</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/milk-tea-doppelgangers</guid>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>sveltekit</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/sveltekit</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/sveltekit</guid>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>lazy sunday</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/lazy-sunday</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/lazy-sunday</guid>
+      <pubDate>Mon, 17 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>chess engine</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/chess-engine</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/chess-engine</guid>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>PWA</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/pwa</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/pwa</guid>
+      <pubDate>Fri, 14 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>days go by</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/days-go-by</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/days-go-by</guid>
+      <pubDate>Thu, 13 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>offline</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/offline</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/offline</guid>
+      <pubDate>Thu, 13 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Hotel ACs</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/hotel-acs</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/hotel-acs</guid>
+      <pubDate>Wed, 12 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>hotel tvs</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/hotel-tvs</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/hotel-tvs</guid>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>standalone</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/standalone</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/standalone</guid>
+      <pubDate>Mon, 10 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Tabs</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/tabs</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/tabs</guid>
+      <pubDate>Sun, 09 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Taco Dip</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/taco-dip</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/taco-dip</guid>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Drunken Crawfish</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/drunken-crawfish</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/drunken-crawfish</guid>
+      <pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Early Bird</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/early-bird</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/early-bird</guid>
+      <pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Westward</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/westward</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/westward</guid>
+      <pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Hibachi</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/hibachi</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/hibachi</guid>
+      <pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Winter Drone</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/winter-drone</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/winter-drone</guid>
+      <pubDate>Mon, 03 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Happy New Year</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/happy-new-year</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/happy-new-year</guid>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Games</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/games</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/games</guid>
+      <pubDate>Fri, 16 Jul 2021 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Knight</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/knight</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/knight</guid>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Workout</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/workout</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/workout</guid>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>YouTube Speeds Faster Than 2x</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/youtube-speeds-faster-than-2x</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/youtube-speeds-faster-than-2x</guid>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>grey</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/grey</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/grey</guid>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>albinogator</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/albinogator</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/albinogator</guid>
+      <pubDate>Tue, 22 Aug 2017 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>point</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/point</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/point</guid>
+      <pubDate>Thu, 07 Jan 2016 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>ana raw</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/ana-raw</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/ana-raw</guid>
+      <pubDate>Sun, 18 Oct 2015 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>ana mke</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/ana-mke</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/ana-mke</guid>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>globes</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/globes</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/globes</guid>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>prime</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/prime</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/prime</guid>
+      <pubDate>Sat, 29 Aug 2015 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>mmfunk</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/mmfunk</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/mmfunk</guid>
+      <pubDate>Mon, 03 Aug 2015 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>wire</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/wire</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/wire</guid>
+      <pubDate>Mon, 27 Jul 2015 00:00:00 GMT</pubDate>
+    </item>
+
+  </channel>
+</rss>

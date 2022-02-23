@@ -12,11 +12,11 @@ I remember speeding up books on tape to chipmunk speeds so I could get through t
 
 YouTube recently added a slider to select a custom speed between 0.25x and 2x at 0.05x increments.
 
-![](images/slider-1.png)
+![](/assets/post/youtube-speeds-faster-than-2x/slider-1.png)
 
 Custom playback speed slider
 
-![](images/speed-settings-copy-1.png)
+![](/assets/post/youtube-speeds-faster-than-2x/speed-settings-copy-1.png)
 
 Preset playback speeds
 
@@ -30,12 +30,13 @@ UPDATE: I've made [a page](https://ihtfy.github.io/JavaScript-Bookmarklets/) tha
 
 First, make a new bookmark. In chrome, you can use `ctrl + d`. You can do it on any page, but before you click "Done", click on "More...".
 
-![](images/bookmark-2.png)
+![](/assets/post/youtube-speeds-faster-than-2x/bookmark-2.png)
 
 I like the Name to be short so I use this: ⏩
 
 Then paste the following code into the URL. To copy it, double click anywhere in the code, then use `ctrl + c`.
 
+```javascript
 javascript: {
   if (document.getElementsByTagName("video").length) {
     const videos = \[...document.getElementsByTagName("video")\];
@@ -48,14 +49,15 @@ javascript: {
     console.log("Can't find a video.");
   }
 };
+```
 
-![](images/save-1.png)
+![](/assets/post/youtube-speeds-faster-than-2x/save-1.png)
 
 The Name and URL fields
 
 When you're watching a YouTube video, you can click the bookmarklet you just made, and it will let you type in the speed.
 
-![](images/use-1.png)
+![](/assets/post/youtube-speeds-faster-than-2x/use-1.png)
 
 ## Skipping Ads
 
@@ -65,6 +67,7 @@ I use this as the Name: ⏭️
 
 And here's the code for the URL:
 
+```javascript
 javascript: {
   if (document.getElementsByTagName("video").length) {
     const videos = \[...document.getElementsByTagName("video")\];
@@ -74,9 +77,11 @@ javascript: {
     console.log("Can't find a video.");
   }
 };
+```
 
 Here's another one that has a little meter to show the current speed.
 
+```javascript
 javascript: {
   if (document.getElementsByTagName("video").length) {
     const videos = \[...document.getElementsByTagName("video")\];
@@ -92,10 +97,13 @@ javascript: {
     console.log("Can't find a video.");
   }
 }
+```
 
 Here's one that just sets the playhead to the end of the video.
 
+```javascript
 javascript: {
   let v = document.getElementsByTagName("video")\[0\];
   v.currentTime = v.duration;
 }
+```

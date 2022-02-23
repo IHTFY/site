@@ -17,6 +17,7 @@ I created a JavaScript version that uses HTML5 canvas, and the '2' bug is fixed.
 
 ### New JS Version
 
+```javascript
 function primesUpTo(x) {
   const primes = \[\];
   if (x < 2) return primes;
@@ -79,11 +80,13 @@ if (window.confirm('Download?')) {
   link.href = canvas.toDataURL('image/octet-stream');
   link.click();
 }
+```
 
 ## [4K Image](https://ihtfy.files.wordpress.com/2015/08/prime4096x2190.png)
 
 ### Old Python Version
 
+```python
 import pygame, sys
 from pygame.locals
 import \*
@@ -194,3 +197,4 @@ pygame.image.save(DISPLAYSURF, "primes.png")
 
 if \_\_name\_\_ == '\_\_main\_\_':
   main()
+```

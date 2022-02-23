@@ -11,8 +11,28 @@ These images were created using PTGui and Photoshop.
 
 \[gallery ids="129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144" type="slideshow" link="none"\]
 
+TODO MAKE SLIDESHOW
+
+![](/assets/post/globes/beach.jpg)
+![](/assets/post/globes/farm.jpg)
+![](/assets/post/globes/field.jpg)
+![](/assets/post/globes/frisbee.jpg)
+![](/assets/post/globes/mendotapier.jpg)
+![](/assets/post/globes/mononaglobe.jpg)
+![](/assets/post/globes/parkbridge.jpg)
+![](/assets/post/globes/parkbridge2.jpg)
+![](/assets/post/globes/picnicbeach.jpg)
+![](/assets/post/globes/picnicpoint.jpg)
+![](/assets/post/globes/playground.jpg)
+![](/assets/post/globes/shell.jpg)
+![](/assets/post/globes/terrace.jpg)
+![](/assets/post/globes/tn.jpg)
+![](/assets/post/globes/tnbridge.jpg)
+![](/assets/post/globes/tower.jpg)
+
+
 ### Time-lapse
 
 I took a series of 360x180 spherical panoramas at Picnic Point in Madison at sunset. In high light levels I use high speed bursts of photos, like a low frame rate movie. Stitching the photos becomes very simple with so many photos. In low light, the images blur making it harder to stitch. Next time I do a low light panorama I'll try a different technique.
 
-![timelapse](images/timelapse.gif)
+![timelapse](/assets/post/globes/timelapse.gif)
