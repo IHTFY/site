@@ -1,3 +1,26 @@
+<script>
+import { theme } from "$lib/utils/theme";
+
+const toggleDarkMode = () => {
+  theme.update(current => (current === "light" ? "dark" : "light"));
+};
+</script>
+
+<button
+  class="button"
+  on:click={() => toggleDarkMode()}
+  aria-label="toggle darkmode"
+>
+  <div class="moon">
+    <div
+      class="moon__small"
+      style={`left: ${$theme === "dark" ? "0.25rem" : "0.75rem"}; bottom: ${
+        $theme === "dark" ? "0.25rem" : "0.75rem"
+      };`}
+    />
+  </div>
+</button>
+
 <style>
 .moon {
   position: relative;
@@ -33,26 +56,3 @@
   -webkit-tap-highlight-color: transparent;
 }
 </style>
-
-<button
-  class="button"
-  on:click={() => toggleDarkMode()}
-  aria-label="toggle darkmode"
->
-  <div class="moon">
-    <div
-      class="moon__small"
-      style={`left: ${$theme === "dark" ? "0.25rem" : "0.75rem"}; bottom: ${
-        $theme === "dark" ? "0.25rem" : "0.75rem"
-      };`}
-    />
-  </div>
-</button>
-
-<script>
-import { theme } from "$lib/utils/theme";
-
-const toggleDarkMode = () => {
-  theme.update(current => (current === "light" ? "dark" : "light"));
-};
-</script>

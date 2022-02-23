@@ -1,3 +1,46 @@
+<script>
+import data from "$lib/data/site";
+import EnvelopeIcon from "~icons/ph/envelope";
+import GithubIcon from "~icons/ph/github-logo";
+import TwitterIcon from "~icons/ph/twitter-logo";
+import RSSIcon from "~icons/ph/rss";
+
+const { github, twitter, email } = data;
+</script>
+
+<footer>
+  <div class="icons">
+    <!-- prettier-ignore -->
+    <a href="mailto:{email}" target="_blank" rel="norel noreferrer" aria-label="email">
+      <EnvelopeIcon height="24" width="24" />
+    </a>
+    <!-- prettier-ignore -->
+    <a href="{github}" target="_blank" rel="norel noreferrer" aria-label="github">
+      <GithubIcon height="24" width="24" />
+    </a>
+    <!-- prettier-ignore -->
+    <a href={twitter} target="_blank" rel="norel noreferrer" aria-label="twitter" >
+      <TwitterIcon height="24" width="24" />
+    </a>
+    <!-- prettier-ignore -->
+    <a href="/rss.xml" rel="alternate" type="application/rss+xml" aria-label="rss">
+      <RSSIcon height="24" width="24" />
+    </a>
+  </div>
+  <p>
+    Powered by
+    <a class="hl" href="https://kit.svelte.dev">Svelte-Kit</a>
+    and
+    <a class="hl" href="https://vercel.app">Vercel</a>
+    • Source code is available on
+    <a class="hl" href="{github}/elianiva.my.id">Github</a>
+  </p>
+  <p>
+    Copyright &copy; {new Date().getFullYear()}
+    <a class="hl" href={github}>Elianiva</a>
+  </p>
+</footer>
+
 <style>
 footer {
   position: relative;
@@ -43,46 +86,3 @@ a {
   color: var(--color-main-accent);
 }
 </style>
-
-<footer>
-  <div class="icons">
-    <!-- prettier-ignore -->
-    <a href="mailto:{email}" target="_blank" rel="norel noreferrer" aria-label="email">
-      <EnvelopeIcon height="24" width="24" />
-    </a>
-    <!-- prettier-ignore -->
-    <a href="{github}" target="_blank" rel="norel noreferrer" aria-label="github">
-      <GithubIcon height="24" width="24" />
-    </a>
-    <!-- prettier-ignore -->
-    <a href={twitter} target="_blank" rel="norel noreferrer" aria-label="twitter" >
-      <TwitterIcon height="24" width="24" />
-    </a>
-    <!-- prettier-ignore -->
-    <a href="/rss.xml" rel="alternate" type="application/rss+xml" aria-label="rss">
-      <RSSIcon height="24" width="24" />
-    </a>
-  </div>
-  <p>
-    Powered by
-    <a class="hl" href="https://kit.svelte.dev">Svelte-Kit</a>
-    and
-    <a class="hl" href="https://vercel.app">Vercel</a>
-    • Source code is available on
-    <a class="hl" href="{github}/elianiva.my.id">Github</a>
-  </p>
-  <p>
-    Copyright &copy; {new Date().getFullYear()}
-    <a class="hl" href={github}>Elianiva</a>
-  </p>
-</footer>
-
-<script>
-import data from "$lib/data/site";
-import EnvelopeIcon from "~icons/ph/envelope";
-import GithubIcon from "~icons/ph/github-logo";
-import TwitterIcon from "~icons/ph/twitter-logo";
-import RSSIcon from "~icons/ph/rss";
-
-const { github, twitter, email } = data;
-</script>

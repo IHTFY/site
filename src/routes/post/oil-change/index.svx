@@ -1,0 +1,11 @@
+---
+draft: false
+title: "oil change"
+date: "2022-01-22"
+coverImage: "image_editor_output_image589471186-1642833832319.jpg"
+desc: TODO
+tags:
+  - TODO
+---
+
+Just did errands today. My car hit 100,000 miles.

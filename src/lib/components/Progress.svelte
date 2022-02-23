@@ -1,3 +1,24 @@
+<script lang="ts">
+import { fade } from "svelte/transition";
+import UpIcon from "~icons/ph/caret-up-bold";
+
+let currentPosition: number;
+
+const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+</script>
+
+<svelte:window bind:scrollY={currentPosition} />
+
+{#if currentPosition > 50}
+  <div
+    class="button"
+    on:click={scrollToTop}
+    transition:fade={{ duration: 100 }}
+  >
+    <UpIcon className="button__icon" />
+  </div>
+{/if}
+
 <style>
 .button {
   position: fixed;
@@ -24,24 +45,3 @@
   color: var(--color-main-text);
 }
 </style>
-
-<svelte:window bind:scrollY={currentPosition} />
-
-{#if currentPosition > 50}
-  <div
-    class="button"
-    on:click={scrollToTop}
-    transition:fade={{ duration: 100 }}
-  >
-    <UpIcon className="button__icon" />
-  </div>
-{/if}
-
-<script lang="ts">
-import { fade } from "svelte/transition";
-import UpIcon from "~icons/ph/caret-up-bold";
-
-let currentPosition: number;
-
-const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
-</script>

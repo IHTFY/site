@@ -1,3 +1,45 @@
+<script lang="ts">
+import Pattern from "$lib/icons/Pattern.svelte";
+import PostCard from "$lib/components/PostCard.svelte";
+import ProjectCard from "$lib/components/ProjectCard.svelte";
+
+export let title: string;
+export let data: Array<Record<string, any>>;
+export let btnText: string;
+export let url: string;
+export let type: "posts" | "projects";
+</script>
+
+<section class="section">
+  <Pattern className="section__pattern" />
+  <h1 class="section__title">{title}</h1>
+  <div class="section__cards">
+    {#if type === "posts"}
+      {#each data as item}
+        <PostCard
+          title={item.title}
+          href={`/post/${item.slug}`}
+          desc={item.desc}
+          date={item.date}
+          tags={item.tags}
+        />
+      {/each}
+    {:else}
+      {#each data as item}
+        <ProjectCard
+          title={item.title}
+          imgSrc={`/assets/project/${item.slug}/cover.webp`}
+          href={`/project/${item.slug}`}
+          desc={item.desc}
+          demo={item.demo}
+          source={item.source}
+        />
+      {/each}
+    {/if}
+  </div>
+  <a href={url} class="section__button">{btnText}</a>
+</section>
+
 <style>
 .section {
   position: relative;
@@ -68,45 +110,3 @@
   }
 }
 </style>
-
-<section class="section">
-  <Pattern className="section__pattern" />
-  <h1 class="section__title">{title}</h1>
-  <div class="section__cards">
-    {#if type === "posts"}
-      {#each data as item}
-        <PostCard
-          title={item.title}
-          href={`/post/${item.slug}`}
-          desc={item.desc}
-          date={item.date}
-          tags={item.tags}
-        />
-      {/each}
-    {:else}
-      {#each data as item}
-        <ProjectCard
-          title={item.title}
-          imgSrc={`/assets/project/${item.slug}/cover.webp`}
-          href={`/project/${item.slug}`}
-          desc={item.desc}
-          demo={item.demo}
-          source={item.source}
-        />
-      {/each}
-    {/if}
-  </div>
-  <a href={url} class="section__button">{btnText}</a>
-</section>
-
-<script lang="ts">
-import Pattern from "$lib/icons/Pattern.svelte";
-import PostCard from "$lib/components/PostCard.svelte";
-import ProjectCard from "$lib/components/ProjectCard.svelte";
-
-export let title: string;
-export let data: Array<Record<string, any>>;
-export let btnText: string;
-export let url: string;
-export let type: "posts" | "projects";
-</script>

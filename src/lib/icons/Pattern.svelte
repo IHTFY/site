@@ -1,3 +1,7 @@
+<script lang="ts">
+export let className: string;
+</script>
+
 <svg
   width="400"
   height="166"
@@ -86,7 +90,3 @@
     </g>
   </g>
 </svg>
-
-<script lang="ts">
-export let className: string;
-</script>

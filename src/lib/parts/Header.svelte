@@ -1,3 +1,27 @@
+<section class="header">
+  <div class="header__left">
+    <a href="https://github.com/elianiva">
+      <img
+        class="header__pict"
+        src="https://avatars3.githubusercontent.com/u/51877647?s=240&v=4"
+        alt="github profile"
+      />
+    </a>
+  </div>
+  <div class="header__right">
+    <span class="header__greet">Hi there!</span>
+    <span class="header__name"> I'm Elianiva. </span>
+    <span class="header__role">
+      A Software Developer and I love Open Source!
+    </span>
+    <p class="header__desc">
+      I like to write code and contribute to open source projects, and sometimes
+      write something in this blog. I speak Indonesia, English, and a little bit
+      of Japanese. Feel free to hit me up!
+    </p>
+  </div>
+</section>
+
 <style>
 .header {
   position: relative;
@@ -69,27 +93,3 @@
   }
 }
 </style>
-
-<section class="header">
-  <div class="header__left">
-    <a href="https://github.com/elianiva">
-      <img
-        class="header__pict"
-        src="https://avatars3.githubusercontent.com/u/51877647?s=240&v=4"
-        alt="github profile"
-      />
-    </a>
-  </div>
-  <div class="header__right">
-    <span class="header__greet">Hi there!</span>
-    <span class="header__name"> I'm Elianiva. </span>
-    <span class="header__role">
-      A Software Developer and I love Open Source!
-    </span>
-    <p class="header__desc">
-      I like to write code and contribute to open source projects, and sometimes
-      write something in this blog. I speak Indonesia, English, and a little bit
-      of Japanese. Feel free to hit me up!
-    </p>
-  </div>
-</section>

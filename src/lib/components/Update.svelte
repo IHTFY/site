@@ -1,3 +1,26 @@
+<script lang="ts">
+export let date: string = "";
+
+const dateObj = new Date(date);
+
+const formattedDate = dateObj.toLocaleDateString("en-UK", {
+  weekday: "short",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+</script>
+
+<section class="update">
+  <div class="update__header">
+    <span class="update__title">UPDATE</span>
+    <span class="update__date">{formattedDate}</span>
+  </div>
+  <div class="update__content">
+    <slot />
+  </div>
+</section>
+
 <style>
 .update {
   background-color: var(--color-alt-bg);
@@ -31,26 +54,3 @@
   line-height: 1.75em;
 }
 </style>
-
-<section class="update">
-  <div class="update__header">
-    <span class="update__title">UPDATE</span>
-    <span class="update__date">{formattedDate}</span>
-  </div>
-  <div class="update__content">
-    <slot />
-  </div>
-</section>
-
-<script lang="ts">
-export let date: string = "";
-
-const dateObj = new Date(date);
-
-const formattedDate = dateObj.toLocaleDateString("en-UK", {
-  weekday: "short",
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-});
-</script>

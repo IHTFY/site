@@ -1,3 +1,9 @@
+<section class="about">
+  <section class="about__content">
+    <slot />
+  </section>
+</section>
+
 <style>
 .about {
   max-width: 1080px;
@@ -130,9 +136,3 @@
   z-index: -1;
 }
 </style>
-
-<section class="about">
-  <section class="about__content">
-    <slot />
-  </section>
-</section>

@@ -1,47 +1,3 @@
-<style>
-main {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-div {
-  flex: 1;
-}
-
-:global(html) {
-  scroll-padding-top: 5rem;
-}
-</style>
-
-<svelte:head>
-  <script>
-  // set dark mode correctly before everythings get rendered
-  // thanks https://github.com/pveyes
-  try {
-    // prettier-ignore
-    const { matches: isDarkMode } = window.matchMedia( "(prefers-color-scheme: dark)")
-
-    const theme = localStorage.getItem("theme");
-    let preference = theme || (isDarkMode ? "dark" : "light");
-
-    // prettier-ignore
-    if (preference) document.documentElement.setAttribute("data-theme", preference)
-  } catch (err) {
-    console.error(err);
-  }
-  </script>
-</svelte:head>
-
-<Navbar {segment} />
-<main>
-  <Loading />
-  <div>
-    <slot />
-  </div>
-  <Footer />
-</main>
-
 <script lang="ts">
 import { onMount } from "svelte";
 import Navbar from "$lib/components/Navbar.svelte";
@@ -80,3 +36,47 @@ onMount(() => {
   });
 });
 </script>
+
+<svelte:head>
+  <script>
+  // set dark mode correctly before everythings get rendered
+  // thanks https://github.com/pveyes
+  try {
+    // prettier-ignore
+    const { matches: isDarkMode } = window.matchMedia( "(prefers-color-scheme: dark)")
+
+    const theme = localStorage.getItem("theme");
+    let preference = theme || (isDarkMode ? "dark" : "light");
+
+    // prettier-ignore
+    if (preference) document.documentElement.setAttribute("data-theme", preference)
+  } catch (err) {
+    console.error(err);
+  }
+  </script>
+</svelte:head>
+
+<Navbar {segment} />
+<main>
+  <Loading />
+  <div>
+    <slot />
+  </div>
+  <Footer />
+</main>
+
+<style>
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+div {
+  flex: 1;
+}
+
+:global(html) {
+  scroll-padding-top: 5rem;
+}
+</style>

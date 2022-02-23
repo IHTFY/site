@@ -1,3 +1,98 @@
+<script>
+import { onMount } from "svelte";
+import { page } from "$app/stores";
+import SEO from "$lib/components/SEO.svelte";
+import Progress from "$lib/components/Progress.svelte";
+import { theme } from "$lib/utils/theme";
+
+import "../../prism-night-owl.css";
+
+export let title = "";
+export let date = Date.now();
+export let desc = "";
+export let tags = [];
+export let minimal = false;
+
+const currentSlug = $page.url.pathname;
+
+let content;
+onMount(() => {
+  content.querySelectorAll("h1 a, h2 a, h3 a").forEach(
+    (
+      /** @type {any} */
+      a
+    ) => {
+      // use `decodeURIComponent` to handle Japanese characters
+      if (
+        !a.hash ||
+        !content.querySelectorAll(decodeURIComponent(a.hash)).length
+      ) {
+        return;
+      }
+
+      a.addEventListener("click", (/** @type {any} */ e) => {
+        e.preventDefault();
+        window.location.hash = e.target.getAttribute("href");
+      });
+    }
+  );
+});
+
+const getCommentOptions = (/** @type {boolean} */ isDark) => ({
+  src: "https://utteranc.es/client.js",
+  repo: "elianiva/elianiva.my.id",
+  "issue-term": "pathname",
+  label: "Comments",
+  theme: `${isDark ? "dark-blue" : "github-light"}`,
+  crossorigin: "anonymous",
+  async: true,
+});
+</script>
+
+<SEO {desc} {title} />
+
+<section class="post">
+  {#if !minimal}
+    <h1 class="post__title">{title}</h1>
+    <span class="post__date">
+      Posted on
+      {new Date(date).toLocaleDateString("en-Gb", { weekday: "long" })},
+      {new Date(date).toLocaleDateString("en-GB", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      })}
+    </span>
+    <a
+      class="post__edit"
+      href="https://github.com/elianiva/elianiva.my.id/blob/master/src/routes/post{currentSlug}/index.svx"
+      target="_blank"
+      rel="norel noreferrer">Suggest An Edit</a
+    >
+    <div class="post__tags">
+      {#each tags as tag}
+        <div class="post__tag">{tag}</div>
+      {/each}
+    </div>
+  {/if}
+  <main class="post__content" bind:this={content}>
+    <slot />
+    {#if !minimal}
+      <h1>Comments</h1>
+      {#if $theme === "dark"}
+        <div>
+          <script {...getCommentOptions(true)}></script>
+        </div>
+      {:else}
+        <div>
+          <script {...getCommentOptions(false)}></script>
+        </div>
+      {/if}
+    {/if}
+  </main>
+</section>
+<Progress />
+
 <style>
 .post {
   max-width: 1080px;
@@ -341,98 +436,3 @@
   }
 }
 </style>
-
-<SEO {desc} {title} />
-
-<section class="post">
-  {#if !minimal}
-    <h1 class="post__title">{title}</h1>
-    <span class="post__date">
-      Posted on
-      {new Date(date).toLocaleDateString("en-Gb", { weekday: "long" })},
-      {new Date(date).toLocaleDateString("en-GB", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-      })}
-    </span>
-    <a
-      class="post__edit"
-      href="https://github.com/elianiva/elianiva.my.id/blob/master/src/routes/post{currentSlug}/index.svx"
-      target="_blank"
-      rel="norel noreferrer">Suggest An Edit</a
-    >
-    <div class="post__tags">
-      {#each tags as tag}
-        <div class="post__tag">{tag}</div>
-      {/each}
-    </div>
-  {/if}
-  <main class="post__content" bind:this={content}>
-    <slot />
-    {#if !minimal}
-      <h1>Comments</h1>
-      {#if $theme === "dark"}
-        <div>
-          <script {...getCommentOptions(true)}></script>
-        </div>
-      {:else}
-        <div>
-          <script {...getCommentOptions(false)}></script>
-        </div>
-      {/if}
-    {/if}
-  </main>
-</section>
-<Progress />
-
-<script>
-import { onMount } from "svelte";
-import { page } from "$app/stores";
-import SEO from "$lib/components/SEO.svelte";
-import Progress from "$lib/components/Progress.svelte";
-import { theme } from "$lib/utils/theme";
-
-import "../../prism-night-owl.css";
-
-export let title = "";
-export let date = Date.now();
-export let desc = "";
-export let tags = [];
-export let minimal = false;
-
-const currentSlug = $page.url.pathname;
-
-let content;
-onMount(() => {
-  content.querySelectorAll("h1 a, h2 a, h3 a").forEach(
-    (
-      /** @type {any} */
-      a
-    ) => {
-      // use `decodeURIComponent` to handle Japanese characters
-      if (
-        !a.hash ||
-        !content.querySelectorAll(decodeURIComponent(a.hash)).length
-      ) {
-        return;
-      }
-
-      a.addEventListener("click", (/** @type {any} */ e) => {
-        e.preventDefault();
-        window.location.hash = e.target.getAttribute("href");
-      });
-    }
-  );
-});
-
-const getCommentOptions = (/** @type {boolean} */ isDark) => ({
-  src: "https://utteranc.es/client.js",
-  repo: "elianiva/elianiva.my.id",
-  "issue-term": "pathname",
-  label: "Comments",
-  theme: `${isDark ? "dark-blue" : "github-light"}`,
-  crossorigin: "anonymous",
-  async: true,
-});
-</script>

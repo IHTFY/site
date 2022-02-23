@@ -1,3 +1,12 @@
+<script lang="ts">
+export let label: string;
+export let onClick: () => void;
+</script>
+
+<div class="tag" on:click={onClick}>
+  <div class="tag__name">#{label}</div>
+</div>
+
 <style>
 .tag {
   background-color: var(--color-alt-bg);
@@ -15,12 +24,3 @@
   padding: 0.5rem;
 }
 </style>
-
-<div class="tag" on:click={onClick}>
-  <div class="tag__name">#{label}</div>
-</div>
-
-<script lang="ts">
-export let label: string;
-export let onClick: () => void;
-</script>

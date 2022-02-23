@@ -1,3 +1,25 @@
+<script lang="ts">
+export let status: number = 404;
+</script>
+
+<svelte:head>
+  <title>{status} | Elianiva's Site</title>
+</svelte:head>
+
+<div class="err">
+  {#if status === 404}
+    <h1 class="err__status">{status}</h1>
+    <span class="err__msg">
+      Sorry, you might have entered the wrong URL.
+      <br />
+      Wanna go back
+      <a class="err__url" href="/">home?</a>
+    </span>
+  {:else}
+    <span class="err__msg"> Something went wrong. </span>
+  {/if}
+</div>
+
 <style>
 .err {
   display: flex;
@@ -51,25 +73,3 @@
   transform: scale3d(1, 0.1, 1);
 }
 </style>
-
-<svelte:head>
-  <title>{status} | Elianiva's Site</title>
-</svelte:head>
-
-<div class="err">
-  {#if status === 404}
-    <h1 class="err__status">{status}</h1>
-    <span class="err__msg">
-      Sorry, you might have entered the wrong URL.
-      <br />
-      Wanna go back
-      <a class="err__url" href="/">home?</a>
-    </span>
-  {:else}
-    <span class="err__msg"> Something went wrong. </span>
-  {/if}
-</div>
-
-<script lang="ts">
-export let status: number = 404;
-</script>

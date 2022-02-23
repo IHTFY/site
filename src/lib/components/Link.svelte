@@ -1,3 +1,12 @@
+<script lang="ts">
+export let href: string;
+export let blank: boolean = true;
+</script>
+
+<a class="link" {href} rel="norel noreferrer" target={blank ? "_blank" : ""}>
+  <slot />
+</a>
+
 <style>
 .link {
   position: relative;
@@ -29,12 +38,3 @@
   transform: scale3d(1, 0.1, 1);
 }
 </style>
-
-<a class="link" {href} rel="norel noreferrer" target={blank ? "_blank" : ""}>
-  <slot />
-</a>
-
-<script lang="ts">
-export let href: string;
-export let blank: boolean = true;
-</script>

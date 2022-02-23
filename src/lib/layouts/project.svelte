@@ -1,3 +1,88 @@
+<script>
+import { page } from "$app/stores";
+import GlobeIcon from "~icons/ph/globe";
+import GithubIcon from "~icons/fe/github";
+import SEO from "$lib/components/SEO.svelte";
+import Progress from "$lib/components/Progress.svelte";
+import data from "$lib/data/site";
+
+import "../../prism-night-owl.css";
+
+export let title;
+export let desc;
+export let demo;
+export let source;
+export let stack;
+
+const currentSlug = $page.url.pathname;
+</script>
+
+<SEO {title} {desc} thumbnail={`${data.siteUrl}${currentSlug}/cover.webp`} />
+
+<section class="project">
+  <div class="project__cover">
+    <div class="project__wrapper">
+      <img
+        src={`/assets${currentSlug}/cover.webp`}
+        alt={title}
+        class="project__img"
+        loading="lazy"
+      />
+    </div>
+  </div>
+  <div class="project__content">
+    <div class="project__header">
+      <h1 class="project__title">{title}</h1>
+      <div class="project__buttons">
+        {#if demo}
+          <a
+            class="project__demo"
+            href={demo}
+            target="_blank"
+            rel="norel noreferrer"
+          >
+            <GlobeIcon /> Visit
+          </a>
+        {/if}
+        <a
+          class="project__source"
+          href={source}
+          target="_blank"
+          rel="norel noreferrer"
+        >
+          <GithubIcon /> Source
+        </a>
+      </div>
+    </div>
+    <hr class="project__divider" />
+    <slot />
+  </div>
+  <div class="project__stack">
+    <span class="stack__title">Tech Stack</span>
+    <hr class="stack__divider" />
+    {#each stack as item}
+      <div class="stack__item">
+        <div class="stack__logo">
+          <img
+            src="/assets/logo/{item[0].toLowerCase().replace(/\s+/g, '-')}.png"
+            alt={item}
+            style="filter: {item[0].toLowerCase() === 'nextjs'
+              ? 'var(--filter-invert)'
+              : ''} "
+          />
+        </div>
+        <a
+          href={item[1]}
+          class="stack__name"
+          target="_blank"
+          rel="norel noreferrer">{item[0]}</a
+        >
+      </div>
+    {/each}
+  </div>
+</section>
+<Progress />
+
 <style>
 .project {
   max-width: 1080px;
@@ -308,88 +393,3 @@
   }
 }
 </style>
-
-<SEO {title} {desc} thumbnail={`${data.siteUrl}${currentSlug}/cover.webp`} />
-
-<section class="project">
-  <div class="project__cover">
-    <div class="project__wrapper">
-      <img
-        src={`/assets${currentSlug}/cover.webp`}
-        alt={title}
-        class="project__img"
-        loading="lazy"
-      />
-    </div>
-  </div>
-  <div class="project__content">
-    <div class="project__header">
-      <h1 class="project__title">{title}</h1>
-      <div class="project__buttons">
-        {#if demo}
-          <a
-            class="project__demo"
-            href={demo}
-            target="_blank"
-            rel="norel noreferrer"
-          >
-            <GlobeIcon /> Visit
-          </a>
-        {/if}
-        <a
-          class="project__source"
-          href={source}
-          target="_blank"
-          rel="norel noreferrer"
-        >
-          <GithubIcon /> Source
-        </a>
-      </div>
-    </div>
-    <hr class="project__divider" />
-    <slot />
-  </div>
-  <div class="project__stack">
-    <span class="stack__title">Tech Stack</span>
-    <hr class="stack__divider" />
-    {#each stack as item}
-      <div class="stack__item">
-        <div class="stack__logo">
-          <img
-            src="/assets/logo/{item[0].toLowerCase().replace(/\s+/g, '-')}.png"
-            alt={item}
-            style="filter: {item[0].toLowerCase() === 'nextjs'
-              ? 'var(--filter-invert)'
-              : ''} "
-          />
-        </div>
-        <a
-          href={item[1]}
-          class="stack__name"
-          target="_blank"
-          rel="norel noreferrer">{item[0]}</a
-        >
-      </div>
-    {/each}
-  </div>
-</section>
-<Progress />
-
-<script>
-import { page } from "$app/stores";
-import GlobeIcon from "~icons/ph/globe";
-import GithubIcon from "~icons/fe/github";
-import SEO from "$lib/components/SEO.svelte";
-import Progress from "$lib/components/Progress.svelte";
-import data from "$lib/data/site";
-
-import "../../prism-night-owl.css";
-
-export let title;
-export let desc;
-export let demo;
-export let source;
-export let stack;
-
-const currentSlug = $page.url.pathname;
-</script>

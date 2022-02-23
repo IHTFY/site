@@ -3,7 +3,7 @@
   "arrowParens": "avoid",
   "trailingComma": "es5",
   "bracketSpacing": true,
-  "svelteSortOrder": "options-styles-markup-scripts",
+  "svelteSortOrder": "options-scripts-markup-styles",
   "svelteAllowShorthand": true,
   "svelteBracketNewLine": true,
   "svelteIndentScriptAndStyle": false,

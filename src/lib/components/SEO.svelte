@@ -1,3 +1,16 @@
+<script lang="ts">
+import { page } from "$app/stores";
+import data from "$lib/data/site";
+
+const { siteName, siteUrl } = data;
+
+export let title: string;
+export let isPost: boolean = false;
+export let thumbnail: string | boolean = false;
+export let desc: string = data.desc;
+export let keywords: string[] = data.keywords;
+</script>
+
 <svelte:head>
   <title>{title} | {siteName}</title>
   <link rel="canonical" href="{siteUrl}{$page.url.pathname}" />
@@ -31,16 +44,3 @@
     />
   {/if}
 </svelte:head>
-
-<script lang="ts">
-import { page } from "$app/stores";
-import data from "$lib/data/site";
-
-const { siteName, siteUrl } = data;
-
-export let title: string;
-export let isPost: boolean = false;
-export let thumbnail: string | boolean = false;
-export let desc: string = data.desc;
-export let keywords: string[] = data.keywords;
-</script>

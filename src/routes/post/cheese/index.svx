@@ -1,0 +1,13 @@
+---
+draft: false
+title: "cheese"
+date: "2022-02-10"
+coverImage: "image_editor_output_image491463956-1644466785894.jpg"
+desc: TODO
+tags:
+  - TODO
+---
+
+![](https://ihtfy.files.wordpress.com/2022/02/image_editor_output_image1865192032-1644466648040.jpg?w=850)
+
+When I was home for Christmas, I tried some old cheese. It was good; a little strange at first but actually quite addictive.

@@ -1,0 +1,29 @@
+---
+draft: false
+title: "ana raw"
+date: "2015-10-18"
+desc: TODO
+tags:
+  - TODO
+---
+
+\[soundcloud url="https://api.soundcloud.com/playlists/156469094" params="auto\_play=false&hide\_related=false&show\_comments=true&show\_user=true&show\_reposts=false&visual=true" width="100%" height="450" iframe="true" /\]
+
+### Song Info:
+
+- Gooddaylosecontrolwhatitis
+    - Good Day - Nappy Roots
+    - Lose Control - Missy Elliot
+    - What It Is - Lil Mama
+- Whatitisfeelright
+    - What It Is - Lil Mama
+    - Feel Right - Mark Ronson
+- Whatdoyoumeanlovemyself
+    - What Do You Mean - Justin Beiber
+    - Love Myself - Hailee Steinfeld
+- Sendmeonmywayworkit
+    - Send Me On My Way - Rusted Root
+    - Work It - Missy Elliot
+- Chillinbuyou
+    - Chillin - Wale
+    - Buyou - Keri Hilson

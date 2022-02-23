@@ -1,0 +1,19 @@
+---
+draft: false
+title: "shortner"
+date: "2022-02-08"
+coverImage: "shortner.jpg"
+desc: TODO
+tags:
+  - TODO
+---
+
+If you have a domain (website name) registered, you can use it as a custom url shortner. I own ihtfy.com and I use it to make shortcut links to various pages.
+
+For example, the links in the first column redirect to the second column:
+
+<table><tbody><tr><td>https://ihtfy.com</td><td>https://FrankieMercado.com</td></tr><tr><td>https://www.ihtfy.com</td><td>https://FrankieMercado.com</td></tr><tr><td>https://github.ihtfy.com</td><td>https://github.com/IHTFY</td></tr><tr><td>https://yt.ihtfy.com</td><td>https://youtube.com/ihopethisfindsyou</td></tr><tr><td>https://contact.ihtfy.com</td><td>https://frankiemercado.com/contact/</td></tr></tbody></table>
+
+shortcuts
+
+On Google Domains, you can go to the "Website" tab to add a forwarding address. Note, when a person clicks on your link, they will be redirected to the new address and they won't see your original URL anymore. This is not the case with the method described in [this previous post](https://frankiemercado.com/2022/02/04/redo/). That method requires you have access to the code at the destination, e.g. your own github project where you can add a CNAME file.

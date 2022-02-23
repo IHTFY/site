@@ -1,20 +1,3 @@
-<style>
-.loading {
-  position: fixed;
-  top: 4rem;
-  left: 0;
-  height: 0.25rem;
-  background-color: var(--color-main-accent);
-  z-index: 50;
-  transition: width ease-out 0.5s;
-  width: 0;
-}
-</style>
-
-{#if $navigating}
-  <div class="loading" style="width: {width}%" />
-{/if}
-
 <script>
 import { onMount, onDestroy } from "svelte";
 import { navigating } from "$app/stores";
@@ -46,3 +29,20 @@ $: if ($navigating) startProgress();
 onMount(() => startProgress());
 onDestroy(() => resetProgress());
 </script>
+
+{#if $navigating}
+  <div class="loading" style="width: {width}%" />
+{/if}
+
+<style>
+.loading {
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  height: 0.25rem;
+  background-color: var(--color-main-accent);
+  z-index: 50;
+  transition: width ease-out 0.5s;
+  width: 0;
+}
+</style>

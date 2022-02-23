@@ -1,33 +1,3 @@
-<style>
-.main {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 2rem 1rem 0;
-  z-index: 2;
-}
-</style>
-
-<SEO title="Home" />
-
-<main class="main">
-  <Header />
-  <Section
-    title="Recent Posts"
-    data={posts}
-    btnText="More Posts"
-    url="/post"
-    type="posts"
-  />
-  <Section
-    title="Recent Projects"
-    data={projects}
-    btnText="More Projects"
-    url="/project"
-    type="projects"
-  />
-</main>
-<Progress />
-
 <script context="module">
 export const prerender = true;
 export async function load({ fetch }) {
@@ -52,3 +22,33 @@ import type { ResourceMetadata } from "$lib/utils/fetch-data";
 export let posts: Array<ResourceMetadata>;
 export let projects: Array<ResourceMetadata>;
 </script>
+
+<SEO title="Home" />
+
+<main class="main">
+  <Header />
+  <Section
+    title="Recent Posts"
+    data={posts}
+    btnText="More Posts"
+    url="/post"
+    type="posts"
+  />
+  <Section
+    title="Recent Projects"
+    data={projects}
+    btnText="More Projects"
+    url="/project"
+    type="projects"
+  />
+</main>
+<Progress />
+
+<style>
+.main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 1rem 0;
+  z-index: 2;
+}
+</style>

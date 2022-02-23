@@ -1,0 +1,15 @@
+---
+draft: false
+title: "milk tea doppelgangers"
+date: "2022-01-19"
+coverImage: "milk-tea-doppelgangers.jpg"
+desc: TODO
+tags:
+  - TODO
+---
+
+I've noticed some milk teas taste like breakfast cereals:
+
+- Taro - Cookie Crisp
+- Winter Melon - Froot Loops
+- Horchata - Cinnamon Toast Crunch

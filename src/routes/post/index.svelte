@@ -1,3 +1,123 @@
+<script context="module">
+export const prerender = true;
+export async function load({ fetch }) {
+  const posts = await (await fetch(`/api/post.json`)).json();
+  return { props: { posts } };
+}
+</script>
+
+<script lang="ts">
+import type { zMetadata } from "$lib/utils/fetch-data";
+import { fly } from "svelte/transition";
+import SEO from "$lib/components/SEO.svelte";
+import PostCard from "$lib/components/PostCard.svelte";
+import Progress from "$lib/components/Progress.svelte";
+import Tag from "$lib/components/Tag.svelte";
+
+export let posts: Metadata[];
+
+let inputBox = null;
+let keyword = "";
+let tagKeyword = "";
+let filteredPosts = [];
+let tagFilter = [];
+let isCompletionVisible = false;
+
+// count available tags and insert it to an object
+// ex: [a, a, b, b, b] -> { a: 2, b: 3 }
+const tags = posts.map(post => post.tags).flat();
+const count = tags.reduce(
+  (acc, curr) => ({ ...acc, [curr]: (acc[curr] || 0) + 1 }),
+  {}
+);
+
+$: filteredPosts = posts.filter(post => {
+  const query = keyword.substr(1).toLowerCase();
+
+  const title = post.title.toLowerCase().includes(query);
+  const slug = post.slug.toLowerCase().includes(query);
+  const tags = tagFilter.every(x => post.tags.includes(x));
+  return (title || slug) && tags;
+});
+
+function filterPost({ currentTarget: { value } }) {
+  // always reset the completion visibility
+  isCompletionVisible = false;
+
+  if (!value.match(/^#/)) {
+    keyword = value;
+    return;
+  }
+
+  tagKeyword = value;
+  isCompletionVisible = true;
+}
+</script>
+
+<SEO title="Posts" />
+
+<section class="posts">
+  <h1 class="posts__title">All Posts</h1>
+  <div class="post__input">
+    <input
+      class="input__box"
+      id="posts__input"
+      type="text"
+      placeholder="Find post... (start with # to find tags)"
+      aria-label="search post"
+      on:input={filterPost}
+      bind:this={inputBox}
+    />
+    {#if isCompletionVisible}
+      <div
+        transition:fly={{ duration: 100, y: -50 }}
+        class="input__autocomplete"
+      >
+        {#each [...new Set(tags)] as tag}
+          {#if tag.match(new RegExp(tagKeyword.substr(1)))}
+            <!-- prettier-ignore -->
+            <span
+              class="autocomplete__item"
+              on:click={() => {
+                tagFilter = [...tagFilter, tag] // cant use push here
+                inputBox.value = ""
+                tagKeyword = ""
+                isCompletionVisible = false
+              }}
+            >
+              {tag} • {count[tag]} result{count[tag] > 1 ? 's' : ''}
+            </span>
+          {/if}
+        {/each}
+      </div>
+    {/if}
+  </div>
+  {#if tagFilter.length > 0}
+    <div class="posts__tags">
+      {#each tagFilter as filter}
+        <Tag
+          label={filter}
+          onClick={() => {
+            tagFilter = tagFilter.filter(x => x !== filter);
+          }}
+        />
+      {/each}
+    </div>
+  {/if}
+  <div class="posts__cards">
+    {#each filteredPosts as post}
+      <PostCard
+        title={post.title}
+        href={`/post/${post.slug}`}
+        desc={post.desc}
+        date={post.date}
+        tags={post.tags}
+      />
+    {/each}
+  </div>
+</section>
+<Progress />
+
 <style>
 .posts {
   max-width: 1080px;
@@ -95,123 +215,3 @@
   color: var(--color-shine);
 }
 </style>
-
-<SEO title="Posts" />
-
-<section class="posts">
-  <h1 class="posts__title">All Posts</h1>
-  <div class="post__input">
-    <input
-      class="input__box"
-      id="posts__input"
-      type="text"
-      placeholder="Find post... (start with # to find tags)"
-      aria-label="search post"
-      on:input={filterPost}
-      bind:this={inputBox}
-    />
-    {#if isCompletionVisible}
-      <div
-        transition:fly={{ duration: 100, y: -50 }}
-        class="input__autocomplete"
-      >
-        {#each [...new Set(tags)] as tag}
-          {#if tag.match(new RegExp(tagKeyword.substr(1)))}
-            <!-- prettier-ignore -->
-            <span
-              class="autocomplete__item"
-              on:click={() => {
-                tagFilter = [...tagFilter, tag] // cant use push here
-                inputBox.value = ""
-                tagKeyword = ""
-                isCompletionVisible = false
-              }}
-            >
-              {tag} • {count[tag]} result{count[tag] > 1 ? 's' : ''}
-            </span>
-          {/if}
-        {/each}
-      </div>
-    {/if}
-  </div>
-  {#if tagFilter.length > 0}
-    <div class="posts__tags">
-      {#each tagFilter as filter}
-        <Tag
-          label={filter}
-          onClick={() => {
-            tagFilter = tagFilter.filter(x => x !== filter);
-          }}
-        />
-      {/each}
-    </div>
-  {/if}
-  <div class="posts__cards">
-    {#each filteredPosts as post}
-      <PostCard
-        title={post.title}
-        href={`/post/${post.slug}`}
-        desc={post.desc}
-        date={post.date}
-        tags={post.tags}
-      />
-    {/each}
-  </div>
-</section>
-<Progress />
-
-<script context="module">
-export const prerender = true;
-export async function load({ fetch }) {
-  const posts = await (await fetch(`/api/post.json`)).json();
-  return { props: { posts } };
-}
-</script>
-
-<script lang="ts">
-import type { Metadata } from "$lib/utils/fetch-data";
-import { fly } from "svelte/transition";
-import SEO from "$lib/components/SEO.svelte";
-import PostCard from "$lib/components/PostCard.svelte";
-import Progress from "$lib/components/Progress.svelte";
-import Tag from "$lib/components/Tag.svelte";
-
-export let posts: Metadata[];
-
-let inputBox = null;
-let keyword = "";
-let tagKeyword = "";
-let filteredPosts = [];
-let tagFilter = [];
-let isCompletionVisible = false;
-
-// count available tags and insert it to an object
-// ex: [a, a, b, b, b] -> { a: 2, b: 3 }
-const tags = posts.map(post => post.tags).flat();
-const count = tags.reduce(
-  (acc, curr) => ({ ...acc, [curr]: (acc[curr] || 0) + 1 }),
-  {}
-);
-
-$: filteredPosts = posts.filter(post => {
-  const query = keyword.substr(1).toLowerCase();
-
-  const title = post.title.toLowerCase().includes(query);
-  const slug = post.slug.toLowerCase().includes(query);
-  const tags = tagFilter.every(x => post.tags.includes(x));
-  return (title || slug) && tags;
-});
-
-function filterPost({ currentTarget: { value } }) {
-  // always reset the completion visibility
-  isCompletionVisible = false;
-
-  if (!value.match(/^#/)) {
-    keyword = value;
-    return;
-  }
-
-  tagKeyword = value;
-  isCompletionVisible = true;
-}
-</script>
