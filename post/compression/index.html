@@ -34,14 +34,14 @@
 	<link rel="stylesheet" href="/_app/assets/prism-night-owl-17eca136.css">
 	<link rel="stylesheet" href="/_app/assets/post-789c7bc3.css">
 	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
-	<link rel="modulepreload" href="/_app/start-0d14b0e3.js">
+	<link rel="modulepreload" href="/_app/start-f0d952d5.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-f73903c8.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-61b6b4d7.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-233b7d65.js">
-	<link rel="modulepreload" href="/_app/pages/post/compression/index.svx-959a6abd.js">
-	<link rel="modulepreload" href="/_app/chunks/post-52cd55a6.js">
+	<link rel="modulepreload" href="/_app/pages/post/compression/index.svx-2216e4ab.js">
+	<link rel="modulepreload" href="/_app/chunks/post-68c71ca3.js">
 	<link rel="modulepreload" href="/_app/chunks/Progress-9db5e1e4.js"><script type="module">
-		import { start } from "/_app/start-0d14b0e3.js";
+		import { start } from "/_app/start-f0d952d5.js";
 		start({
 			target: document.body,
 			paths: {"base":"","assets":""},
@@ -54,7 +54,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-61b6b4d7.js"),
-						import("/_app/pages/post/compression/index.svx-959a6abd.js")
+						import("/_app/pages/post/compression/index.svx-2216e4ab.js")
 				],
 				url: new URL("http://sveltekit-prerender/post/compression"),
 				params: {}
@@ -93,7 +93,7 @@
       Saturday,
       12 February 2022</span>
     <a class="post__edit svelte-1ifswd7" href="https://github.com/elianiva/elianiva.my.id/blob/master/src/routes/post/post/compression/index.svx" target="_blank" rel="norel noreferrer">Suggest An Edit</a>
-    <div class="post__tags svelte-1ifswd7"><div class="post__tag svelte-1ifswd7">TODO</div></div>
+    <div class="post__tags svelte-1ifswd7"><div class="post__tag svelte-1ifswd7">todo</div></div>
   <main class="post__content svelte-1ifswd7"><p>I was getting a warning on a coding project that each page was more than 1MB in size. The data is a list of coordinates, stored as a big string. I was able to reduce the size of the data to 20% the original size by rounding to whole numbers. Then I used <a href="https://www.npmjs.com/package/lz-string" rel="nofollow">this LZ compression library</a> to reduce it to 5% the orignal size.</p>
 <p>LZ is a lossless compression algorithm, which means you get the exact original input when you decompress. It works by:</p>
 <ol><li>List all the characters used by the data and store it in “dictionary”</li>

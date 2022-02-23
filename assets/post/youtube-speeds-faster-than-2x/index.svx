@@ -5,7 +5,7 @@ date: "2019-06-08"
 coverImage: "use-1.png"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 I remember speeding up books on tape to chipmunk speeds so I could get through them faster. Today, my podcast app does this without the pitch distortion, and it can even trim out the silent parts.
