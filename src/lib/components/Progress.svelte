@@ -1,10 +1,10 @@
 <script lang="ts">
-import { fade } from "svelte/transition";
-import UpIcon from "~icons/ph/caret-up-bold";
+import { fade } from 'svelte/transition';
+import UpIcon from '~icons/ph/caret-up-bold';
 
 let currentPosition: number;
 
-const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 </script>
 
 <svelte:window bind:scrollY={currentPosition} />

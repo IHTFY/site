@@ -48,7 +48,7 @@
 }
 
 .about__content :global(h1::after) {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
@@ -126,7 +126,7 @@
 }
 
 .about__content :global(p a::after) {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--color-main-accent);
   bottom: 0.25rem;

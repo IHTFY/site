@@ -1,40 +1,40 @@
 <script lang="ts">
-import { onMount } from "svelte";
-import Navbar from "$lib/components/Navbar.svelte";
-import Footer from "$lib/components/Footer.svelte";
-import Loading from "$lib/components/Loading.svelte";
-import { theme } from "$lib/utils/theme";
-import "../global.css";
+import { onMount } from 'svelte';
+import Navbar from '$lib/components/Navbar.svelte';
+import Footer from '$lib/components/Footer.svelte';
+import Loading from '$lib/components/Loading.svelte';
+import { theme } from '$lib/utils/theme';
+import '../global.css';
 
 // fonts
-import "@fontsource/open-sans/400.css";
-import "@fontsource/open-sans/600.css";
-import "@fontsource/poppins/400.css";
-import "@fontsource/poppins/400-italic.css";
-import "@fontsource/jetbrains-mono/400.css";
-import "@fontsource/jetbrains-mono/400-italic.css";
+import '@fontsource/open-sans/400.css';
+import '@fontsource/open-sans/600.css';
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/400-italic.css';
+import '@fontsource/jetbrains-mono/400.css';
+import '@fontsource/jetbrains-mono/400-italic.css';
 
-export let segment: string = "";
+export let segment: string = '';
 
 onMount(() => {
   const { matches: isDarkTheme } = window.matchMedia(
-    "(prefers-color-scheme: dark)"
+    '(prefers-color-scheme: dark)'
   );
 
-  type Theme = "dark" | "light";
+  type Theme = 'dark' | 'light';
   let preference: Theme;
 
-  preference = localStorage.getItem("theme")
-    ? (localStorage.getItem("theme") as Theme)
+  preference = localStorage.getItem('theme')
+    ? (localStorage.getItem('theme') as Theme)
     : isDarkTheme
-    ? ("dark" as Theme)
-    : ("light" as Theme);
+    ? ('dark' as Theme)
+    : ('light' as Theme);
 
   theme.set(preference);
 
   theme.subscribe(current => {
-    localStorage.setItem("theme", current);
-    document.documentElement.setAttribute("data-theme", current);
+    localStorage.setItem('theme', current);
+    document.documentElement.setAttribute('data-theme', current);
   });
 });
 </script>
@@ -47,8 +47,8 @@ onMount(() => {
     // prettier-ignore
     const { matches: isDarkMode } = window.matchMedia( "(prefers-color-scheme: dark)")
 
-    const theme = localStorage.getItem("theme");
-    let preference = theme || (isDarkMode ? "dark" : "light");
+    const theme = localStorage.getItem('theme');
+    let preference = theme || (isDarkMode ? 'dark' : 'light');
 
     // prettier-ignore
     if (preference) document.documentElement.setAttribute("data-theme", preference)

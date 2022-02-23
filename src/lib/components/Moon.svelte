@@ -1,8 +1,8 @@
 <script>
-import { theme } from "$lib/utils/theme";
+import { theme } from '$lib/utils/theme';
 
 const toggleDarkMode = () => {
-  theme.update(current => (current === "light" ? "dark" : "light"));
+  theme.update(current => (current === 'light' ? 'dark' : 'light'));
 };
 </script>
 
@@ -14,8 +14,8 @@ const toggleDarkMode = () => {
   <div class="moon">
     <div
       class="moon__small"
-      style={`left: ${$theme === "dark" ? "0.25rem" : "0.75rem"}; bottom: ${
-        $theme === "dark" ? "0.25rem" : "0.75rem"
+      style={`left: ${$theme === 'dark' ? '0.25rem' : '0.75rem'}; bottom: ${
+        $theme === 'dark' ? '0.25rem' : '0.75rem'
       };`}
     />
   </div>

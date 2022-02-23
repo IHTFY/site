@@ -7,18 +7,18 @@ export async function load({ fetch }) {
 </script>
 
 <script lang="ts">
-import type { ResourceMetadata } from "$lib/utils/fetch-data";
-import { fly } from "svelte/transition";
-import SEO from "$lib/components/SEO.svelte";
-import PostCard from "$lib/components/PostCard.svelte";
-import Progress from "$lib/components/Progress.svelte";
-import Tag from "$lib/components/Tag.svelte";
+import type { ResourceMetadata } from '$lib/utils/fetch-data';
+import { fly } from 'svelte/transition';
+import SEO from '$lib/components/SEO.svelte';
+import PostCard from '$lib/components/PostCard.svelte';
+import Progress from '$lib/components/Progress.svelte';
+import Tag from '$lib/components/Tag.svelte';
 
 export let posts: ResourceMetadata[];
 
 let inputBox = null;
-let keyword = "";
-let tagKeyword = "";
+let keyword = '';
+let tagKeyword = '';
 let filteredPosts = [];
 let tagFilter = [];
 let isCompletionVisible = false;
@@ -74,17 +74,17 @@ function filterPost({ currentTarget: { value } }) {
         class="input__autocomplete"
       >
         {#each [...new Set(tags)] as tag}
-          {#if tag.match(new RegExp(tagKeyword.substring(1), "i"))}
+          {#if tag.match(new RegExp(tagKeyword.substring(1), 'i'))}
             <span
               class="autocomplete__item"
               on:click={() => {
                 tagFilter = [...new Set([...tagFilter, tag])]; // remove duplicates
-                inputBox.value = "";
-                tagKeyword = "";
+                inputBox.value = '';
+                tagKeyword = '';
                 isCompletionVisible = false;
               }}
             >
-              {tag} • {count[tag]} result{count[tag] > 1 ? "s" : ""}
+              {tag} • {count[tag]} result{count[tag] > 1 ? 's' : ''}
             </span>
           {/if}
         {/each}
@@ -136,7 +136,7 @@ function filterPost({ currentTarget: { value } }) {
 }
 
 .posts__title::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -0.25rem;
   height: 0.25rem;

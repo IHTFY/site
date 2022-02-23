@@ -14,6 +14,6 @@ export let className: string;
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-  class={"feather feather-chevron-up" + className}
+  class={'feather feather-chevron-up' + className}
   ><polyline points="18 15 12 9 6 15" /></svg
 >

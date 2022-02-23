@@ -1,12 +1,12 @@
 <script>
-import { page } from "$app/stores";
-import GlobeIcon from "~icons/ph/globe";
-import GithubIcon from "~icons/fe/github";
-import SEO from "$lib/components/SEO.svelte";
-import Progress from "$lib/components/Progress.svelte";
-import data from "$lib/data/site";
+import { page } from '$app/stores';
+import GlobeIcon from '~icons/ph/globe';
+import GithubIcon from '~icons/fe/github';
+import SEO from '$lib/components/SEO.svelte';
+import Progress from '$lib/components/Progress.svelte';
+import data from '$lib/data/site';
 
-import "../../prism-night-owl.css";
+import '../../prism-night-owl.css';
 
 export let title;
 export let desc;
@@ -234,7 +234,7 @@ const currentSlug = $page.url.pathname;
 }
 
 .stack__name::after {
-  content: "↗";
+  content: '↗';
   font-size: 1rem;
   vertical-align: top;
 }
@@ -255,7 +255,7 @@ const currentSlug = $page.url.pathname;
 }
 
 .project__content :global(p a::after) {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--color-main-accent);
   bottom: 0.25rem;
@@ -359,11 +359,11 @@ const currentSlug = $page.url.pathname;
 }
 
 .project__content :global(blockquote p::before) {
-  content: "“	";
+  content: '“	';
 }
 
 .project__content :global(blockquote p::after) {
-  content: " ”";
+  content: ' ”';
 }
 
 @media only screen and (max-width: 480px) {

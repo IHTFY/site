@@ -1,20 +1,20 @@
 <script lang="ts">
-import Pattern from "$lib/icons/Pattern.svelte";
-import PostCard from "$lib/components/PostCard.svelte";
-import ProjectCard from "$lib/components/ProjectCard.svelte";
+import Pattern from '$lib/icons/Pattern.svelte';
+import PostCard from '$lib/components/PostCard.svelte';
+import ProjectCard from '$lib/components/ProjectCard.svelte';
 
 export let title: string;
 export let data: Array<Record<string, any>>;
 export let btnText: string;
 export let url: string;
-export let type: "posts" | "projects";
+export let type: 'posts' | 'projects';
 </script>
 
 <section class="section">
   <Pattern className="section__pattern" />
   <h1 class="section__title">{title}</h1>
   <div class="section__cards">
-    {#if type === "posts"}
+    {#if type === 'posts'}
       {#each data as item}
         <PostCard
           title={item.title}
@@ -60,7 +60,7 @@ export let type: "posts" | "projects";
 }
 
 .section__title::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -0.25rem;
   height: 0.25rem;

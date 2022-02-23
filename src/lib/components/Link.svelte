@@ -3,7 +3,7 @@ export let href: string;
 export let blank: boolean = true;
 </script>
 
-<a class="link" {href} rel="norel noreferrer" target={blank ? "_blank" : ""}>
+<a class="link" {href} rel="norel noreferrer" target={blank ? '_blank' : ''}>
   <slot />
 </a>
 
@@ -18,7 +18,7 @@ export let blank: boolean = true;
 
 .link::before {
   position: absolute;
-  content: "";
+  content: '';
   bottom: 0.25rem;
   left: -0.25rem;
   right: -0.25rem;

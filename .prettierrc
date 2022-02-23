@@ -1,6 +1,8 @@
 {
   "semi": true,
   "arrowParens": "avoid",
+  "quoteProps": "consistent",
+  "singleQuote": true,
   "trailingComma": "es5",
   "bracketSpacing": true,
   "svelteSortOrder": "options-scripts-markup-styles",
@@ -8,5 +10,7 @@
   "svelteBracketNewLine": true,
   "svelteIndentScriptAndStyle": false,
   "printWidth": 80,
-  "plugins": ["prettier-plugin-svelte"]
+  "plugins": [
+    "prettier-plugin-svelte"
+  ]
 }

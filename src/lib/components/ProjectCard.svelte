@@ -1,7 +1,7 @@
 <script lang="ts">
-import { fade } from "svelte/transition";
-import GlobeIcon from "~icons/ph/globe";
-import GithubIcon from "~icons/fe/github";
+import { fade } from 'svelte/transition';
+import GlobeIcon from '~icons/ph/globe';
+import GithubIcon from '~icons/fe/github';
 
 export let title: string;
 export let imgSrc: string;
@@ -26,7 +26,7 @@ export let source: string;
       {#if demo}
         <a
           class="card__demo"
-          href={demo ? demo : "#"}
+          href={demo ? demo : '#'}
           target="_blank"
           rel="norel noreferrer"
           data-testid="demo"
@@ -54,6 +54,11 @@ export let source: string;
   background-color: var(--color-alt-bg);
   box-shadow: var(--card-shadow);
   border-radius: 0.25rem;
+  transition-duration: 500ms;
+}
+
+.card:hover {
+  transform: scale(1.01);
 }
 
 .card__img {

@@ -1,7 +1,7 @@
 <script lang="ts">
-import { fly, fade } from "svelte/transition";
-import Moon from "$lib/components/Moon.svelte";
-import Logo from "$lib/icons/Logo.svelte";
+import { fly, fade } from 'svelte/transition';
+import Moon from '$lib/components/Moon.svelte';
+import Logo from '$lib/icons/Logo.svelte';
 
 export let segment: string;
 
@@ -13,8 +13,8 @@ const toggleNav = () => {
   isVisible = !isVisible;
 
   // turn off scrolling when mobile nav is visible
-  if (checked) document.body.style.overflow = "hidden";
-  else document.body.style.overflow = "auto";
+  if (checked) document.body.style.overflow = 'hidden';
+  else document.body.style.overflow = 'auto';
 };
 </script>
 
@@ -27,21 +27,21 @@ const toggleNav = () => {
       <li class="navbar__item" data-testid="home"><a href="/">Home</a></li>
       <li
         class="navbar__item"
-        class:active={segment === "post"}
+        class:active={segment === 'post'}
         data-testid="posts"
       >
         <a href="/post">Posts</a>
       </li>
       <li
         class="navbar__item"
-        class:active={segment === "project"}
+        class:active={segment === 'project'}
         data-testid="projects"
       >
         <a href="/project">Projects</a>
       </li>
       <li
         class="navbar__item"
-        class:active={segment === "about"}
+        class:active={segment === 'about'}
         data-testid="about"
       >
         <a href="/about">About</a>
@@ -78,13 +78,13 @@ const toggleNav = () => {
       <li class="navbar__mobile_item" on:click={toggleNav}>
         <a href="/">Home</a>
       </li>
-      <li class="navbar__mobile_item" class:active={segment === "post"}>
+      <li class="navbar__mobile_item" class:active={segment === 'post'}>
         <a href="/post" on:click={toggleNav}>Posts</a>
       </li>
-      <li class="navbar__mobile_item" class:active={segment === "project"}>
+      <li class="navbar__mobile_item" class:active={segment === 'project'}>
         <a href="/project" on:click={toggleNav}>Projects</a>
       </li>
-      <li class="navbar__mobile_item" class:active={segment === "about"}>
+      <li class="navbar__mobile_item" class:active={segment === 'about'}>
         <a href="/about" on:click={toggleNav}>About</a>
       </li>
       <li class="navbar__mobile_item">
@@ -161,7 +161,7 @@ const toggleNav = () => {
 }
 
 .navbar__item a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -0.25rem;
   left: 0;
@@ -218,7 +218,7 @@ const toggleNav = () => {
     transform: rotate(-45deg) translate3d(0, -0.5rem, 0);
   }
 
-  [class^="navbar__hamburger_item"] {
+  [class^='navbar__hamburger_item'] {
     position: relative;
     display: block;
     background-color: var(--color-shine);

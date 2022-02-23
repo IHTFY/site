@@ -1,9 +1,9 @@
 <script>
-import data from "$lib/data/site";
-import EnvelopeIcon from "~icons/ph/envelope";
-import GithubIcon from "~icons/ph/github-logo";
-import TwitterIcon from "~icons/ph/twitter-logo";
-import RSSIcon from "~icons/ph/rss";
+import data from '$lib/data/site';
+import EnvelopeIcon from '~icons/ph/envelope';
+import GithubIcon from '~icons/ph/github-logo';
+import TwitterIcon from '~icons/ph/twitter-logo';
+import RSSIcon from '~icons/ph/rss';
 
 const { github, twitter, email } = data;
 </script>

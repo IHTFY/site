@@ -7,9 +7,9 @@ export async function load({ fetch }) {
 </script>
 
 <script lang="ts">
-import SEO from "$lib/components/SEO.svelte";
-import ProjectCard from "$lib/components/ProjectCard.svelte";
-import Progress from "$lib/components/Progress.svelte";
+import SEO from '$lib/components/SEO.svelte';
+import ProjectCard from '$lib/components/ProjectCard.svelte';
+import Progress from '$lib/components/Progress.svelte';
 
 export let projects: Array<any>;
 </script>
@@ -25,7 +25,7 @@ export let projects: Array<any>;
     projects are here, quite proud on some of them.
   </p>
   <div class="projects__cards">
-    {#each projects.filter(p => p.type === "personal") as project}
+    {#each projects.filter(p => p.type === 'personal') as project}
       <ProjectCard
         title={project.title}
         imgSrc={`/assets/project/${project.slug}/cover.webp`}
@@ -45,7 +45,7 @@ export let projects: Array<any>;
     here anyway in case anyone needs them for reference or something.
   </p>
   <div class="projects__cards">
-    {#each projects.filter(p => p.type === "assignment") as project}
+    {#each projects.filter(p => p.type === 'assignment') as project}
       <ProjectCard
         title={project.title}
         imgSrc={`/assets/project/${project.slug}/cover.webp`}
@@ -78,7 +78,7 @@ export let projects: Array<any>;
 }
 
 .projects__title::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -0.25rem;
   height: 0.25rem;

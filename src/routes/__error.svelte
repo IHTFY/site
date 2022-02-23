@@ -53,7 +53,7 @@ export let status: number = 404;
 
 .err__url::before {
   position: absolute;
-  content: "";
+  content: '';
   bottom: -0.25rem;
   left: -0.25rem;
   right: -0.25rem;

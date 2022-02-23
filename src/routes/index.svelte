@@ -13,11 +13,11 @@ export async function load({ fetch }) {
 </script>
 
 <script lang="ts">
-import SEO from "$lib/components/SEO.svelte";
-import Header from "$lib/parts/Header.svelte";
-import Section from "$lib/parts/Section.svelte";
-import Progress from "$lib/components/Progress.svelte";
-import type { ResourceMetadata } from "$lib/utils/fetch-data";
+import SEO from '$lib/components/SEO.svelte';
+import Header from '$lib/parts/Header.svelte';
+import Section from '$lib/parts/Section.svelte';
+import Progress from '$lib/components/Progress.svelte';
+import type { ResourceMetadata } from '$lib/utils/fetch-data';
 
 export let posts: Array<ResourceMetadata>;
 export let projects: Array<ResourceMetadata>;

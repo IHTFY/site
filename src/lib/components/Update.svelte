@@ -1,13 +1,13 @@
 <script lang="ts">
-export let date: string = "";
+export let date: string = '';
 
 const dateObj = new Date(date);
 
-const formattedDate = dateObj.toLocaleDateString("en-UK", {
-  weekday: "short",
-  year: "numeric",
-  month: "long",
-  day: "numeric",
+const formattedDate = dateObj.toLocaleDateString('en-UK', {
+  weekday: 'short',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
 });
 </script>
 

@@ -1,6 +1,6 @@
 <script>
-import { onMount, onDestroy } from "svelte";
-import { navigating } from "$app/stores";
+import { onMount, onDestroy } from 'svelte';
+import { navigating } from '$app/stores';
 
 let counter;
 let width = 0;

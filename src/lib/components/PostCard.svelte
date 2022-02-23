@@ -1,6 +1,6 @@
 <script lang="ts">
-import { fade } from "svelte/transition";
-import CalendarIcon from "~icons/ph/calendar-blank-bold";
+import { fade } from 'svelte/transition';
+import CalendarIcon from '~icons/ph/calendar-blank-bold';
 
 export let title: string;
 export let desc: string;
@@ -15,10 +15,10 @@ export let tags: Array<string>;
     <div class="card__date">
       <CalendarIcon className="date__icon" />
       <span class="date__label" data-testid="date">
-        {new Date(date).toLocaleDateString("en-GB", {
-          day: "numeric",
-          month: "long",
-          year: "numeric",
+        {new Date(date).toLocaleDateString('en-GB', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric',
         })}
       </span>
     </div>
@@ -39,6 +39,11 @@ export let tags: Array<string>;
   z-index: 2;
   border-radius: 0.25rem;
   box-shadow: var(--card-shadow);
+  transition-duration: 500ms;
+}
+
+.card:hover {
+  transform: scale(1.01);
 }
 
 .card__details {
@@ -105,7 +110,7 @@ export let tags: Array<string>;
 }
 
 .card__tag::before {
-  content: "# ";
+  content: '# ';
   font-weight: 600;
 }
 

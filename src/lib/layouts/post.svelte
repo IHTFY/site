@@ -1,14 +1,14 @@
 <script>
-import { onMount } from "svelte";
-import { page } from "$app/stores";
-import SEO from "$lib/components/SEO.svelte";
-import Progress from "$lib/components/Progress.svelte";
+import { onMount } from 'svelte';
+import { page } from '$app/stores';
+import SEO from '$lib/components/SEO.svelte';
+import Progress from '$lib/components/Progress.svelte';
 
-import "../../prism-night-owl.css";
+import '../../prism-night-owl.css';
 
-export let title = "";
+export let title = '';
 export let date = Date.now();
-export let desc = "";
+export let desc = '';
 export let tags = [];
 export let minimal = false;
 
@@ -16,7 +16,7 @@ const currentSlug = $page.url.pathname;
 
 let content;
 onMount(() => {
-  content.querySelectorAll("h1 a, h2 a, h3 a").forEach(
+  content.querySelectorAll('h1 a, h2 a, h3 a').forEach(
     (
       /** @type {any} */
       a
@@ -29,9 +29,9 @@ onMount(() => {
         return;
       }
 
-      a.addEventListener("click", (/** @type {any} */ e) => {
+      a.addEventListener('click', (/** @type {any} */ e) => {
         e.preventDefault();
-        window.location.hash = e.target.getAttribute("href");
+        window.location.hash = e.target.getAttribute('href');
       });
     }
   );
@@ -45,16 +45,16 @@ onMount(() => {
     <h1 class="post__title">{title}</h1>
     <span class="post__date">
       Posted on
-      {new Date(date).toLocaleDateString("en-Gb", { weekday: "long" })},
-      {new Date(date).toLocaleDateString("en-GB", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
+      {new Date(date).toLocaleDateString('en-US', { weekday: 'long' })},
+      {new Date(date).toLocaleDateString('en-US', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
       })}
     </span>
     <a
       class="post__edit"
-      href="https://github.com/elianiva/elianiva.my.id/blob/master/src/routes/post{currentSlug}/index.svx"
+      href="mailto:siteEdit@ihtfy.com?subject=Edit%20{currentSlug}"
       target="_blank"
       rel="norel noreferrer">Suggest An Edit</a
     >
@@ -134,7 +134,7 @@ onMount(() => {
 }
 
 .post__tag::before {
-  content: "# ";
+  content: '# ';
 }
 
 .post__content {
@@ -170,7 +170,7 @@ onMount(() => {
 }
 
 .post__content :global(h1::after) {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
@@ -197,7 +197,7 @@ onMount(() => {
 }
 
 .post__content :global(h3::after) {
-  content: "• ";
+  content: '• ';
   position: absolute;
   left: 0;
   color: var(--color-main-accent);
@@ -246,7 +246,7 @@ onMount(() => {
 
 .post__content :global(p > a::after),
 .post__content :global(ul a::after) {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--color-main-accent);
   bottom: 0.25rem;
