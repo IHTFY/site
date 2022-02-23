@@ -5,7 +5,7 @@ date: "2022-01-05"
 coverImage: "20220104_202419.jpg"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 I took my redeye flight to California this morning. It was supposed to be a single plane with 3 stops, but we ended up having an unscheduled plane switch.

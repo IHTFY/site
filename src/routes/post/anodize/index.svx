@@ -5,7 +5,7 @@ date: "2022-02-07"
 coverImage: "anodize.jpg"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 I bought some butterfly paperclips, like the one I use as a logo. I tried to anodize one using a blowtorch: a [Bernzomatic TS8000](https://amzn.to/3upUfSa) that I bought to sear sous vide steaks.

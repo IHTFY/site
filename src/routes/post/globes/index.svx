@@ -4,7 +4,7 @@ title: "globes"
 date: "2015-09-15"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 These images were created using PTGui and Photoshop.

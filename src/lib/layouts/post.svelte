@@ -3,7 +3,6 @@ import { onMount } from "svelte";
 import { page } from "$app/stores";
 import SEO from "$lib/components/SEO.svelte";
 import Progress from "$lib/components/Progress.svelte";
-import { theme } from "$lib/utils/theme";
 
 import "../../prism-night-owl.css";
 

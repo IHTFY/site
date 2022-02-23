@@ -5,7 +5,7 @@ date: "2022-01-27"
 coverImage: "image_editor_output_image691278338-1643262772508.jpg"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 I was playing this ipad racing game called Asphalt 9. There's an insane number of subsections, menus, and modes. I don't know how little kids can figure all that out.

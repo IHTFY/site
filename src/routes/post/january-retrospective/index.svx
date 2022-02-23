@@ -5,7 +5,7 @@ date: "2022-02-01"
 coverImage: "january-retrospective.jpg"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 On January 1st, 2022, I listed some goals for the year.

@@ -5,7 +5,7 @@ date: "2021-03-16"
 coverImage: "workoutthumb.png"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 ## [workout.ihtfy.com](https://workout.ihtfy.com)

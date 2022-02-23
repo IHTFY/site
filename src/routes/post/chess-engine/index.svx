@@ -5,7 +5,7 @@ date: "2022-01-16"
 coverImage: "image_editor_output_image-1492837878-1642284155420.jpg"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 I started making a chess engine a while ago. I only got as far as making random moves.

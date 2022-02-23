@@ -5,7 +5,7 @@ date: "2021-03-16"
 coverImage: "knightthumb.png"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 ## [knightpuzzle.ihtfy.com](https://knightpuzzle.ihtfy.com/)

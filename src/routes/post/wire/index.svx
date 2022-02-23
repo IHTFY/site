@@ -5,7 +5,7 @@ date: "2015-07-27"
 coverImage: "z2000x1500.jpg"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 \[gallery ids="113,115,114,112" type="slideshow" link="none"\]

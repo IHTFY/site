@@ -5,7 +5,7 @@ date: "2022-02-04"
 coverImage: "livestreams.jpg"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 This is somewhat related to my [previous post](https://frankiemercado.com/2022/02/02/soundcloud-likes/) about downloading all of my SoundCloud liked songs. I have another batch file that I use to save livestreams. It doesn't work for YouTube livestreams and probably not Twitch either. Often news sites or other random sites will work.

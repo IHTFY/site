@@ -5,7 +5,7 @@ date: "2022-01-19"
 coverImage: "milk-tea-doppelgangers.jpg"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 I've noticed some milk teas taste like breakfast cereals:

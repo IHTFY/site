@@ -74,18 +74,17 @@ function filterPost({ currentTarget: { value } }) {
         class="input__autocomplete"
       >
         {#each [...new Set(tags)] as tag}
-          {#if tag.match(new RegExp(tagKeyword.substring(1)))}
-            <!-- prettier-ignore -->
+          {#if tag.match(new RegExp(tagKeyword.substring(1), "i"))}
             <span
               class="autocomplete__item"
               on:click={() => {
-                tagFilter = [...tagFilter, tag] // cant use push here
-                inputBox.value = ""
-                tagKeyword = ""
-                isCompletionVisible = false
+                tagFilter = [...new Set([...tagFilter, tag])]; // remove duplicates
+                inputBox.value = "";
+                tagKeyword = "";
+                isCompletionVisible = false;
               }}
             >
-              {tag} • {count[tag]} result{count[tag] > 1 ? 's' : ''}
+              {tag} • {count[tag]} result{count[tag] > 1 ? "s" : ""}
             </span>
           {/if}
         {/each}

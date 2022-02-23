@@ -5,7 +5,7 @@ date: "2021-07-16"
 coverImage: "collage.png"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 I've made a few web games in recently. I'll try to keep this page updated as I make more.

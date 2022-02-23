@@ -5,7 +5,7 @@ date: "2022-01-21"
 coverImage: "image_editor_output_image-862649385-1642747108548.jpg"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 My sleep schedule started to get off again but has actually been good the last week.

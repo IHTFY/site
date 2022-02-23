@@ -4,7 +4,7 @@ title: "simplify"
 date: "2022-02-19"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 I simplified my logo a bit. It looks pretty much the same, but the underlying svg is much smaller.

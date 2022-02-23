@@ -5,7 +5,7 @@ date: "2017-09-29"
 coverImage: "img_7485-panoramaglobesmallrawthumb.jpg"
 desc: TODO
 tags:
-  - TODO
+  - todo
 ---
 
 Another globe featuring [@nwele](https://www.instagram.com/nwele/)
