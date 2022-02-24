@@ -3,7 +3,7 @@ export let status: number = 404;
 </script>
 
 <svelte:head>
-  <title>{status} | Elianiva's Site</title>
+  <title>{status} | IHTFY's Site</title>
 </svelte:head>
 
 <div class="err">
@@ -16,7 +16,7 @@ export let status: number = 404;
       <a class="err__url" href="/">home?</a>
     </span>
   {:else}
-    <span class="err__msg"> Something went wrong. </span>
+    <span class="err__msg"> Something went wrong.</span>
   {/if}
 </div>
 

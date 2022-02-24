@@ -3,41 +3,58 @@ import data from '$lib/data/site';
 import EnvelopeIcon from '~icons/ph/envelope';
 import GithubIcon from '~icons/ph/github-logo';
 import TwitterIcon from '~icons/ph/twitter-logo';
-import RSSIcon from '~icons/ph/rss';
+import InstagramIcon from '~icons/ph/instagram-logo';
+import TiktokIcon from '~icons/ph/tiktok-logo';
+import YoutubeIcon from '~icons/ph/youtube-logo';
+// import RSSIcon from '~icons/ph/rss';
 
-const { github, twitter, email } = data;
+const { github, twitter, instagram, tiktok, email, youtube } = data;
 </script>
 
 <footer>
   <div class="icons">
-    <!-- prettier-ignore -->
-    <a href="mailto:{email}" target="_blank" rel="norel noreferrer" aria-label="email">
-      <EnvelopeIcon height="24" width="24" />
+    <a
+      href={youtube}
+      target="_blank"
+      rel="norel noreferrer"
+      aria-label="youtube"
+    >
+      <YoutubeIcon height="24" width="24" />
     </a>
-    <!-- prettier-ignore -->
-    <a href="{github}" target="_blank" rel="norel noreferrer" aria-label="github">
+    <a href={github} target="_blank" rel="norel noreferrer" aria-label="github">
       <GithubIcon height="24" width="24" />
     </a>
-    <!-- prettier-ignore -->
-    <a href={twitter} target="_blank" rel="norel noreferrer" aria-label="twitter" >
+    <a
+      href={instagram}
+      target="_blank"
+      rel="norel noreferrer"
+      aria-label="instagram"
+    >
+      <InstagramIcon height="24" width="24" />
+    </a>
+    <a
+      href={twitter}
+      target="_blank"
+      rel="norel noreferrer"
+      aria-label="twitter"
+    >
       <TwitterIcon height="24" width="24" />
     </a>
-    <!-- prettier-ignore -->
-    <a href="/rss.xml" rel="alternate" type="application/rss+xml" aria-label="rss">
-      <RSSIcon height="24" width="24" />
+    <a href={tiktok} target="_blank" rel="norel noreferrer" aria-label="tiktok">
+      <TiktokIcon height="24" width="24" />
+    </a>
+    <a
+      href="mailto:{email}"
+      target="_blank"
+      rel="norel noreferrer"
+      aria-label="email"
+    >
+      <EnvelopeIcon height="24" width="24" />
     </a>
   </div>
   <p>
-    Powered by
-    <a class="hl" href="https://kit.svelte.dev">Svelte-Kit</a>
-    and
-    <a class="hl" href="https://vercel.app">Vercel</a>
-    • Source code is available on
-    <a class="hl" href="{github}/elianiva.my.id">Github</a>
-  </p>
-  <p>
     Copyright &copy; {new Date().getFullYear()}
-    <a class="hl" href={github}>Elianiva</a>
+    <a class="hl" href={github}>IHTFY</a>
   </p>
 </footer>
 
@@ -74,7 +91,7 @@ a {
 .icons {
   margin: 0 auto 0.5rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   max-width: 220px;
 }
 

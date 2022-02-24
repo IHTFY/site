@@ -1,23 +1,22 @@
 <section class="header">
   <div class="header__left">
-    <a href="https://github.com/elianiva">
+    <a href="https://github.com/ihtfy">
       <img
         class="header__pict"
-        src="https://avatars3.githubusercontent.com/u/51877647?s=240&v=4"
+        src="/assets/logo/avatar.jpg"
         alt="github profile"
       />
     </a>
   </div>
   <div class="header__right">
-    <span class="header__greet">Hi there!</span>
-    <span class="header__name"> I'm Elianiva. </span>
+    <span class="header__greet">Hey there,</span>
+    <span class="header__name"> I'm Frankie!</span>
     <span class="header__role">
-      A Software Developer and I love Open Source!
+      I write code, do math, make music, and eat food.
     </span>
     <p class="header__desc">
-      I like to write code and contribute to open source projects, and sometimes
-      write something in this blog. I speak Indonesia, English, and a little bit
-      of Japanese. Feel free to hit me up!
+      This is my hub where you can find almost all my online stuff. I've been
+      posting <i>something</i> every day in 2022.
     </p>
   </div>
 </section>
