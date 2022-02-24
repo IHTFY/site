@@ -13,7 +13,7 @@
     />
 
     <link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="/logo32.png" />
 
     <meta http-equiv="content-security-policy" content=""><title>reredo | IHTFY</title><script data-svelte="svelte-1xtfmqk">// set dark mode correctly before everythings get rendered
   // thanks https://github.com/pveyes
@@ -29,19 +29,19 @@
   } catch (err) {
     console.error(err);
   }
-  </script><link rel="canonical" href="https://blog.ihtfy.com//post/reredo" data-svelte="svelte-1r0yd13"><meta name="description" content="TODO" data-svelte="svelte-1r0yd13"><meta name="keywords" content="personal,website,blog,article" data-svelte="svelte-1r0yd13"><meta property="og:type" content="website" data-svelte="svelte-1r0yd13"><meta property="og:url" content="https://blog.ihtfy.com//post/reredo" data-svelte="svelte-1r0yd13"><meta property="og:title" content="reredo" data-svelte="svelte-1r0yd13"><meta property="og:description" content="TODO" data-svelte="svelte-1r0yd13"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/51877647?s=240&amp;v=4" data-svelte="svelte-1r0yd13"><meta property="twitter:card" content="summary" data-svelte="svelte-1r0yd13"><meta property="twitter:url" content="https://blog.ihtfy.com//post/reredo" data-svelte="svelte-1r0yd13"><meta property="twitter:title" content="reredo" data-svelte="svelte-1r0yd13"><meta property="twitter:description" content="TODO" data-svelte="svelte-1r0yd13">
+  </script><link rel="canonical" href="https://blog.ihtfy.com//post/reredo" data-svelte="svelte-1r0yd13"><meta name="description" content="Redoing the calendar maker again" data-svelte="svelte-1r0yd13"><meta name="keywords" content="personal,website,blog,article" data-svelte="svelte-1r0yd13"><meta property="og:type" content="website" data-svelte="svelte-1r0yd13"><meta property="og:url" content="https://blog.ihtfy.com//post/reredo" data-svelte="svelte-1r0yd13"><meta property="og:title" content="reredo" data-svelte="svelte-1r0yd13"><meta property="og:description" content="Redoing the calendar maker again" data-svelte="svelte-1r0yd13"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/51877647?s=240&amp;v=4" data-svelte="svelte-1r0yd13"><meta property="twitter:card" content="summary" data-svelte="svelte-1r0yd13"><meta property="twitter:url" content="https://blog.ihtfy.com//post/reredo" data-svelte="svelte-1r0yd13"><meta property="twitter:title" content="reredo" data-svelte="svelte-1r0yd13"><meta property="twitter:description" content="Redoing the calendar maker again" data-svelte="svelte-1r0yd13">
 	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-16e075ab.css">
 	<link rel="stylesheet" href="/_app/assets/prism-night-owl-17eca136.css">
 	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
 	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
-	<link rel="modulepreload" href="/_app/start-b44a32a6.js">
+	<link rel="modulepreload" href="/_app/start-facc6ecd.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-f73903c8.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-591eda95.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-2e642f94.js">
-	<link rel="modulepreload" href="/_app/pages/post/reredo/index.svx-1b60935d.js">
+	<link rel="modulepreload" href="/_app/pages/post/reredo/index.svx-3c49a03d.js">
 	<link rel="modulepreload" href="/_app/chunks/post-178ca962.js">
 	<link rel="modulepreload" href="/_app/chunks/Progress-2d81d7be.js"><script type="module">
-		import { start } from "/_app/start-b44a32a6.js";
+		import { start } from "/_app/start-facc6ecd.js";
 		start({
 			target: document.body,
 			paths: {"base":"","assets":""},
@@ -54,7 +54,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-591eda95.js"),
-						import("/_app/pages/post/reredo/index.svx-1b60935d.js")
+						import("/_app/pages/post/reredo/index.svx-3c49a03d.js")
 				],
 				url: new URL("http://sveltekit-prerender/post/reredo"),
 				params: {}
@@ -93,12 +93,12 @@
       Tuesday,
       February 15, 2022</span>
     <a class="post__edit svelte-f0w9v3" href="mailto:siteEdit@ihtfy.com?subject=Edit%20/post/reredo" target="_blank" rel="norel noreferrer">Suggest An Edit</a>
-    <div class="post__tags svelte-f0w9v3"><div class="post__tag svelte-f0w9v3">todo</div></div>
+    <div class="post__tags svelte-f0w9v3"><div class="post__tag svelte-f0w9v3">coding</div><div class="post__tag svelte-f0w9v3">design</div></div>
   <main class="post__content svelte-f0w9v3"><p>I noticed a little bit ago that the calendar maker site doesn’t really need routing. And it’s just a static page hosted on GitHub, so I don’t really need SvelteKit for server side rendering. I had also had some problems getting any component libraries to install. I think I’m going to start over again just using Svelte, and hopefully I can get this library called <a href="https://illright.github.io/attractions/" rel="nofollow">Attractions</a> to work.</p>
 <p>It has a nice <a href="https://illright.github.io/attractions/docs/components/file-dropzone" rel="nofollow">FileDropzone</a> component and <a href="https://illright.github.io/attractions/docs/components/date-picker" rel="nofollow">DatePicker</a>. I’ll probably just have the settings and data page be <a href="https://illright.github.io/attractions/docs/components/tabs" rel="nofollow">Tabs</a> or maybe <a href="https://illright.github.io/attractions/docs/components/modal" rel="nofollow">Modals</a>.</p>
 <p>I think I’ll still use <a href="https://dexie.org/" rel="nofollow">Dexie</a>/<a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API" rel="nofollow">indexedDB</a> for storage.</p>
 <p>I’ve used <a href="http://materializecss.com" rel="nofollow">MaterializeCSS</a> several times, and it’s a fast way to style a page built without any framework. It also has a <a href="https://materializecss.com/pickers.html" rel="nofollow">Date Picker</a> component. The library has never been updated though, and there are a few bugs I’ve found while working with it. For example, long months have the last letters cut off; this is probably fixable with some simple CSS, but there’s little stuff like that all over, e.g. missing margins/padding in the header component.</p>
-<p>I’ve used <a href="https://bulma.io/" rel="nofollow">Bulma</a> just once I think - on the <a href="https://frankiemercado.com/2021/03/15/knight/" rel="nofollow">Knight Puzzle</a>. I think it worked pretty well. I had trouble styling the table, because it requires <a href="https://sass-lang.com/" rel="nofollow">SASS</a> to modify the default styles, and I was trying to keep things simply by just using the Bulma CDN. But Bulma seems to have a collection of extensions (I think made by random users) including a <a href="https://wikiki.github.io/components/calendar/" rel="nofollow">calender</a>. Bulma has a default <a href="https://bulma.io/documentation/form/file/" rel="nofollow">File Upload</a> component, but it doesn’t support drag and drop which is nice to have.</p>
+<p>I’ve used <a href="https://bulma.io/" rel="nofollow">Bulma</a> just once I think - on the <a href="https://blog.ihtfy.com/post/knight/" rel="nofollow">Knight Puzzle</a>. I think it worked pretty well. I had trouble styling the table, because it requires <a href="https://sass-lang.com/" rel="nofollow">SASS</a> to modify the default styles, and I was trying to keep things simply by just using the Bulma CDN. But Bulma seems to have a collection of extensions (I think made by random users) including a <a href="https://wikiki.github.io/components/calendar/" rel="nofollow">calender</a>. Bulma has a default <a href="https://bulma.io/documentation/form/file/" rel="nofollow">File Upload</a> component, but it doesn’t support drag and drop which is nice to have.</p>
 <p>I think Attractions looks sleek, and I think it has most of what I need.</p></main></section>
 
 
