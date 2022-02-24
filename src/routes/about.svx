@@ -14,7 +14,7 @@ import Progress from "$lib/components/Progress.svelte";
 <SEO title="About" />
 
 # About Me
-I'm Frankie. I go by ihtfy on most sites.
+I'm Frankie --- I go by ihtfy on most sites.
 
 
 ## This Website

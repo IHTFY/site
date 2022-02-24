@@ -3,9 +3,10 @@ draft: false
 title: "theming"
 date: "2022-02-18"
 coverImage: "theming.jpg"
-desc: TODO
+desc: Remaking the calendar maker
 tags:
-  - todo
+  - coding
+  - design
 ---
 
 I remade the calendar maker using Attractions, and it looks pretty nice so far. A few things it's missing are dark mode and grid/layout utilities.

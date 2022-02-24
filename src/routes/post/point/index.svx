@@ -3,30 +3,29 @@ draft: false
 title: "point"
 date: "2016-01-07"
 coverImage: "points2000x1500.png"
-desc: TODO
+desc: Gernerative art using Processing
 tags:
-  - todo
+  - coding
+  - art
+  - math
 ---
 
 I made this in June of 2014. I was using processing (a java library) to make mosaic and pointillism style images from existing pictures.
-
-_You can click the images below to see larger versions._
 
 ### Cloud
 
 Generated circles are semi-uniformly distributed (small deviations from initial lattice)
 
-TODO FORMAT PICTURES
-![](/assets/post/point/cloud.png)
-![](/assets/post/point/capped-cloud.png)
+![cloud](/assets/post/point/cloud.png)
+![capped-cloud](/assets/post/point/capped-cloud.png)
 
 
 ### Lake
 
 Using randomly placed circles of roughly equal diameter
 
-![](/assets/post/point/lake.png)
-![](/assets/post/point/capped-lake.png)
+![lake](/assets/post/point/lake.png)
+![capped-lake](/assets/post/point/capped-lake.png)
 
 
 Video showing shrinking polygons to reduce uncovered spots. I just realized this is the same concept of simulated annealing.
@@ -37,30 +36,30 @@ Video showing shrinking polygons to reduce uncovered spots. I just realized this
 
 Randomly placed quadrilaterals
 
-![](/assets/post/point/banana.jpg)
-![](/assets/post/point/capped-banana.jpg)
+![banana](/assets/post/point/banana.jpg)
+![capped-banana](/assets/post/point/capped-banana.jpg)
 
 ### Jaguar
 
 Using small polygons and larger polygons
 
-![](/assets/post/point/leo.jpg)
-![](/assets/post/point/capped-leo1.jpg)
-![](/assets/post/point/capped-leo2.jpg)
+![leo](/assets/post/point/leo.jpg)
+![capped-leo1](/assets/post/point/capped-leo1.jpg)
+![capped-leo2](/assets/post/point/capped-leo2.jpg)
 
 
 ### Another Jaguar
 
 Random circles
 
-![](/assets/post/point/cheetah.png)
-![](/assets/post/point/capped-cheetah.png)
+![cheetah](/assets/post/point/cheetah.png)
+![capped-cheetah](/assets/post/point/capped-cheetah.png)
 
 
 ### White and Pink
 
-![](/assets/post/point/bb.jpg)
-![](/assets/post/point/capped-bb.jpg)
+![bb](/assets/post/point/bb.jpg)
+![capped-bb](/assets/post/point/capped-bb.jpg)
 
 
 
@@ -147,4 +146,5 @@ void keyPressed() {
   if (key == 'p' || key == 'P') {
     saveFrame("./images/Capped-" + img); // output image
   }
-}```
+}
+```

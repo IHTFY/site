@@ -3,9 +3,9 @@ draft: false
 title: "Happy New Year"
 date: "2022-01-02"
 coverImage: "image_editor_output_image1043157577-1641102948760.jpg"
-desc: TODO
+desc: Starting daily posts
 tags:
-  - todo
+  - random
 ---
 
 I have 30 minutes to write this. I wanted to post something on January 1st and hopefully every day this year. Perhaps I'll count YouTube videos as part of the streak, but I could probably make a post here as well on those days.

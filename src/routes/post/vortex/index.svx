@@ -3,9 +3,10 @@ draft: false
 title: "vortex"
 date: "2022-02-22"
 coverImage: "vortex.jpg"
-desc: TODO
+desc: Finished the vortex math thing
 tags:
-  - todo
+  - coding
+  - math
 ---
 
 I finished the modular times table vortex. Here's the finished site: [https://vortex.ihtfy.com/](https://vortex.ihtfy.com/)

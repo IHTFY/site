@@ -3,7 +3,7 @@ draft: false
 title: "albinogator"
 date: "2017-08-22"
 coverImage: "img_6443-panoramarawcropped20001500.jpg"
-desc: TODO
+desc: A panorama of an alligator
 tags:
   - photography
 ---

@@ -3,11 +3,11 @@ draft: false
 title: "grey"
 date: "2017-09-29"
 coverImage: "img_7485-panoramaglobesmallrawthumb.jpg"
-desc: TODO
+desc: A tiny planet
 tags:
-  - todo
+  - photography
 ---
 
 Another globe featuring [@nwele](https://www.instagram.com/nwele/)
 
-\[caption id="attachment\_237" align="alignnone" width="1000"\]![IMG_7485 PanoramaGLOBEtinyRAW](/assets/post/grey/img_7485-panoramaglobetinyraw.jpg) Muir Beach\[/caption\]
+![Muir Beach](/assets/post/grey/img_7485-panoramaglobetinyraw.jpg) Muir Beach

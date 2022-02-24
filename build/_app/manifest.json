@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-b44a32a6.js",
+    "file": "start-a6b5a751.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -90,6 +90,7 @@
       "src/routes/post/grey/index.svx",
       "src/routes/post/late/index.svx",
       "src/routes/post/logo/index.svx",
+      "src/routes/post/plan/index.svx",
       "src/routes/post/redo/index.svx",
       "src/routes/post/tabs/index.svx",
       "src/routes/post/wire/index.svx",
@@ -465,7 +466,7 @@
     ]
   },
   "src/routes/about.svx": {
-    "file": "pages/about.svx-33c806de.js",
+    "file": "pages/about.svx-f6eb9387.js",
     "src": "src/routes/about.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -494,7 +495,7 @@
     ]
   },
   "src/routes/post/youtube-speeds-faster-than-2x/index.svx": {
-    "file": "pages/post/youtube-speeds-faster-than-2x/index.svx-9a4bab62.js",
+    "file": "pages/post/youtube-speeds-faster-than-2x/index.svx-7c0fb2da.js",
     "src": "src/routes/post/youtube-speeds-faster-than-2x/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -524,7 +525,7 @@
     ]
   },
   "src/routes/post/january-retrospective/index.svx": {
-    "file": "pages/post/january-retrospective/index.svx-c20123ab.js",
+    "file": "pages/post/january-retrospective/index.svx-a7538e72.js",
     "src": "src/routes/post/january-retrospective/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -539,7 +540,7 @@
     ]
   },
   "src/routes/post/calendar-progress/index.svx": {
-    "file": "pages/post/calendar-progress/index.svx-86030515.js",
+    "file": "pages/post/calendar-progress/index.svx-c23c89ca.js",
     "src": "src/routes/post/calendar-progress/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -554,7 +555,7 @@
     ]
   },
   "src/routes/post/drunken-crawfish/index.svx": {
-    "file": "pages/post/drunken-crawfish/index.svx-d5344ae3.js",
+    "file": "pages/post/drunken-crawfish/index.svx-0f20a081.js",
     "src": "src/routes/post/drunken-crawfish/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -569,7 +570,7 @@
     ]
   },
   "src/routes/post/soundcloud-likes/index.svx": {
-    "file": "pages/post/soundcloud-likes/index.svx-ff19f798.js",
+    "file": "pages/post/soundcloud-likes/index.svx-8103837a.js",
     "src": "src/routes/post/soundcloud-likes/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -599,7 +600,7 @@
     ]
   },
   "src/routes/post/watching-videos/index.svx": {
-    "file": "pages/post/watching-videos/index.svx-be6a1fc7.js",
+    "file": "pages/post/watching-videos/index.svx-c979bb33.js",
     "src": "src/routes/post/watching-videos/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -614,7 +615,7 @@
     ]
   },
   "src/routes/post/happy-new-year/index.svx": {
-    "file": "pages/post/happy-new-year/index.svx-2d32d7f1.js",
+    "file": "pages/post/happy-new-year/index.svx-542b5288.js",
     "src": "src/routes/post/happy-new-year/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -629,7 +630,7 @@
     ]
   },
   "src/routes/post/sleep-schedule/index.svx": {
-    "file": "pages/post/sleep-schedule/index.svx-53b591d0.js",
+    "file": "pages/post/sleep-schedule/index.svx-7e43add1.js",
     "src": "src/routes/post/sleep-schedule/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -644,7 +645,7 @@
     ]
   },
   "src/routes/post/chess-engine/index.svx": {
-    "file": "pages/post/chess-engine/index.svx-be4cd78d.js",
+    "file": "pages/post/chess-engine/index.svx-fa4fc644.js",
     "src": "src/routes/post/chess-engine/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -659,7 +660,7 @@
     ]
   },
   "src/routes/post/pseudorandom/index.svx": {
-    "file": "pages/post/pseudorandom/index.svx-487e3646.js",
+    "file": "pages/post/pseudorandom/index.svx-f5cf2b5f.js",
     "src": "src/routes/post/pseudorandom/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -674,7 +675,7 @@
     ]
   },
   "src/routes/post/winter-drone/index.svx": {
-    "file": "pages/post/winter-drone/index.svx-7d6e5048.js",
+    "file": "pages/post/winter-drone/index.svx-0bb74ad3.js",
     "src": "src/routes/post/winter-drone/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -689,7 +690,7 @@
     ]
   },
   "src/routes/post/albinogator/index.svx": {
-    "file": "pages/post/albinogator/index.svx-43e54404.js",
+    "file": "pages/post/albinogator/index.svx-d382e4a0.js",
     "src": "src/routes/post/albinogator/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -704,7 +705,7 @@
     ]
   },
   "src/routes/post/compression/index.svx": {
-    "file": "pages/post/compression/index.svx-f53b1219.js",
+    "file": "pages/post/compression/index.svx-529feceb.js",
     "src": "src/routes/post/compression/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -719,7 +720,7 @@
     ]
   },
   "src/routes/post/lazy-sunday/index.svx": {
-    "file": "pages/post/lazy-sunday/index.svx-1e01401c.js",
+    "file": "pages/post/lazy-sunday/index.svx-1f69401c.js",
     "src": "src/routes/post/lazy-sunday/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -734,7 +735,7 @@
     ]
   },
   "src/routes/post/livestreams/index.svx": {
-    "file": "pages/post/livestreams/index.svx-9763cbcd.js",
+    "file": "pages/post/livestreams/index.svx-abc233f2.js",
     "src": "src/routes/post/livestreams/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -749,7 +750,7 @@
     ]
   },
   "src/routes/post/days-go-by/index.svx": {
-    "file": "pages/post/days-go-by/index.svx-62941a8e.js",
+    "file": "pages/post/days-go-by/index.svx-d28622b1.js",
     "src": "src/routes/post/days-go-by/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -764,7 +765,7 @@
     ]
   },
   "src/routes/post/early-bird/index.svx": {
-    "file": "pages/post/early-bird/index.svx-7828235f.js",
+    "file": "pages/post/early-bird/index.svx-84973a69.js",
     "src": "src/routes/post/early-bird/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -794,7 +795,7 @@
     ]
   },
   "src/routes/post/standalone/index.svx": {
-    "file": "pages/post/standalone/index.svx-8e6a6254.js",
+    "file": "pages/post/standalone/index.svx-4adab639.js",
     "src": "src/routes/post/standalone/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -809,7 +810,7 @@
     ]
   },
   "src/routes/post/hotel-acs/index.svx": {
-    "file": "pages/post/hotel-acs/index.svx-d2b7bc19.js",
+    "file": "pages/post/hotel-acs/index.svx-06d6dbce.js",
     "src": "src/routes/post/hotel-acs/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -824,7 +825,7 @@
     ]
   },
   "src/routes/post/hotel-tvs/index.svx": {
-    "file": "pages/post/hotel-tvs/index.svx-f66f6435.js",
+    "file": "pages/post/hotel-tvs/index.svx-2830d9bc.js",
     "src": "src/routes/post/hotel-tvs/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -854,7 +855,7 @@
     ]
   },
   "src/routes/post/sveltekit/index.svx": {
-    "file": "pages/post/sveltekit/index.svx-f0ad4d07.js",
+    "file": "pages/post/sveltekit/index.svx-7a765bdc.js",
     "src": "src/routes/post/sveltekit/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -869,7 +870,7 @@
     ]
   },
   "src/routes/post/dash-cam/index.svx": {
-    "file": "pages/post/dash-cam/index.svx-406e1ef6.js",
+    "file": "pages/post/dash-cam/index.svx-e2bf8e81.js",
     "src": "src/routes/post/dash-cam/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -884,7 +885,7 @@
     ]
   },
   "src/routes/post/headache/index.svx": {
-    "file": "pages/post/headache/index.svx-9ab74555.js",
+    "file": "pages/post/headache/index.svx-25a5785c.js",
     "src": "src/routes/post/headache/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -914,7 +915,7 @@
     ]
   },
   "src/routes/post/shortner/index.svx": {
-    "file": "pages/post/shortner/index.svx-bff6452d.js",
+    "file": "pages/post/shortner/index.svx-8a94c918.js",
     "src": "src/routes/post/shortner/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -929,7 +930,7 @@
     ]
   },
   "src/routes/post/simplify/index.svx": {
-    "file": "pages/post/simplify/index.svx-a5e4e497.js",
+    "file": "pages/post/simplify/index.svx-bbb4d931.js",
     "src": "src/routes/post/simplify/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -944,7 +945,7 @@
     ]
   },
   "src/routes/post/taco-dip/index.svx": {
-    "file": "pages/post/taco-dip/index.svx-5492cfc0.js",
+    "file": "pages/post/taco-dip/index.svx-b072f041.js",
     "src": "src/routes/post/taco-dip/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -959,7 +960,7 @@
     ]
   },
   "src/routes/post/westward/index.svx": {
-    "file": "pages/post/westward/index.svx-87b0c08c.js",
+    "file": "pages/post/westward/index.svx-eaf3b1f2.js",
     "src": "src/routes/post/westward/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -974,7 +975,7 @@
     ]
   },
   "src/routes/post/ana-mke/index.svx": {
-    "file": "pages/post/ana-mke/index.svx-d43467b7.js",
+    "file": "pages/post/ana-mke/index.svx-0edf4e55.js",
     "src": "src/routes/post/ana-mke/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -989,7 +990,7 @@
     ]
   },
   "src/routes/post/ana-raw/index.svx": {
-    "file": "pages/post/ana-raw/index.svx-9baf037d.js",
+    "file": "pages/post/ana-raw/index.svx-944f889a.js",
     "src": "src/routes/post/ana-raw/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1004,7 +1005,7 @@
     ]
   },
   "src/routes/post/anodize/index.svx": {
-    "file": "pages/post/anodize/index.svx-aba40ea2.js",
+    "file": "pages/post/anodize/index.svx-4635741f.js",
     "src": "src/routes/post/anodize/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1019,7 +1020,7 @@
     ]
   },
   "src/routes/post/another/index.svx": {
-    "file": "pages/post/another/index.svx-29d7c810.js",
+    "file": "pages/post/another/index.svx-3f1d828c.js",
     "src": "src/routes/post/another/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1034,7 +1035,7 @@
     ]
   },
   "src/routes/post/asphalt/index.svx": {
-    "file": "pages/post/asphalt/index.svx-d2bd89bb.js",
+    "file": "pages/post/asphalt/index.svx-beab1078.js",
     "src": "src/routes/post/asphalt/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1049,7 +1050,7 @@
     ]
   },
   "src/routes/post/fractal/index.svx": {
-    "file": "pages/post/fractal/index.svx-8542972c.js",
+    "file": "pages/post/fractal/index.svx-f2d27d4b.js",
     "src": "src/routes/post/fractal/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1064,7 +1065,7 @@
     ]
   },
   "src/routes/post/hibachi/index.svx": {
-    "file": "pages/post/hibachi/index.svx-73305093.js",
+    "file": "pages/post/hibachi/index.svx-d7cf8cf2.js",
     "src": "src/routes/post/hibachi/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1094,7 +1095,7 @@
     ]
   },
   "src/routes/post/theming/index.svx": {
-    "file": "pages/post/theming/index.svx-4362aa87.js",
+    "file": "pages/post/theming/index.svx-1baaf961.js",
     "src": "src/routes/post/theming/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1109,7 +1110,7 @@
     ]
   },
   "src/routes/post/workout/index.svx": {
-    "file": "pages/post/workout/index.svx-af79418c.js",
+    "file": "pages/post/workout/index.svx-82ee6559.js",
     "src": "src/routes/post/workout/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1124,7 +1125,7 @@
     ]
   },
   "src/routes/post/cheese/index.svx": {
-    "file": "pages/post/cheese/index.svx-023c9d5a.js",
+    "file": "pages/post/cheese/index.svx-00ff70d6.js",
     "src": "src/routes/post/cheese/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1139,7 +1140,7 @@
     ]
   },
   "src/routes/post/forgot/index.svx": {
-    "file": "pages/post/forgot/index.svx-5ba36eb7.js",
+    "file": "pages/post/forgot/index.svx-f6e6ead6.js",
     "src": "src/routes/post/forgot/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1154,7 +1155,7 @@
     ]
   },
   "src/routes/post/globes/index.svx": {
-    "file": "pages/post/globes/index.svx-0ae97046.js",
+    "file": "pages/post/globes/index.svx-ee108b33.js",
     "src": "src/routes/post/globes/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1169,7 +1170,7 @@
     ]
   },
   "src/routes/post/knight/index.svx": {
-    "file": "pages/post/knight/index.svx-8d578930.js",
+    "file": "pages/post/knight/index.svx-87121a48.js",
     "src": "src/routes/post/knight/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1199,7 +1200,7 @@
     ]
   },
   "src/routes/post/plates/index.svx": {
-    "file": "pages/post/plates/index.svx-f54f8004.js",
+    "file": "pages/post/plates/index.svx-ae010420.js",
     "src": "src/routes/post/plates/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1214,7 +1215,7 @@
     ]
   },
   "src/routes/post/reredo/index.svx": {
-    "file": "pages/post/reredo/index.svx-1b60935d.js",
+    "file": "pages/post/reredo/index.svx-3c49a03d.js",
     "src": "src/routes/post/reredo/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1229,7 +1230,7 @@
     ]
   },
   "src/routes/post/vortex/index.svx": {
-    "file": "pages/post/vortex/index.svx-1e932265.js",
+    "file": "pages/post/vortex/index.svx-e8d55ab6.js",
     "src": "src/routes/post/vortex/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1244,7 +1245,7 @@
     ]
   },
   "src/routes/post/blank/index.svx": {
-    "file": "pages/post/blank/index.svx-db73eb3e.js",
+    "file": "pages/post/blank/index.svx-1260ea6f.js",
     "src": "src/routes/post/blank/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1259,7 +1260,7 @@
     ]
   },
   "src/routes/post/cents/index.svx": {
-    "file": "pages/post/cents/index.svx-15d4dba5.js",
+    "file": "pages/post/cents/index.svx-934f7d46.js",
     "src": "src/routes/post/cents/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1274,7 +1275,7 @@
     ]
   },
   "src/routes/post/games/index.svx": {
-    "file": "pages/post/games/index.svx-9bee8a53.js",
+    "file": "pages/post/games/index.svx-feaf0402.js",
     "src": "src/routes/post/games/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1289,7 +1290,7 @@
     ]
   },
   "src/routes/post/imslp/index.svx": {
-    "file": "pages/post/imslp/index.svx-dd25b0a1.js",
+    "file": "pages/post/imslp/index.svx-fa8edd61.js",
     "src": "src/routes/post/imslp/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1304,7 +1305,7 @@
     ]
   },
   "src/routes/post/lingo/index.svx": {
-    "file": "pages/post/lingo/index.svx-a0e0ede1.js",
+    "file": "pages/post/lingo/index.svx-babc2db5.js",
     "src": "src/routes/post/lingo/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1319,7 +1320,7 @@
     ]
   },
   "src/routes/post/point/index.svx": {
-    "file": "pages/post/point/index.svx-b7911b52.js",
+    "file": "pages/post/point/index.svx-7e2ef724.js",
     "src": "src/routes/post/point/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1334,7 +1335,7 @@
     ]
   },
   "src/routes/post/prime/index.svx": {
-    "file": "pages/post/prime/index.svx-453f5f40.js",
+    "file": "pages/post/prime/index.svx-61fc5148.js",
     "src": "src/routes/post/prime/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1349,7 +1350,7 @@
     ]
   },
   "src/routes/post/grey/index.svx": {
-    "file": "pages/post/grey/index.svx-f5e1bddb.js",
+    "file": "pages/post/grey/index.svx-b8d35e94.js",
     "src": "src/routes/post/grey/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1364,7 +1365,7 @@
     ]
   },
   "src/routes/post/late/index.svx": {
-    "file": "pages/post/late/index.svx-74808240.js",
+    "file": "pages/post/late/index.svx-879691b5.js",
     "src": "src/routes/post/late/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1393,8 +1394,23 @@
       "assets/prism-night-owl-17eca136.css"
     ]
   },
+  "src/routes/post/plan/index.svx": {
+    "file": "pages/post/plan/index.svx-ff89e474.js",
+    "src": "src/routes/post/plan/index.svx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-f73903c8.js",
+      "_post-178ca962.js",
+      "_stores-2e642f94.js",
+      "_Progress-2d81d7be.js"
+    ],
+    "css": [
+      "assets/prism-night-owl-17eca136.css"
+    ]
+  },
   "src/routes/post/redo/index.svx": {
-    "file": "pages/post/redo/index.svx-81f83364.js",
+    "file": "pages/post/redo/index.svx-a33e01cf.js",
     "src": "src/routes/post/redo/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1409,7 +1425,7 @@
     ]
   },
   "src/routes/post/tabs/index.svx": {
-    "file": "pages/post/tabs/index.svx-7cb1e721.js",
+    "file": "pages/post/tabs/index.svx-a29f9542.js",
     "src": "src/routes/post/tabs/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1424,7 +1440,7 @@
     ]
   },
   "src/routes/post/wire/index.svx": {
-    "file": "pages/post/wire/index.svx-93cfc19f.js",
+    "file": "pages/post/wire/index.svx-bbad54de.js",
     "src": "src/routes/post/wire/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1439,7 +1455,7 @@
     ]
   },
   "src/routes/post/444/index.svx": {
-    "file": "pages/post/444/index.svx-b021ffd8.js",
+    "file": "pages/post/444/index.svx-6fedbe09.js",
     "src": "src/routes/post/444/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1454,7 +1470,7 @@
     ]
   },
   "src/routes/post/cat/index.svx": {
-    "file": "pages/post/cat/index.svx-0301ca29.js",
+    "file": "pages/post/cat/index.svx-6f4f1db6.js",
     "src": "src/routes/post/cat/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1469,7 +1485,7 @@
     ]
   },
   "src/routes/post/hdd/index.svx": {
-    "file": "pages/post/hdd/index.svx-1353d7ab.js",
+    "file": "pages/post/hdd/index.svx-d0def16b.js",
     "src": "src/routes/post/hdd/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -1484,7 +1500,7 @@
     ]
   },
   "src/routes/post/pwa/index.svx": {
-    "file": "pages/post/pwa/index.svx-4268419d.js",
+    "file": "pages/post/pwa/index.svx-52a3e94b.js",
     "src": "src/routes/post/pwa/index.svx",
     "isEntry": true,
     "isDynamicEntry": true,

@@ -3,13 +3,14 @@ draft: false
 title: "days go by"
 date: "2022-01-13"
 coverImage: "image_editor_output_image-695516293-1642055306895.jpg"
-desc: TODO
+desc: A sunset
 tags:
-  - todo
+  - random
+  - photography
 ---
 
 The clouds looked nice during the sunset today.
 
-![](https://ihtfy.files.wordpress.com/2022/01/20220112_222804.jpg?w=850)
+![sunset](/assets/post/days-go-by/20220112_222804.jpg)
 
 It always looks better in real life.

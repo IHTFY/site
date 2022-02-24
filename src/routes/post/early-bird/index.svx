@@ -3,9 +3,9 @@ draft: false
 title: "Early Bird"
 date: "2022-01-06"
 coverImage: "1641448764281.jpg"
-desc: TODO
+desc: Installing car floor mats
 tags:
-  - todo
+  - random
 ---
 
 My sleep schedule has been especially bad the last couple years. Today I woke up at a reasonable time, and hopefully I can repeat that tomorrow.

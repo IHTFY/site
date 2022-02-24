@@ -12,11 +12,11 @@ I remember speeding up books on tape to chipmunk speeds so I could get through t
 
 YouTube recently added a slider to select a custom speed between 0.25x and 2x at 0.05x increments.
 
-![](/assets/post/youtube-speeds-faster-than-2x/slider-1.png)
+![slider-1](/assets/post/youtube-speeds-faster-than-2x/slider-1.png)
 
 Custom playback speed slider
 
-![](/assets/post/youtube-speeds-faster-than-2x/speed-settings-copy-1.png)
+![speed settings](/assets/post/youtube-speeds-faster-than-2x/speed-settings-copy-1.png)
 
 Preset playback speeds
 
@@ -30,7 +30,7 @@ UPDATE: I've made [a page](https://ihtfy.github.io/JavaScript-Bookmarklets/) tha
 
 First, make a new bookmark. In chrome, you can use `ctrl + d`. You can do it on any page, but before you click "Done", click on "More...".
 
-![](/assets/post/youtube-speeds-faster-than-2x/bookmark-2.png)
+![bookmark](/assets/post/youtube-speeds-faster-than-2x/bookmark-2.png)
 
 I like the Name to be short so I use this: ⏩
 
@@ -51,13 +51,13 @@ javascript: {
 };
 ```
 
-![](/assets/post/youtube-speeds-faster-than-2x/save-1.png)
+![save](/assets/post/youtube-speeds-faster-than-2x/save-1.png)
 
 The Name and URL fields
 
 When you're watching a YouTube video, you can click the bookmarklet you just made, and it will let you type in the speed.
 
-![](/assets/post/youtube-speeds-faster-than-2x/use-1.png)
+![use](/assets/post/youtube-speeds-faster-than-2x/use-1.png)
 
 ## Skipping Ads
 
@@ -96,7 +96,7 @@ javascript: {
   } else {
     console.log("Can't find a video.");
   }
-}
+};
 ```
 
 Here's one that just sets the playhead to the end of the video.
@@ -105,5 +105,5 @@ Here's one that just sets the playhead to the end of the video.
 javascript: {
   let v = document.getElementsByTagName("video")\[0\];
   v.currentTime = v.duration;
-}
+};
 ```

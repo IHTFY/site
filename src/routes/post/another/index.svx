@@ -3,9 +3,11 @@ draft: false
 title: "another"
 date: "2022-02-24"
 coverImage: "another.jpg"
-desc: TODO
+desc: Redesigning my website
 tags:
-  - random
+  - coding
+  - website
+  - design
 ---
 
 

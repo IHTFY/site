@@ -3,11 +3,11 @@ draft: false
 title: "cat"
 date: "2022-02-09"
 coverImage: "cat.jpg"
-desc: TODO
+desc: A cat ate a birdie
 tags:
-  - todo
+  - random
 ---
 
 I heard something outside my window. I looked out and saw a tabby tail through the leaves. A few seconds later, it pops out at the top of the tree. I can hear baby birds chirping, and I see the cat chewing.
 
-https://youtu.be/WPAhIPJNIDM
+[![cat](http://i3.ytimg.com/vi/WPAhIPJNIDM/maxresdefault.jpg)](https://youtu.be/WPAhIPJNIDM)

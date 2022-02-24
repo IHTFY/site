@@ -2,9 +2,10 @@
 draft: false
 title: "simplify"
 date: "2022-02-19"
-desc: TODO
+desc: Compressing my SVG logo
 tags:
-  - todo
+  - design
+  - coding
 ---
 
 I simplified my logo a bit. It looks pretty much the same, but the underlying svg is much smaller.

@@ -3,16 +3,17 @@ draft: false
 title: "Knight"
 date: "2021-03-16"
 coverImage: "knightthumb.png"
-desc: TODO
+desc: I made a chess puzzle game
 tags:
-  - todo
+  - gaming
+  - coding
 ---
 
 ## [knightpuzzle.ihtfy.com](https://knightpuzzle.ihtfy.com/)
 
 I saw this video where Grandmaster Ben Finegold explains a simple chess puzzle. It only involves two pieces: a knight and a queen.
 
-https://youtu.be/SrQlpY\_eGYU?t=45
+[![GM Ben Finegold's Explanation](http://i3.ytimg.com/vi/SrQlpY_eGYU/maxresdefault.jpg)](https://youtu.be/SrQlpY_eGYU?t=45)
 
 GM Ben Finegold Explains the Puzzle
 
@@ -34,6 +35,6 @@ The true challenge is to do it on a real board where there is no help in the for
 
 I added options to show the target square, and if you're really having trouble, Queen Vision, which darkens all the squares the queen can attack.
 
-There is also a Stats section that shows your time splits for each target as well as how many moves it took. The "Best" is what I think the optimal length is. If you find a shorter path between two targets, please send me the a message [here](https://frankiemercado.com/contact/).
+There is also a Stats section that shows your time splits for each target as well as how many moves it took. The "Best" is what I think the optimal length is. If you find a shorter path between two targets, please send me the a message [here](https://contact.ihtfy.com/).
 
 [Try it out](https://knightpuzzle.ihtfy.com/), or see the [source code](https://github.com/IHTFY/knight-puzzle).

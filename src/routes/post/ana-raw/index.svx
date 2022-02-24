@@ -2,9 +2,9 @@
 draft: false
 title: "ana raw"
 date: "2015-10-18"
-desc: TODO
+desc: More music I made for another of my sister's fashion shows
 tags:
-  - todo
+  - music
 ---
 
 \[soundcloud url="https://api.soundcloud.com/playlists/156469094" params="auto\_play=false&hide\_related=false&show\_comments=true&show\_user=true&show\_reposts=false&visual=true" width="100%" height="450" iframe="true" /\]

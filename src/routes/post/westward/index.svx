@@ -3,21 +3,21 @@ draft: false
 title: "Westward"
 date: "2022-01-05"
 coverImage: "20220104_202419.jpg"
-desc: TODO
+desc: Flew back to California
 tags:
-  - todo
+  - random
 ---
 
 I took my redeye flight to California this morning. It was supposed to be a single plane with 3 stops, but we ended up having an unscheduled plane switch.
 
-![](https://ihtfy.files.wordpress.com/2022/01/20220104_073757-1.jpg?w=850)
+![land](/assets/post/westward/20220104_073757-1.jpg)
 
-![](https://ihtfy.files.wordpress.com/2022/01/20220104_111230-1.jpg?w=850)
+![sea](/assets/post/westward/20220104_111230-1.jpg)
 
 I also got this puzzle for Christmas.
 
-![](https://ihtfy.files.wordpress.com/2022/01/1686090176-1641356363945.jpg?w=768)
+![disassembled](/assets/post/westward/1686090176-1641356363945.jpg)
 
-![](https://ihtfy.files.wordpress.com/2022/01/1397221145-1641356390695.jpg?w=619)
+![assembled](/assets/post/westward/1397221145-1641356390695.jpg)
 
 Putting it together was harder than taking it apart. It took a lot of finesse. I wonder how fast the assembler is.

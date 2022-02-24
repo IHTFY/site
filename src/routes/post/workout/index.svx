@@ -3,9 +3,9 @@ draft: false
 title: "Workout"
 date: "2021-03-16"
 coverImage: "workoutthumb.png"
-desc: TODO
+desc: I made a workout tracker
 tags:
-  - todo
+  - code
 ---
 
 ## [workout.ihtfy.com](https://workout.ihtfy.com)
@@ -20,7 +20,7 @@ A couple of months ago, I made a website to track some basic calisthenics:
 
 The goal was to motivate myself to merely continue exercising. In the past, I would often try to do a set number each day, or try to increase some metric each workout. The goal here is simply to beat your average. The average is total reps divided by total days, so if you take a break, you'll see your average start to decay. It also means you won't have to keep up with an exponentially growing goal.
 
-![workout gif](https://ihtfy.files.wordpress.com/2021/03/dayn.gif?w=850 "Adding and Subtracting Reps")
+![workout gif](/assets/post/workout/dayn.gif "Adding and Subtracting Reps")
 
 Adding and Subtracting Reps
 
@@ -28,7 +28,7 @@ Originally, I was just using a spreadsheet to type in the reps as I completed th
 
 The data is stored in your browser's `localStorage` which persists when you restart your browser or computer, but it doesn't sync across devices.
 
-![Toggle Lines](https://ihtfy.files.wordpress.com/2021/03/toggle.gif?w=850)
+![Toggle Lines](/assets/post/workout/toggle.gif)
 
 Show or Hide Lines
 
@@ -36,7 +36,7 @@ You can toggle different exercises on and off, but note that the Average line is
 
 There is an option to manually edit the data points. It uses JSON format, so be careful to follow the pattern and not add extra commas, brackets, or leading zeros.
 
-![](https://ihtfy.files.wordpress.com/2021/03/edit.gif?w=850)
+![edit the data](/assets/post/workout/edit.gif)
 
 Edit the Data
 

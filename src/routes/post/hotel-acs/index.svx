@@ -3,14 +3,16 @@ draft: false
 title: "Hotel ACs"
 date: "2022-01-12"
 coverImage: "1641968312818.jpg"
-desc: TODO
+desc: How to hack hotel air conditioning
 tags:
-  - todo
+  - hack
+  - project
+  - tutorial
 ---
 
 A lot of hotels use the same air conditioning units. Sometimes the control is set by a faulty thermostat or somewhere outside of the room. It can also be annoying to have intermittent fan noise while you're trying to sleep.
 
-![](/assets/post/hotel-acs/20220111_220422_remastered.jpg)
+![ac panel](/assets/post/hotel-acs/20220111_220422_remastered.jpg)
 
 
 

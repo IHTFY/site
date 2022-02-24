@@ -3,9 +3,9 @@ draft: false
 title: "forgot"
 date: "2022-02-15"
 coverImage: "image_editor_output_image1496038441-1644911933641.jpg"
-desc: TODO
+desc: I forgot to post
 tags:
-  - todo
+  - random
 ---
 
 I forgot to write today.

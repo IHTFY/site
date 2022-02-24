@@ -3,9 +3,9 @@ draft: false
 title: "imslp"
 date: "2022-01-31"
 coverImage: "imslp.jpg"
-desc: TODO
+desc: The place for classical sheet music
 tags:
-  - todo
+  - music
 ---
 
 If you're ever searching for classical sheet music, you'll probably end up on [imslp.org](https://imslp.org/).

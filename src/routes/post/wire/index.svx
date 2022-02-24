@@ -3,9 +3,12 @@ draft: false
 title: "wire"
 date: "2015-07-27"
 coverImage: "z2000x1500.jpg"
-desc: TODO
+desc: My first wire wrappings
 tags:
-  - todo
+  - art
 ---
 
-\[gallery ids="113,115,114,112" type="slideshow" link="none"\]
+![9](/assets/post/wire/9.jpg)
+![eyering](/assets/post/wire/eyering.jpg)
+![a](/assets/post/wire/lettera.jpg)
+![twistring](/assets/post/wire/twistring.jpg)

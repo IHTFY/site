@@ -22,7 +22,14 @@ If you wanted to compress the string "OROMEOROMEO"
 
 You would get all the individual characters used and add them to the dictionary:
 
-<table><tbody><tr><td>Input</td><td>Dictionary</td><td>Output</td></tr><tr><td>OROMEOROMEO</td><td>1. O<br>2. R<br>3. M<br>4. E</td><td></td></tr></tbody></table>
+
+| Input       | Dictionary | Output |
+| ----------- | ---------- | ------ |
+| OROMEOROMEO | 1. O       |        |
+|             | 2. R       |        |
+|             | 3. M       |        |
+|             | 4. E       |        |
+
 
 Initialize the Dictionary
 
@@ -30,43 +37,136 @@ Next, we find the longest word that matches our remaining string, which is just 
 
 Then, we encode it as the index (1)
 
-<table><tbody><tr><td>Input</td><td>Dictionary</td><td>Output</td></tr><tr><td>ROMEOROMEO</td><td>1. O<br>2. H<br>3. R<br>4. M<br>5. E</td><td>1</td></tr></tbody></table>
+| Input      | Dictionary | Output |
+| ---------- | ---------- | ------ |
+| ROMEOROMEO | 1. O       | 1      |
+|            | 2. R       |        |
+|            | 3. M       |        |
+|            | 4. E       |        |
 
 Next, we add "OR" to our dictionary. If we had had that entry in our last step, we could've encoded more data and saved more space. We add it now so that we can make use of it in the future.
 
-<table><tbody><tr><td>Input</td><td>Dictionary</td><td>Output</td></tr><tr><td>ROMEOROMEO</td><td>1. O<br>2. R<br>3. M<br>4. E<br>5. OR</td><td>1</td></tr></tbody></table>
+| Input      | Dictionary | Output |
+| ---------- | ---------- | ------ |
+| ROMEOROMEO | 1. O       | 1      |
+|            | 2. R       |        |
+|            | 3. M       |        |
+|            | 4. E       |        |
+|            | 5. OR      |        |
 
 Now, we repeat the process. Our next chunk is just "R", since "RO" isn't in the dictionary. We store 2 as output, remove the input, and add "RO" to the dictionary
 
-<table><tbody><tr><td>Input</td><td>Dictionary</td><td>Output</td></tr><tr><td>OMEOROMEO</td><td>1. O<br>2. R<br>3. M<br>4. E<br>5. OR<br>6. RO</td><td>1,2</td></tr></tbody></table>
+| Input     | Dictionary | Output |
+| --------- | ---------- | ------ |
+| OMEOROMEO | 1. O       | 1,2    |
+|           | 2. R       |        |
+|           | 3. M       |        |
+|           | 4. E       |        |
+|           | 5. OR      |        |
+|           | 6. RO      |        |
 
 Next, we encode "O", since "OM" isn't in the dictionary.
 
-<table><tbody><tr><td>Input</td><td>Dictionary</td><td>Output</td></tr><tr><td>MEOROMEO</td><td>1. O<br>2. R<br>3. M<br>4. E<br>5. OR<br>6. RO<br>7. OM</td><td>1,2,1</td></tr></tbody></table>
+| Input    | Dictionary | Output |
+| -------- | ---------- | ------ |
+| MEOROMEO | 1. O       | 1,2,1  |
+|          | 2. R       |        |
+|          | 3. M       |        |
+|          | 4. E       |        |
+|          | 5. OR      |        |
+|          | 6. RO      |        |
+|          | 7. OM      |        |
 
 Next, "M" is encoded since "ME" isn't listed.
 
-<table><tbody><tr><td>Input</td><td>Dictionary</td><td>Output</td></tr><tr><td>EOROMEO</td><td>1. O<br>2. R<br>3. M<br>4. E<br>5. OR<br>6. RO<br>7. OM<br>8. ME</td><td>1,2,1,3</td></tr></tbody></table>
+| Input   | Dictionary | Output  |
+| ------- | ---------- | ------- |
+| EOROMEO | 1. O       | 1,2,1,3 |
+|         | 2. R       |         |
+|         | 3. M       |         |
+|         | 4. E       |         |
+|         | 5. OR      |         |
+|         | 6. RO      |         |
+|         | 7. OM      |         |
+|         | 8. ME      |         |
 
 Next, "E" is encoded as "4" since "EO" isn't in the dictionary, but we'll add it.
 
-<table><tbody><tr><td>Input</td><td>Dictionary</td><td>Output</td></tr><tr><td>OROMEO</td><td>1. O<br>2. R<br>3. M<br>4. E<br>5. OR<br>6. RO<br>7. OM<br>8. ME<br>9. EO</td><td>1,2,1,3,4</td></tr></tbody></table>
+| Input  | Dictionary | Output    |
+| ------ | ---------- | --------- |
+| OROMEO | 1. O       | 1,2,1,3,4 |
+|        | 2. R       |           |
+|        | 3. M       |           |
+|        | 4. E       |           |
+|        | 5. OR      |           |
+|        | 6. RO      |           |
+|        | 7. OM      |           |
+|        | 8. ME      |           |
+|        | 9. EO      |           |
 
 Finally we find a longer match.
 
-<table><tbody><tr><td>Input</td><td>Dictionary</td><td>Output</td></tr><tr><td>OROMEO</td><td>1. O<br>2. R<br>3. M<br>4. E<br>5. OR<br>6. RO<br>7. OM<br>8. ME<br>9. EO</td><td>1,2,1,3,4</td></tr></tbody></table>
+
+| Input  | Dictionary | Output    |
+| ------ | ---------- | --------- |
+| OROMEO | 1. O       | 1,2,1,3,4 |
+|        | 2. R       |           |
+|        | 3. M       |           |
+|        | 4. E       |           |
+|        | 5. OR      |           |
+|        | 6. RO      |           |
+|        | 7. OM      |           |
+|        | 8. ME      |           |
+|        | 9. EO      |           |
 
 "O" is in the dictionary, but so is "OR" which is longer. Is "ORO" in the dictionary? No, so we encode "OR" as "5", and add "ORO" to the dictionary.
 
-<table><tbody><tr><td>Input</td><td>Dictionary</td><td>Output</td></tr><tr><td>OMEO</td><td>1. O<br>2. R<br>3. M<br>4. E<br>5. OR<br>6. RO<br>7. OM<br>8. ME<br>9. EO<br>10. ORO</td><td>1,2,1,3,4,5</td></tr></tbody></table>
+
+| Input | Dictionary | Output      |
+| ----- | ---------- | ----------- |
+| OMEO  | 1. O       | 1,2,1,3,4,5 |
+|       | 2. R       |             |
+|       | 3. M       |             |
+|       | 4. E       |             |
+|       | 5. OR      |             |
+|       | 6. RO      |             |
+|       | 7. OM      |             |
+|       | 8. ME      |             |
+|       | 9. EO      |             |
+|       | 10. ORO    |             |
 
 Next, we have "O" in the dictionary, but "OM" is there too. Is "OME"? No, so we encode "OM" as "7" and add "OME" to the dictionary.
 
-<table><tbody><tr><td>Input</td><td>Dictionary</td><td>Output</td></tr><tr><td>EO</td><td>1. O<br>2. R<br>3. M<br>4. E<br>5. OR<br>6. RO<br>7. OM<br>8. ME<br>9. EO<br>10. ORO<br>11. OME</td><td>1,2,1,3,4,5,7</td></tr></tbody></table>
+
+| Input | Dictionary | Output        |
+| ----- | ---------- | ------------- |
+| EO    | 1. O       | 1,2,1,3,4,5,7 |
+|       | 2. R       |               |
+|       | 3. M       |               |
+|       | 4. E       |               |
+|       | 5. OR      |               |
+|       | 6. RO      |               |
+|       | 7. OM      |               |
+|       | 8. ME      |               |
+|       | 9. EO      |               |
+|       | 10. ORO    |               |
+|       | 11. OME    |               |
 
 Finally, "EO" is in the dictionary so we encode it as "9", and we're done.
 
-<table><tbody><tr><td>Input</td><td>Dictionary</td><td>Output</td></tr><tr><td></td><td>1. O<br>2. R<br>3. M<br>4. E<br>5. OR<br>6. RO<br>7. OM<br>8. ME<br>9. EO<br>10. ORO<br>11. OME</td><td>1,2,1,3,4,5,7,9</td></tr></tbody></table>
+| Input | Dictionary | Output          |
+| ----- | ---------- | --------------- |
+|       | 1. O       | 1,2,1,3,4,5,7,9 |
+|       | 2. R       |                 |
+|       | 3. M       |                 |
+|       | 4. E       |                 |
+|       | 5. OR      |                 |
+|       | 6. RO      |                 |
+|       | 7. OM      |                 |
+|       | 8. ME      |                 |
+|       | 9. EO      |                 |
+|       | 10. ORO    |                 |
+|       | 11. OME    |                 |
 
 Encode the next chunk
 

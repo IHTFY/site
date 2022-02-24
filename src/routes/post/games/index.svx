@@ -3,16 +3,17 @@ draft: false
 title: "Games"
 date: "2021-07-16"
 coverImage: "collage.png"
-desc: TODO
+desc: Here are some web games I've made
 tags:
-  - todo
+  - coding
+  - gaming
 ---
 
 I've made a few web games in recently. I'll try to keep this page updated as I make more.
 
 ## Empire
 
-![](https://ihtfy.files.wordpress.com/2021/07/emipre.png?w=850)
+![empire](/assets/post/games/emipre.png)
 
 [PLAY](https://empire.ihtfy.com/)
 
@@ -24,7 +25,7 @@ I tried a lot of new things while making this game; this was my first multiplaye
 
 ## Telewave
 
-![](https://ihtfy.files.wordpress.com/2021/07/telewave-2.png?w=850)
+![telewave](/assets/post/games/telewave-2.png)
 
 [PLAY](https://telewave.ihtfy.com/)
 
@@ -34,7 +35,7 @@ Based on the board game, [Wavelength](https://www.wavelength.zone/).
 
 ## Optics
 
-![](https://ihtfy.files.wordpress.com/2021/07/optics.png?w=850)
+![optics](/assets/post/games/optics.png)
 
 [PLAY](https://optics.ihtfy.com/)
 
@@ -44,7 +45,7 @@ Based on the card game, [Illusion](https://pandasaurusgames.com/products/illusio
 
 ## Knight Puzzle
 
-![](https://ihtfy.files.wordpress.com/2021/07/knight.png?w=850)
+![knight](/assets/post/games/knight.png)
 
 [PLAY](https://knightpuzzle.ihtfy.com/)
 
