@@ -44,6 +44,7 @@ export let tags: Array<string>;
 
 .card:hover {
   transform: scale(1.01);
+  transition-duration: 100ms;
 }
 
 .card__details {

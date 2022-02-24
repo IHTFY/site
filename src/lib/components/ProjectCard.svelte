@@ -59,6 +59,7 @@ export let source: string;
 
 .card:hover {
   transform: scale(1.01);
+  transition-duration: 100ms;
 }
 
 .card__img {
