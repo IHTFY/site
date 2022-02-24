@@ -3,9 +3,9 @@ draft: false
 title: "shortner"
 date: "2022-02-08"
 coverImage: "shortner.jpg"
-desc: TODO
+desc: How to get custom short URLs
 tags:
-  - todo
+  - coding
 ---
 
 If you have a domain (website name) registered, you can use it as a custom url shortner. I own ihtfy.com and I use it to make shortcut links to various pages.

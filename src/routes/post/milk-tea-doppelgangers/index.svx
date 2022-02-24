@@ -3,9 +3,10 @@ draft: false
 title: "milk tea doppelgangers"
 date: "2022-01-19"
 coverImage: "milk-tea-doppelgangers.jpg"
-desc: TODO
+desc: Milktea is cereal milk
 tags:
-  - todo
+  - random
+  - food
 ---
 
 I've noticed some milk teas taste like breakfast cereals:

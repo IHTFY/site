@@ -3,13 +3,11 @@ draft: false
 title: "logo"
 date: "2022-01-29"
 coverImage: "logowombo2.jpg"
-desc: TODO
+desc: Thinking of a new logo
 tags:
-  - todo
+  - design
 ---
 
-https://youtu.be/obydiUba5ow
-
-Creating a new logo
+[Creating a new logo](https://youtu.be/obydiUba5ow)
 
 I decided to make a new logo to use as a favicon.

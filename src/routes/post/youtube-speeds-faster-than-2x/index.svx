@@ -3,9 +3,10 @@ draft: false
 title: "YouTube Speeds Faster Than 2x"
 date: "2019-06-08"
 coverImage: "use-1.png"
-desc: TODO
+desc: How to watch YouTube even faster
 tags:
-  - todo
+  - coding
+  - tutorial
 ---
 
 I remember speeding up books on tape to chipmunk speeds so I could get through them faster. Today, my podcast app does this without the pitch distortion, and it can even trim out the silent parts.

@@ -3,9 +3,10 @@ draft: false
 title: "panorama scroll"
 date: "2022-01-25"
 coverImage: "image_editor_output_image431926342-1643089884637.jpg"
-desc: TODO
+desc: A funny way to screenshot a page
 tags:
-  - todo
+  - hack
+  - random
 ---
 
 If you need to take a screenshot of a long web page, you can take a panorama with your phone and just scroll the page down.
