@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#20263a" />
+    <meta name="supported-color-scheme" content="dark light" />
+    <meta name="color-scheme" content="light dark" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://blog.ihtfy.com/rss.xml"
+    />
+
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <meta http-equiv="content-security-policy" content=""><title>migrating | Elianiva</title><script data-svelte="svelte-1xtfmqk">// set dark mode correctly before everythings get rendered
+  // thanks https://github.com/pveyes
+  try {
+    // prettier-ignore
+    const { matches: isDarkMode } = window.matchMedia( "(prefers-color-scheme: dark)")
+
+    const theme = localStorage.getItem('theme');
+    let preference = theme || (isDarkMode ? 'dark' : 'light');
+
+    // prettier-ignore
+    if (preference) document.documentElement.setAttribute("data-theme", preference)
+  } catch (err) {
+    console.error(err);
+  }
+  </script><link rel="canonical" href="https://elianiva.my.id/post/migrating" data-svelte="svelte-1r0yd13"><meta name="description" content="todo" data-svelte="svelte-1r0yd13"><meta name="keywords" content="personal,website,blog,article" data-svelte="svelte-1r0yd13"><meta property="og:type" content="website" data-svelte="svelte-1r0yd13"><meta property="og:url" content="https://elianiva.my.id/post/migrating" data-svelte="svelte-1r0yd13"><meta property="og:title" content="migrating" data-svelte="svelte-1r0yd13"><meta property="og:description" content="todo" data-svelte="svelte-1r0yd13"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/51877647?s=240&amp;v=4" data-svelte="svelte-1r0yd13"><meta property="twitter:card" content="summary" data-svelte="svelte-1r0yd13"><meta property="twitter:url" content="https://elianiva.my.id/post/migrating" data-svelte="svelte-1r0yd13"><meta property="twitter:title" content="migrating" data-svelte="svelte-1r0yd13"><meta property="twitter:description" content="todo" data-svelte="svelte-1r0yd13">
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-de8e6eab.css">
+	<link rel="stylesheet" href="/_app/assets/prism-night-owl-17eca136.css">
+	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
+	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
+	<link rel="modulepreload" href="/_app/start-6f438369.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-f73903c8.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-7a4f64b8.js">
+	<link rel="modulepreload" href="/_app/chunks/stores-233b7d65.js">
+	<link rel="modulepreload" href="/_app/pages/post/migrating/index.svx-ed10b2a8.js">
+	<link rel="modulepreload" href="/_app/chunks/post-d86c6f51.js">
+	<link rel="modulepreload" href="/_app/chunks/Progress-59f48294.js"><script type="module">
+		import { start } from "/_app/start-6f438369.js";
+		start({
+			target: document.body,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-7a4f64b8.js"),
+						import("/_app/pages/post/migrating/index.svx-ed10b2a8.js")
+				],
+				url: new URL("http://sveltekit-prerender/post/migrating"),
+				params: {}
+			}
+		});
+	</script>
+				<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/service-worker.js');
+		}
+	</script>
+  </head>
+  <body>
+    <div id="svelte">
+
+
+
+
+<nav class="navbar svelte-1xlbyhi"><div class="navbar__container svelte-1xlbyhi"><div class="navbar__title svelte-1xlbyhi"><a href="/" aria-label="logo" class="svelte-1xlbyhi"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" x="0" y="0" viewBox="0 0 14 14" xml:space="preserve" class="logo__icon" fill="none" stroke="#21326D"><path d="M4 2l8 5l0 6l-10-12l10 0l-10 12l0-6l8-5" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"></path></svg></a></div>
+    <ul class="navbar__items svelte-1xlbyhi"><li class="navbar__item svelte-1xlbyhi" data-testid="home"><a href="/" class="svelte-1xlbyhi">Home</a></li>
+      <li class="navbar__item svelte-1xlbyhi" data-testid="posts"><a href="/post" class="svelte-1xlbyhi">Posts</a></li>
+      <li class="navbar__item svelte-1xlbyhi" data-testid="projects"><a href="/project" class="svelte-1xlbyhi">Projects</a></li>
+      <li class="navbar__item svelte-1xlbyhi" data-testid="about"><a href="/about" class="svelte-1xlbyhi">About</a></li>
+      <li class="navbar__item svelte-1xlbyhi"><button class="button svelte-vmvdwe" aria-label="toggle darkmode"><div class="moon svelte-vmvdwe"><div class="moon__small svelte-vmvdwe" style="left: 0.75rem; bottom: 0.75rem;"></div></div>
+</button></li></ul>
+    <div class="navbar__hamburger svelte-1xlbyhi" data-testid="hamburger-navigation"><input class="navbar__checkbox svelte-1xlbyhi" type="checkbox"  aria-label="toggle menu">
+      <span class="navbar__hamburger_item--1 svelte-1xlbyhi"></span>
+      <span class="navbar__hamburger_item--2 svelte-1xlbyhi"></span>
+      <span class="navbar__hamburger_item--3 svelte-1xlbyhi"></span></div></div></nav>
+
+<main class="svelte-tfxsok">
+  <div class="svelte-tfxsok">
+
+<section class="post svelte-f0w9v3"><h1 class="post__title svelte-f0w9v3">migrating</h1>
+    <span class="post__date svelte-f0w9v3">Posted on
+      Saturday,
+      February 19, 2022</span>
+    <a class="post__edit svelte-f0w9v3" href="mailto:siteEdit@ihtfy.com?subject=Edit%20/post/migrating" target="_blank" rel="norel noreferrer">Suggest An Edit</a>
+    <div class="post__tags svelte-f0w9v3"><div class="post__tag svelte-f0w9v3">todo</div></div>
+  <main class="post__content svelte-f0w9v3"><p>I’m going to try migrating this site from WordPress to a SvelteKit site hosted on GitHub. I’m paying $99 per year to host on wordpress.com; there’s a cheaper plan now, but I don’t see any way to downgrade - only upgrade. It’s also very limiting: I can’t add an SVG image, custom JS (expected), but even the additional CSS rules are very limited because the theme overrides them.</p>
+<p>My hope is to export this site data. Find a way to “load” it into a SvelteKit site, then I’ll go through all the posts by hand and make sure everything is working correctly. I used to host a Jekyll blog site on gh pages, but it kept breaking because GitHub would update dependencies automatically.</p>
+<p>One nice thing about WordPress is I can easily write from my phone and schedule posts. I’m actually starting this post on February 17th, but I’ll post it on the 19th.</p>
+<p>There are some limitations on GitHub pages. They need to be static which is fine with me, but I’ll likely need to do some tweaking and use a different theme. The storage and bandwidth limitations on GitHub aren’t a concern to me since I don’t get much traffic to my site, and I plan on hosting most videos on YouTube.</p>
+<h2 id="exporting"><a href="#exporting">Exporting</a></h2>
+<p>I went to <code>https://wordpress.com/export/frankiemercado.com</code> to export all my website content. This gave me a big XML file with all my posts. The images are nested inside of month and year folders, so one file may be at <code>./2022/01/image.jpg</code>.</p>
+<p>The formatting of the XML is pretty cluttered; lots of “wp” comments and “wp:…” tags which is to be expected. I think I’d like my site to have each post structured as markdown. When I searched for “wordpress to markdown” I find <a href="https://github.com/lonekorean/wordpress-export-to-markdown" rel="nofollow">this script</a>.</p>
+<p>From Windows PowerShell, I go to the folder containing all my data.</p>
+<p>cd .\Downloads\wp20220218</p>
+<p>Then I run the command:</p>
+<p>npm wordpress-export-to-markdown</p>
+<p>I renamed the XML file to <code>export.xml</code>, and kept the default output folder name. These are the settings I used:</p>
+<p>Starting wizard…<br>
+? Path to WordPress export file? export.xml<br>
+? Path to output folder? output<br>
+? Create year folders? No<br>
+? Create month folders? No<br>
+? Create a folder for each post? Yes<br>
+? Prefix post folders/files with date? Yes<br>
+? Save images attached to posts? Yes<br>
+? Save images scraped from post body content? Yes<br>
+? Include custom post types and pages? No</p>
+<p>Now I have a folder called <code>output</code> filled with folders for each post named like: YYYY-MM-DD-PostTitle. Inside one of these folders is an <code>index.md</code> file which contains the text and formatting of the post. There is also a folder called <code>images</code> which contains any images from that post.</p>
+<h2 id="new-theme"><a href="#new-theme">New Theme</a></h2>
+<p>Next, I need to find a new theme to use.</p>
+<ul><li><a href="https://fantinel.dev/blog-development-sveltekit/" rel="nofollow">This one</a> looks nice, but has some server side code I’d need to work around if I host for free on GitHub</li>
+<li><a href="https://github.com/svelteland/svelte-kit-blog-demo" rel="nofollow">This one</a> is simple and static.</li></ul>
+<p>After looking at the first one again, it looks like he’s <a href="https://github.com/matfantinel/matfantinel.github.io/deployments/activity_log?environment=github-pages" rel="nofollow">hosted on github-pages</a> too, so I think I’ll start there.</p>
+<h2 id="setup"><a href="#setup">Setup</a></h2>
+<p>I downloaded the .zip file from <a href="https://github.com/matfantinel/matfantinel.github.io" rel="nofollow">his GitHub</a>, extract it, and open in VS Code. Looking at <code>package.json</code> I see the usual SvelteKit scripts: <code>dev</code>, <code>build</code>, <code>preview</code>. He also has a <code>deploy</code> script for <code>gh-pages</code> to publish the <code>build</code> folder, and some <code>prettier</code> stuff for linting and formatting.</p>
+<p>I’ll run <code>npm install</code> and see what happens. No errors.</p>
+<p>I think I’ll need to change the <code>build</code> script though, since I’m on Windows, and I don’t think it will recognize the <code>rm -rf ...</code> command, though PowerShell does use some Unix commands, so who knows.</p>
+<p>Let’s try <code>npm run dev</code>. Errors: <code>config.kit.target is no longer required, and should be removed</code>.</p>
+<p>In <code>svelte.config.js</code> I’ll remove the <code>target</code> from <code>kit: {...</code>.</p>
+<p>Now when I run, there are no errors in the console, but the page (<code>localhost:3000</code>) has an error: <code>Unrecognized option &#39;enableSourcemap&#39;</code>.</p>
+<p>After searching a bit, I may need to update svelte or some other decency. I’ll run <code>npm update</code>. That seemed to fix it.</p>
+<p>I see the site, but when I scroll down and up, it crashes and gives another error: <code>[plugin:vite-plugin-svelte] Error while preprocessing C:/Users/Frankie/Documents/Code/blog/src/lib/posts/web-workers.md - Cannot read property &#39;buildPlaceholders&#39; of undefined</code>.</p>
+<p>I run <code>npm install</code> again to see if that fixes anything. Nope.</p>
+<p>I’m able to open the <code>resume</code> page fine, but all of the blog posts are broken because of the issue.</p>
+<p>I wonder if I need to run the <code>postbuild</code> script to run <code>svelte-sitemap</code>, just guessing. I’ll need to make the <code>build</code> script Windows PowerShell friendly first.</p>
+<p>I added a file called <code>.nojekyll</code> to the <code>/static</code> directory. Then the <code>build</code> script just becomes <code>svelte-kit build</code>.</p>
+<p>I’m also going to remove the Plausible analytics. I’ll just comment out the scripts in the head of <code>app.html</code>.</p>
+<p>Still not working. I see someone posted <a href="https://github.com/matfantinel/matfantinel.github.io/issues/18" rel="nofollow">the same issue</a>. I was able to fix the latter issue that’s linked, but I haven’t been able to fix the mdsvex/prismjs problem.</p></main></section>
+
+
+</div>
+  <footer class="svelte-1kafbbo"><div class="icons svelte-1kafbbo">
+    <a href="mailto:dicha.arkana03@gmail.com" target="_blank" rel="norel noreferrer" aria-label="email" class="svelte-1kafbbo"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8zm-83.9 74L128 133.1L52.6 64h150.8zm-41.4 6L40 181.8V74.2zm11.8 10.9l12.1 11a8 8 0 0 0 10.8 0l12.1-11l57.9 53.1H52.6zm46.8-10.9L216 74.2v107.6z" fill="currentColor"/><!-- HTML_TAG_END --></svg></a>
+    
+    <a href="https://github.com/elianiva" target="_blank" rel="norel noreferrer" aria-label="github" class="svelte-1kafbbo"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path d="M216 216a16 16 0 0 1-16-16v-8a32.1 32.1 0 0 0-14.8-27a55.8 55.8 0 0 0 22.8-45v-8a58 58 0 0 0-7.7-28.3a59.9 59.9 0 0 0-5.4-47.7a7.8 7.8 0 0 0-6.9-4a59.7 59.7 0 0 0-48 24h-24a59.7 59.7 0 0 0-48-24a7.8 7.8 0 0 0-6.9 4a59.9 59.9 0 0 0-5.4 47.7A58 58 0 0 0 48 112v8a55.8 55.8 0 0 0 22.8 45A32.1 32.1 0 0 0 56 192v8a16 16 0 0 1-16 16a8 8 0 0 0 0 16a32.1 32.1 0 0 0 32-32v-8a16 16 0 0 1 16-16h12v40a16 16 0 0 1-16 16a8 8 0 0 0 0 16a32.1 32.1 0 0 0 32-32v-40h24v40a32.1 32.1 0 0 0 32 32a8 8 0 0 0 0-16a16 16 0 0 1-16-16v-40h12a16 16 0 0 1 16 16v8a32.1 32.1 0 0 0 32 32a8 8 0 0 0 0-16zM64 120v-8a42.7 42.7 0 0 1 6.9-22.5a7.9 7.9 0 0 0 1.1-7.7a43.7 43.7 0 0 1 .8-33.5a43.6 43.6 0 0 1 32.3 20a8 8 0 0 0 6.7 3.7h32.4a8 8 0 0 0 6.7-3.7a43.6 43.6 0 0 1 32.3-20a43.7 43.7 0 0 1 .8 33.5a8.2 8.2 0 0 0 1.1 7.7A42.7 42.7 0 0 1 192 112v8a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40z" fill="currentColor"/><!-- HTML_TAG_END --></svg></a>
+    
+    <a href="https://twitter.com/@elianiva_" target="_blank" rel="norel noreferrer" aria-label="twitter" class="svelte-1kafbbo"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path d="M247.4 68.9A8 8 0 0 0 240 64h-30.4a47.8 47.8 0 0 0-75.2-10.1A47.7 47.7 0 0 0 120 88v6.1C79.3 83.5 46 50.7 45.7 50.3a8 8 0 0 0-8.1-1.9a8.1 8.1 0 0 0-5.5 6.2c-8.7 48.2 5.8 80.5 19.5 99.1a108.6 108.6 0 0 0 24.7 24.4c-15.3 17.3-38.9 26.3-39.1 26.4a8 8 0 0 0-3.9 11.9c.8 1.2 3.8 5.1 11.1 8.8c9.1 4.5 21.1 6.8 35.6 6.8c70.5 0 129.5-54.3 135.5-124.2l30.2-30.1a8.4 8.4 0 0 0 1.7-8.8zm-45.3 29.7a7.8 7.8 0 0 0-2.3 5.2C195.7 166.7 143.1 216 80 216c-10.6 0-18-1.4-23.2-3.1c11.5-6.2 27.5-17 37.9-32.5a8 8 0 0 0 1-6.4a8.1 8.1 0 0 0-4.1-5.1c-.1-.1-14.9-7.8-27.6-25.3c-14.4-19.8-20.5-43.9-18.1-71.7c15.8 13 46 34.2 80.8 40a8.1 8.1 0 0 0 6.5-1.8a8.2 8.2 0 0 0 2.8-6.1V88a32 32 0 0 1 61.3-12.8a8.1 8.1 0 0 0 7.4 4.8h16z" fill="currentColor"/><!-- HTML_TAG_END --></svg></a>
+    
+    <a href="/rss.xml" rel="alternate" type="application/rss+xml" aria-label="rss" class="svelte-1kafbbo"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path d="M98.9 157.1A71.6 71.6 0 0 1 120 208a8 8 0 0 1-16 0a56 56 0 0 0-56-56a8 8 0 0 1 0-16a71.6 71.6 0 0 1 50.9 21.1zM48 88a8 8 0 0 0 0 16a102.9 102.9 0 0 1 73.5 30.5A102.9 102.9 0 0 1 152 208a8 8 0 0 0 16 0A119.8 119.8 0 0 0 48 88zm118.8 1.2A166.9 166.9 0 0 0 48 40a8 8 0 0 0 0 16a151.1 151.1 0 0 1 107.5 44.5A151.1 151.1 0 0 1 200 208a8 8 0 0 0 16 0a166.9 166.9 0 0 0-49.2-118.8zM52 192a12 12 0 1 0 12 12a12 12 0 0 0-12-12z" fill="currentColor"/><!-- HTML_TAG_END --></svg></a></div>
+  <p class="svelte-1kafbbo">Powered by
+    <a class="hl svelte-1kafbbo" href="https://kit.svelte.dev">Svelte-Kit</a>
+    and
+    <a class="hl svelte-1kafbbo" href="https://vercel.app">Vercel</a>
+    • Source code is available on
+    <a class="hl svelte-1kafbbo" href="https://github.com/elianiva/elianiva.my.id">Github</a></p>
+  <p class="svelte-1kafbbo">Copyright © 2022
+    <a class="hl svelte-1kafbbo" href="https://github.com/elianiva">Elianiva</a></p>
+</footer>
+</main>
+
+</div>
+  </body>
+</html>
