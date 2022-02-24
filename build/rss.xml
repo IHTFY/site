@@ -8,8 +8,53 @@
     <link>https://elianiva.my.id</link>
     <atom:link href="https://elianiva.my.id/feed.xml" rel="self" type="application/rss+xml" />
     <generator>Svelte-Kit</generator>
-    <lastBuildDate>Wed, 23 Feb 2022 07:50:49 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 24 Feb 2022 04:24:29 GMT</lastBuildDate>
     
+    <item>
+      <title>another</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/another</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/another</guid>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>cents</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/cents</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/cents</guid>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>vortex</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/vortex</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/vortex</guid>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>overflow</title>
+      <description><![CDATA[TODO]]></description>
+      <link>https://elianiva.my.id/post/overflow</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/overflow</guid>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>migrating</title>
+      <description><![CDATA[todo]]></description>
+      <link>https://elianiva.my.id/post/migrating</link>
+      <guid isPermaLink="false">https://elianiva.my.id/post/migrating</guid>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 GMT</pubDate>
+    </item>
+
+
     <item>
       <title>simplify</title>
       <description><![CDATA[TODO]]></description>

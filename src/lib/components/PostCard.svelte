@@ -106,7 +106,7 @@ export let tags: Array<string>;
   margin-top: 0.5rem;
   border-radius: 0.25rem;
   transition: filter ease-out 0.2s;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .card__tag::before {
