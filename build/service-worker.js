@@ -1,6 +1,6 @@
-const timestamp = 1645691047408;
+const timestamp = 1645691432045;
 const build = [
-  "/_app/start-facc6ecd.js",
+  "/_app/start-c5ed9742.js",
   "/_app/pages/__layout.svelte-591eda95.js",
   "/_app/assets/pages/__layout.svelte-16e075ab.css",
   "/_app/pages/__error.svelte-fcd465c7.js",
@@ -45,7 +45,7 @@ const build = [
   "/_app/pages/post/chess-engine/index.svx-fa4fc644.js",
   "/_app/pages/post/pseudorandom/index.svx-f5cf2b5f.js",
   "/_app/pages/post/winter-drone/index.svx-0cf40e17.js",
-  "/_app/pages/post/albinogator/index.svx-d382e4a0.js",
+  "/_app/pages/post/albinogator/index.svx-af162a60.js",
   "/_app/pages/post/compression/index.svx-0369de34.js",
   "/_app/pages/post/lazy-sunday/index.svx-1f69401c.js",
   "/_app/pages/post/livestreams/index.svx-4d9ffd0b.js",
