@@ -1,6 +1,6 @@
-const timestamp = 1645780561313;
+const timestamp = 1645781623339;
 const build = [
-  "/_app/start-5562f531.js",
+  "/_app/start-13d11455.js",
   "/_app/pages/__layout.svelte-0672c45b.js",
   "/_app/assets/pages/__layout.svelte-f15e5ea8.css",
   "/_app/pages/__error.svelte-51e86b38.js",
@@ -52,7 +52,7 @@ const build = [
   "/_app/pages/post/days-go-by/index.svx-b761c7a2.js",
   "/_app/pages/post/early-bird/index.svx-06ebac79.js",
   "/_app/pages/post/oil-change/index.svx-b011b0ed.js",
-  "/_app/pages/post/standalone/index.svx-b5ef5d46.js",
+  "/_app/pages/post/standalone/index.svx-e7994e38.js",
   "/_app/pages/post/hotel-acs/index.svx-f4b8b7f5.js",
   "/_app/pages/post/hotel-tvs/index.svx-33517482.js",
   "/_app/pages/post/migrating/index.svx-3a2169f4.js",
