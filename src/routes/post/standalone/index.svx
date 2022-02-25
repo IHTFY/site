@@ -3,7 +3,7 @@ draft: false
 title: "standalone"
 date: "2022-01-10"
 coverImage: "standalone.jpg"
-desc: TODO
+desc: Making Empire an installable app
 tags:
   - code
   - gaming
