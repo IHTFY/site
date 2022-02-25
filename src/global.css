@@ -1,15 +1,15 @@
 :root {
-  --color-light-main-accent:  #3d5dd9;
+  --color-light-main-accent:  #f23c4a;
   --color-light-main-bg:      #f7fafc;
   --color-light-alt-bg:       #ffffff;
-  --color-light-special-bg:   #EDF2F7;
-  --color-light-main-text:    #4A5568 ;
+  --color-light-special-bg:   #edf2f7;
+  --color-light-main-text:    #4A5568;
   --color-light-alt-text:     #696969;
   --color-light-borders:      #e4e4e4;
   --color-light-thin:         #a0aec0;
   --color-light-shine:        #171c26;
 
-  --color-dark-main-accent:   #f23c4a;
+  --color-dark-main-accent:   #2e4bbd;
   --color-dark-main-bg:       #1A202C;
   --color-dark-alt-bg:        #20263a;
   --color-dark-special-bg:    #2c3445;
@@ -44,7 +44,7 @@
     --filter-brightness: brightness(0.97);
   }
 
-  /* set dark colours if user overrides it */
+  /* set dark colors if user overrides it */
   [data-theme="dark"] {
     --color-main-accent: var(--color-dark-main-accent);
     --color-main-bg:     var(--color-dark-main-bg);
@@ -92,7 +92,7 @@
     --prism-classname:      #ffcb8b;
   }
 
-  /* set light colours if user overrides it */
+  /* set light colors if user overrides it */
   [data-theme="light"] {
     --color-main-accent: var(--color-light-main-accent);
     --color-main-bg:     var(--color-light-main-bg);

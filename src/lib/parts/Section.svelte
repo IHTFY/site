@@ -92,7 +92,7 @@ export let type: 'posts' | 'projects';
 }
 
 .section__button:hover {
-  transform: translate3d(0, -0.25rem, 0);
+  transform: translate3d(0, 0.15rem, 0);
 }
 
 :global(.section__pattern) {
