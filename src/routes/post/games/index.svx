@@ -5,7 +5,7 @@ date: "2021-07-16"
 coverImage: "collage.png"
 desc: Here are some web games I've made
 tags:
-  - coding
+  - code
   - gaming
 ---
 

@@ -5,7 +5,7 @@ date: "2022-02-19"
 desc: Compressing my SVG logo
 tags:
   - design
-  - coding
+  - code
 ---
 
 I simplified my logo a bit. It looks pretty much the same, but the underlying svg is much smaller.

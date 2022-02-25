@@ -1,58 +1,55 @@
 <script>
 import { theme } from '$lib/utils/theme';
 
-const toggleDarkMode = () => {
+const toggleDarkMode = () =>
   theme.update(current => (current === 'light' ? 'dark' : 'light'));
-};
 </script>
 
-<button
-  class="button"
-  on:click={() => toggleDarkMode()}
-  aria-label="toggle darkmode"
->
-  <div class="moon">
-    <div
-      class="moon__small"
-      style={`left: ${$theme === 'dark' ? '0.25rem' : '0.75rem'}; bottom: ${
-        $theme === 'dark' ? '0.25rem' : '0.75rem'
-      };`}
-    />
-  </div>
-</button>
+<input id="toggle" class="toggle" type="checkbox" on:change={toggleDarkMode} />
 
 <style>
-.moon {
-  position: relative;
-  width: 1.25rem;
-  height: 1.25rem;
-  border: 0.15rem var(--color-alt-text) solid;
-  border-radius: 50%;
-  clip-path: circle(50% at 50% 50%);
+/* adapted from https://codepen.io/mrozilla/pen/OJJNjRb */
+
+.toggle:hover:not(:checked) {
+  color: hsl(40, 100%, 50%);
+}
+.toggle:hover:checked {
+  color: black;
+}
+
+.toggle {
+  --size: 1.5rem;
+
   z-index: 1;
-}
 
-.moon__small {
-  position: absolute;
-  bottom: 0.25rem;
-  left: 0.25rem;
-  width: 1.25rem;
-  height: 1.25rem;
-  border: 0.15rem var(--color-alt-text) solid;
-  border-radius: 50%;
-  background-color: var(--color-main-bg);
-  z-index: 2;
-  transition: bottom ease-out 0.2s, left ease-out 0.2s;
-}
-
-.button {
-  border: none;
-  background: none;
+  appearance: none;
   outline: none;
-  display: flex;
-  align-items: center;
-  color: var(--color-main-text);
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
+  /* cursor: pointer; */
+
+  width: var(--size);
+  height: var(--size);
+  box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
+  border-radius: 999px;
+  color: hsl(240, 100%, 95%);
+
+  transition: all 500ms;
+}
+.toggle:checked {
+  --ray-size: calc(var(--size) * -0.4);
+  --offset-orthogonal: calc(var(--size) * 0.65);
+  --offset-diagonal: calc(var(--size) * 0.46);
+
+  transform: scale(0.75);
+  color: hsl(40, 100%, 50%);
+  box-shadow: inset 0 0 0 var(--size),
+    calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
+    var(--offset-orthogonal) 0 0 var(--ray-size),
+    0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size),
+    0 var(--offset-orthogonal) 0 var(--ray-size),
+    calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0
+      var(--ray-size),
+    var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size),
+    calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size),
+    var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
 }
 </style>

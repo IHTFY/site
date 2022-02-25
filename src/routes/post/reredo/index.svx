@@ -5,7 +5,7 @@ date: "2022-02-16"
 coverImage: "reredo.jpg"
 desc: Redoing the calendar maker again
 tags:
-  - coding
+  - code
   - design
 ---
 

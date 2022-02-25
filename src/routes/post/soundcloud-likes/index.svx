@@ -5,7 +5,7 @@ date: "2022-02-03"
 coverImage: "soundcloud-likes.jpg"
 desc: How to archive all your soundcloud likes
 tags:
-  - coding
+  - code
   - tutorial
 ---
 

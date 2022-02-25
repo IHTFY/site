@@ -5,7 +5,7 @@ date: "2022-02-13"
 coverImage: "compression.jpg"
 desc: How LZ string compression works
 tags:
-  - coding
+  - code
   - tutorial
 ---
 

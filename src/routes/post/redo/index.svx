@@ -5,7 +5,7 @@ date: "2022-02-05"
 coverImage: "redo.jpg"
 desc: Restarting the calendar maker
 tags:
-  - coding
+  - code
   - design
 ---
 

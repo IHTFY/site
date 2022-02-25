@@ -5,7 +5,7 @@ date: "2022-01-24"
 coverImage: "image_editor_output_image282321977-1643004589146.jpg"
 desc: Learning about sveltekit
 tags:
-  - coding
+  - code
 ---
 
 I played around with the calendar creator again today. Mostly watching videos about sveltekit though.

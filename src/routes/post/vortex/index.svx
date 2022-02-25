@@ -5,7 +5,7 @@ date: "2022-02-22"
 coverImage: "vortex.jpg"
 desc: Finished the vortex math thing
 tags:
-  - coding
+  - code
   - math
 ---
 

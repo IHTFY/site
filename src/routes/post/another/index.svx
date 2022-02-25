@@ -5,7 +5,7 @@ date: "2022-02-24"
 coverImage: "another.jpg"
 desc: Redesigning my website
 tags:
-  - coding
+  - code
   - website
   - design
 ---

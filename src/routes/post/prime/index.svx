@@ -5,7 +5,7 @@ date: "2015-08-29"
 coverImage: "primes2000x1500.png"
 desc: Plotting twin primes
 tags:
-  - coding
+  - code
   - art
   - math
 ---

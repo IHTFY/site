@@ -5,7 +5,7 @@ date: "2019-06-08"
 coverImage: "use-1.png"
 desc: How to watch YouTube even faster
 tags:
-  - coding
+  - code
   - tutorial
 ---
 

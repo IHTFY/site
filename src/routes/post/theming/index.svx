@@ -5,7 +5,7 @@ date: "2022-02-18"
 coverImage: "theming.jpg"
 desc: Remaking the calendar maker
 tags:
-  - coding
+  - code
   - design
 ---
 

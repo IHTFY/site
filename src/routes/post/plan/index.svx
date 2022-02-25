@@ -5,7 +5,7 @@ date: "2022-02-24"
 coverImage: "plan.jpg"
 desc: Working on my new site
 tags:
-  - coding
+  - code
   - design
 ---
 

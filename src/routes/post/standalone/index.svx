@@ -5,7 +5,7 @@ date: "2022-01-10"
 coverImage: "standalone.jpg"
 desc: TODO
 tags:
-  - coding
+  - code
   - gaming
 ---
 

@@ -5,7 +5,7 @@ date: "2022-02-20"
 coverImage: "migrating.jpg"
 desc: Moving my site to github
 tags:
-  - coding
+  - code
   - design
 ---
 

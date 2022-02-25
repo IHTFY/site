@@ -6,7 +6,7 @@ coverImage: "knightthumb.png"
 desc: I made a chess puzzle game
 tags:
   - gaming
-  - coding
+  - code
 ---
 
 ## [knightpuzzle.ihtfy.com](https://knightpuzzle.ihtfy.com/)

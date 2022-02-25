@@ -5,7 +5,7 @@ date: "2022-02-04"
 coverImage: "livestreams.jpg"
 desc: How to save livestreams
 tags:
-  - coding
+  - code
   - tutorial
 ---
 

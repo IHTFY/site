@@ -5,7 +5,7 @@ date: "2022-01-14"
 coverImage: "pwa.jpg"
 desc: Making the Knight Puzzle a PWA
 tags:
-  - coding
+  - code
   - gaming
 ---
 
