@@ -21,9 +21,8 @@ I created a JavaScript version that uses HTML5 canvas, and the '2' bug is fixed.
 
 ```javascript
 function primesUpTo(x) {
-  const primes = [];
-  if (x < 2) return primes;
-  if (x >= 2) primes.push(2);
+  if (x < 2) return [];
+  const primes = [2];
   let n = 3;
   for (let n = 3; n <= x; n += 2) {
     let elig = true;
@@ -84,7 +83,9 @@ if (window.confirm('Download?')) {
 }
 ```
 
-## [4K Image](/assets/post/prime/prime4096x2190.png)
+### A 4K Version
+[Click Here](/assets/post/prime/prime4096x2190.png) You might need to refresh the page.
+
 
 ### Old Python Version
 

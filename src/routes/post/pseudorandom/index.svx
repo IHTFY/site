@@ -3,7 +3,7 @@ draft: false
 title: "pseudorandom"
 date: "2022-02-14"
 coverImage: "pseudorandom.jpg"
-desc: TODO
+desc: Playing around with crypto - No, not currency
 tags:
   - coding
   - math
@@ -26,6 +26,6 @@ You can also generate random integers using `getRandomValues`, and following the
 | BigInt64Array     | 2<sup>64</sup> = 18,446,744,073,709,551,615 | [-9223372036854775808, 9223372036854775807] |
 | BitUint64Array    | 2<sup>64</sup> = 18,446,744,073,709,551,615 | [0, 18446744073709551615]                   |
 
-The only difference between Uint8Array and Uint8ClampedArray is that the if you try assign a number outside of the range \[0, 255\], the clamped array will round you up to 0 or down to 255. The Uint8Array will take loop over, so 256 becomes 0, and -1 becomes 255, etc. I don't think this has an effect on the random output code above though.
+The only difference between Uint8Array and Uint8ClampedArray is that the if you try assign a number outside of the range [0, 255], the clamped array will round you up to 0 or down to 255. The Uint8Array will take loop over, so 256 becomes 0, and -1 becomes 255, etc. I don't think this has an effect on the random output code above though.
 
 The "U" in the name stands for "unsigned", meaning the numbers are non-negative. The signed versions have are just centered around zero, so there are an equal amount of negative and non-negative outcomes.

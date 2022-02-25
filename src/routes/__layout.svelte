@@ -11,8 +11,8 @@ import '@fontsource/open-sans/400.css';
 import '@fontsource/open-sans/600.css';
 import '@fontsource/poppins/400.css';
 import '@fontsource/poppins/400-italic.css';
-import '@fontsource/jetbrains-mono/400.css';
-import '@fontsource/jetbrains-mono/400-italic.css';
+import '@fontsource/source-code-pro/400.css';
+import '@fontsource/source-code-pro/400-italic.css';
 
 export let segment: string = '';
 

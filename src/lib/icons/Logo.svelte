@@ -3,15 +3,10 @@ export let className: string;
 </script>
 
 <svg
-  version="1.1"
   xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
   width="40"
   height="40"
-  x="0"
-  y="0"
   viewBox="0 0 14 14"
-  xml:space="preserve"
   class={className}
   fill="none"
   stroke="#21326D"
@@ -22,5 +17,5 @@ export let className: string;
     stroke-linecap="round"
     stroke-linejoin="round"
     stroke="currentColor"
-  /></svg
->
+  />
+</svg>

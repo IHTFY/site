@@ -5,7 +5,6 @@ date: "2022-01-11"
 coverImage: "hotel-tvs.jpg"
 desc: Hacking the hotel TV
 tags:
-  - tech
   - hack
   - tutorial
   - experiment
