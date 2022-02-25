@@ -1,23 +1,23 @@
 :root {
-  --color-light-main-accent:  #f23c4a;
-  --color-light-main-bg:      #f7fafc;
-  --color-light-alt-bg:       #ffffff;
-  --color-light-special-bg:   #edf2f7;
-  --color-light-main-text:    #4A5568;
-  --color-light-alt-text:     #696969;
-  --color-light-borders:      #e4e4e4;
-  --color-light-thin:         #a0aec0;
-  --color-light-shine:        #171c26;
+  --color-light-main-accent:  hsl(355, 87%, 59%);
+  --color-light-main-bg:      hsl(204, 45%, 98%);
+  --color-light-alt-bg:       hsl(0, 0%, 100%);
+  --color-light-special-bg:   hsl(210, 38%, 95%);
+  --color-light-main-text:    hsl(218, 17%, 35%);
+  --color-light-alt-text:     hsl(0, 0%, 41%);
+  --color-light-borders:      hsl(0, 0%, 89%);
+  --color-light-thin:         hsl(214, 20%, 69%);
+  --color-light-shine:        hsl(220, 25%, 12%);
 
-  --color-dark-main-accent:   #2e4bbd;
-  --color-dark-main-bg:       #1A202C;
-  --color-dark-alt-bg:        #20263a;
-  --color-dark-special-bg:    #2c3445;
-  --color-dark-main-text:     #a0aec0;
-  --color-dark-alt-text:      #8fa0bf;
-  --color-dark-borders:       #3b465a;
-  --color-dark-thin:          #6b7a99;
-  --color-dark-shine:         #EDF2F7;
+  --color-dark-main-accent:   hsl(228, 58%, 46%);
+  --color-dark-main-bg:       hsl(243, 27%, 10%);
+  --color-dark-alt-bg:        hsl(218, 40%, 14%);
+  --color-dark-special-bg:    hsl(221, 23%, 19%);
+  --color-dark-main-text:     hsl(208, 23%, 65%);
+  --color-dark-alt-text:      hsl(225, 27%, 63%);
+  --color-dark-borders:       hsl(219, 22%, 27%);
+  --color-dark-thin:          hsl(220, 18%, 48%);
+  --color-dark-shine:         hsl(210, 33%, 82%);
 
   --font-heading: "Poppins", sans-serif;
   --font-sans: "Open Sans", sans-serif;
