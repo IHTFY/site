@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "compression"
-date: "2022-02-13"
+date: "2022-02-12"
 coverImage: "compression.jpg"
 desc: How LZ string compression works
 tags:

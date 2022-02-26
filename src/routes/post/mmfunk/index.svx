@@ -2,6 +2,7 @@
 draft: false
 title: "mmfunk"
 date: "2015-08-03"
+coverImage: "mmfunk2000x1500.jpg"
 desc: The first remix I made
 tags:
   - music

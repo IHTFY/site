@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Happy New Year"
-date: "2022-01-02"
+date: "2022-01-01"
 coverImage: "image_editor_output_image1043157577-1641102948760.jpg"
 desc: Starting daily posts
 tags:

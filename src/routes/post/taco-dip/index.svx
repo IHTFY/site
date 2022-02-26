@@ -1,8 +1,8 @@
 ---
 draft: false
 title: "Taco Dip"
-date: "2022-01-08"
-coverImage: "image_editor_output_image124938774-1641621990536.jpg"
+date: "2022-01-07"
+coverImage: "taco-dip.jpg"
 desc: I made taco dip
 tags:
   - food

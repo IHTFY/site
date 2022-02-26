@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "another"
-date: "2022-02-24"
+date: "2022-02-23"
 coverImage: "another.jpg"
 desc: Redesigning my website
 tags:

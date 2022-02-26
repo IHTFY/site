@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "headache"
-date: "2022-01-23"
+date: "2022-01-22"
 coverImage: "image_editor_output_image1552881242-1642913686562.jpg"
 desc: Head hurts
 tags:

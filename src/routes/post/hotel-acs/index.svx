@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Hotel ACs"
-date: "2022-01-12"
+date: "2022-01-11"
 coverImage: "1641968312818.jpg"
 desc: How to hack hotel air conditioning
 tags:

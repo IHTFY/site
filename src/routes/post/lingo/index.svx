@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "lingo"
-date: "2022-02-02"
+date: "2022-02-01"
 coverImage: "lingo.jpg"
 desc: Wordle is trending
 tags:

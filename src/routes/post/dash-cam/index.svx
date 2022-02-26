@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "dash cam"
-date: "2022-01-26"
+date: "2022-01-25"
 coverImage: "image_editor_output_image-478686964-1643161419772.jpg"
 desc: Installing a dash cam
 tags:

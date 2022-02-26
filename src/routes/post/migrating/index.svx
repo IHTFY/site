@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "migrating"
-date: "2022-02-20"
+date: "2022-02-19"
 coverImage: "migrating.jpg"
 desc: Moving my site to github
 tags:

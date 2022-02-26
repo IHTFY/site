@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "forgot"
-date: "2022-02-15"
+date: "2022-02-14"
 coverImage: "image_editor_output_image1496038441-1644911933641.jpg"
 desc: I forgot to post
 tags:

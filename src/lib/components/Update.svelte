@@ -1,9 +1,9 @@
 <script lang="ts">
 export let date: string = '';
 
-const dateObj = new Date(date);
+const dateObj = new Date(date + 'T00:00');
 
-const formattedDate = dateObj.toLocaleDateString('en-UK', {
+const formattedDate = dateObj.toLocaleDateString('en-US', {
   weekday: 'short',
   year: 'numeric',
   month: 'long',

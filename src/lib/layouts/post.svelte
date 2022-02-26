@@ -10,7 +10,6 @@ export let title = '';
 export let date = Date.now();
 export let desc = '';
 export let tags = [];
-export let minimal = false;
 
 const currentSlug = $page.url.pathname;
 
@@ -41,29 +40,29 @@ onMount(() => {
 <SEO {desc} {title} />
 
 <section class="post">
-  {#if !minimal}
-    <h1 class="post__title">{title}</h1>
-    <span class="post__date">
-      Posted on
-      {new Date(date).toLocaleDateString('en-US', { weekday: 'long' })},
-      {new Date(date).toLocaleDateString('en-US', {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric',
-      })}
-    </span>
-    <a
-      class="post__edit"
-      href="mailto:siteEdit@ihtfy.com?subject=Edit%20{currentSlug}"
-      target="_blank"
-      rel="norel noreferrer">Suggest An Edit</a
-    >
-    <div class="post__tags">
-      {#each tags as tag}
-        <div class="post__tag">{tag}</div>
-      {/each}
-    </div>
-  {/if}
+  <h1 class="post__title">{title}</h1>
+  <span class="post__date">
+    Posted on
+    {new Date(date + 'T00:00').toLocaleDateString('en-US', {
+      weekday: 'long',
+    })},
+    {new Date(date + 'T00:00').toLocaleDateString('en-US', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    })}
+  </span>
+  <a
+    class="post__edit"
+    href="mailto:siteEdit@ihtfy.com?subject=Edit%20{currentSlug}"
+    target="_blank"
+    rel="norel noreferrer">Suggest An Edit</a
+  >
+  <div class="post__tags">
+    {#each tags as tag}
+      <div class="post__tag">{tag}</div>
+    {/each}
+  </div>
   <main class="post__content" bind:this={content}>
     <slot />
   </main>

@@ -6,8 +6,10 @@ const HAS_EXTENSION = /\.[^/.]+$/;
 const getPagePath = (kind: string) => path.resolve(`./src/routes/${kind}`);
 
 export interface ResourceMetadata {
+  draft: boolean;
   title: string;
   date: string;
+  coverImage: string;
   desc: string;
   tags: Array<string>;
   demo: string;
@@ -15,9 +17,7 @@ export interface ResourceMetadata {
   layout: string;
   stack: Array<Array<string>>;
   slug: string;
-  draft: boolean;
   type: string;
-  coverImage: string;
 }
 
 export const getResourcesAsync = async (

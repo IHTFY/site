@@ -36,14 +36,14 @@
 	<link rel="stylesheet" href="/_app/assets/prism-night-owl-c9ab7466.css">
 	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
 	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
-	<link rel="modulepreload" href="/_app/start-8061d000.js">
+	<link rel="modulepreload" href="/_app/start-200339bc.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-4e826582.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-0672c45b.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-6bae2da7.js">
-	<link rel="modulepreload" href="/_app/pages/post/standalone/index.svx-e7994e38.js">
-	<link rel="modulepreload" href="/_app/chunks/post-f0963b8b.js">
+	<link rel="modulepreload" href="/_app/pages/post/standalone/index.svx-673d14f4.js">
+	<link rel="modulepreload" href="/_app/chunks/post-373b22db.js">
 	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js"><script type="module">
-		import { start } from "/_app/start-8061d000.js";
+		import { start } from "/_app/start-200339bc.js";
 		start({
 			target: document.body,
 			paths: {"base":"","assets":""},
@@ -56,7 +56,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-0672c45b.js"),
-						import("/_app/pages/post/standalone/index.svx-e7994e38.js")
+						import("/_app/pages/post/standalone/index.svx-673d14f4.js")
 				],
 				url: new URL("http://sveltekit-prerender/post/standalone"),
 				params: {}
@@ -90,11 +90,11 @@
   <div class="svelte-tfxsok">
 
 <section class="post svelte-f0w9v3"><h1 class="post__title svelte-f0w9v3">standalone</h1>
-    <span class="post__date svelte-f0w9v3">Posted on
-      Sunday,
-      January 9, 2022</span>
-    <a class="post__edit svelte-f0w9v3" href="mailto:siteEdit@ihtfy.com?subject=Edit%20/post/standalone" target="_blank" rel="norel noreferrer">Suggest An Edit</a>
-    <div class="post__tags svelte-f0w9v3"><div class="post__tag svelte-f0w9v3">code</div><div class="post__tag svelte-f0w9v3">gaming</div></div>
+  <span class="post__date svelte-f0w9v3">Posted on
+    Sunday,
+    January 9, 2022</span>
+  <a class="post__edit svelte-f0w9v3" href="mailto:siteEdit@ihtfy.com?subject=Edit%20/post/standalone" target="_blank" rel="norel noreferrer">Suggest An Edit</a>
+  <div class="post__tags svelte-f0w9v3"><div class="post__tag svelte-f0w9v3">code</div><div class="post__tag svelte-f0w9v3">gaming</div></div>
   <main class="post__content svelte-f0w9v3"><p>Today I made <a href="https://empire.ihtfy.com/" rel="nofollow">Empire</a> a PWA, which means you can install it on your phone or computer as an app. I’ve made a PWA before, <a href="https://optics.ihtfy.com/" rel="nofollow">Optics</a>, but it was harder to get it to work this time around. Some of the difficulty came from forgetting to either clear the browser cache or restart the dev server. But in the end I got it working.</p>
 <p>I disabled overscrolling (pull to refresh/forward/backward) since that can mess up the game. I decided to keep zooming enabled for now. In the future I may try to conditionally allow navigation if in the browser versus in the PWA.</p>
 <p>I noticed that different mobile browsers handle the PWA differently, namely the color of the status bar, the background color of the icon when the app is sleeping. If you install via Brave it doesn’t install through the Play Store, so there is a browser icon in the corner of the app shortcut. Also, the Play Store version doesn’t acknowledge the Brave version and vice versa.</p>

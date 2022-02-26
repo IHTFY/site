@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "vortex"
-date: "2022-02-22"
+date: "2022-02-21"
 coverImage: "vortex.jpg"
 desc: Finished the vortex math thing
 tags:

@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "cat"
-date: "2022-02-09"
+date: "2022-02-08"
 coverImage: "cat.jpg"
 desc: A cat ate a birdie
 tags:

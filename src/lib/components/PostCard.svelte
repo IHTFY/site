@@ -10,23 +10,34 @@ export let tags: Array<string>;
 </script>
 
 <div class="card" in:fade={{ duration: 200 }}>
-  <a rel="prefetch" {href} class="card__details">
-    <span class="card__title" data-testid="title">{title}</span>
-    <div class="card__date">
-      <CalendarIcon className="date__icon" />
-      <span class="date__label" data-testid="date">
-        {new Date(date).toLocaleDateString('en-GB', {
-          day: 'numeric',
-          month: 'long',
-          year: 'numeric',
-        })}
-      </span>
-    </div>
-    <p class="card__desc" data-testid="desc">{@html desc}</p>
-    <div class="card__tags">
-      {#each tags as tag}
-        <span class="card__tag" data-testid="tag">{tag}</span>
-      {/each}
+  <a rel="prefetch" {href}>
+    <img
+      class="card__img"
+      src={`/assets/post/${title
+        .toLocaleLowerCase()
+        .replace(/ /g, '-')}/cover.jpg`}
+      alt={title}
+      loading="lazy"
+      data-testid="img"
+    />
+    <div class="card__details">
+      <span class="card__title" data-testid="title">{title}</span>
+      <div class="card__date">
+        <CalendarIcon className="date__icon" />
+        <span class="date__label" data-testid="date">
+          {new Date(date + 'T00:00').toLocaleDateString('en-US', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric',
+          })}
+        </span>
+      </div>
+      <p class="card__desc" data-testid="desc">{@html desc}</p>
+      <div class="card__tags">
+        {#each tags as tag}
+          <span class="card__tag" data-testid="tag">{tag}</span>
+        {/each}
+      </div>
     </div>
   </a>
 </div>
@@ -42,17 +53,42 @@ export let tags: Array<string>;
   transition-duration: 500ms;
 }
 
+a {
+  color: var(--color-main-text);
+  text-decoration: none;
+}
+
+.card__details {
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: 3.5rem 2rem 5.5rem 1fr;
+  z-index: 2;
+}
 .card:hover {
   transform: scale(1.01);
   transition-duration: 100ms;
 }
 
-.card__details {
-  color: var(--color-main-text);
-  text-decoration: none;
-  padding: 1rem;
-  display: grid;
-  grid-template-rows: 3.5rem 2rem 5.5rem 1fr;
+.card__img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  background-color: var(--color-borders);
+}
+
+.card:hover .card__img {
+  animation: card-img-hover infinite 2s linear;
+}
+
+@keyframes card-img-hover {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .card__title {

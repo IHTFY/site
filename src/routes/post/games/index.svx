@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Games"
-date: "2021-07-16"
+date: "2021-07-15"
 coverImage: "collage.png"
 desc: Here are some web games I've made
 tags:

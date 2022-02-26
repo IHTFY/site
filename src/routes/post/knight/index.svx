@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Knight"
-date: "2021-03-16"
+date: "2021-03-15"
 coverImage: "knightthumb.png"
 desc: I made a chess puzzle game
 tags:

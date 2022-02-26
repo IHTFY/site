@@ -2,6 +2,7 @@
 draft: false
 title: "ana raw"
 date: "2015-10-18"
+coverImage: "anaraw2000x1500.jpg"
 desc: More music I made for another of my sister's fashion shows
 tags:
   - music

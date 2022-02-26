@@ -7,7 +7,10 @@ export async function load({ fetch }) {
   ]);
 
   return {
-    props: { posts: await posts.json(), projects: await projects.json() },
+    props: {
+      posts: await posts.json(),
+      projects: await projects.json(),
+    },
   };
 }
 </script>

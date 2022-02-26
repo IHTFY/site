@@ -6,7 +6,7 @@ describe("PostCard.svelte", () => {
   afterEach(() => cleanup());
 
   const date = Date.now();
-  const formattedDate = new Date(date).toLocaleDateString("en-GB", {
+  const formattedDate = new Date(date+'T00:00').toLocaleDateString("en-US", {
     day: "numeric",
     month: "long",
     year: "numeric",

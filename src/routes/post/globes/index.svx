@@ -2,6 +2,7 @@
 draft: false
 title: "globes"
 date: "2015-09-15"
+coverImage: "beach.jpg"
 desc: Spherical panoramas
 tags:
   - photography
@@ -9,7 +10,7 @@ tags:
 
 These images were created using PTGui and Photoshop.
 
-![beach](/assets/post/globes/beach.jpg)
+![beach](/assets/post/globes/cover.jpg)
 ![farm](/assets/post/globes/farm.jpg)
 ![field](/assets/post/globes/field.jpg)
 ![frisbee](/assets/post/globes/frisbee.jpg)

@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "anodize"
-date: "2022-02-07"
+date: "2022-02-06"
 coverImage: "anodize.jpg"
 desc: Taking a blow torch to a paperclip
 tags:

@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "shortner"
-date: "2022-02-08"
+date: "2022-02-07"
 coverImage: "shortner.jpg"
 desc: How to get custom short URLs
 tags:

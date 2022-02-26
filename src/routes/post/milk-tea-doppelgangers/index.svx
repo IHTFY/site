@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "milk tea doppelgangers"
-date: "2022-01-19"
+date: "2022-01-18"
 coverImage: "milk-tea-doppelgangers.jpg"
 desc: Milktea is cereal milk
 tags:
