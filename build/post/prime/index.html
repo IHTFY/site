@@ -37,15 +37,17 @@
 	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
 	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
 	<link rel="stylesheet" href="/_app/assets/CodeBlock-a4490bc0.css">
-	<link rel="modulepreload" href="/_app/start-4944aae0.js">
+	<link rel="stylesheet" href="/_app/assets/Update-cf9b15e3.css">
+	<link rel="modulepreload" href="/_app/start-8061d000.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-4e826582.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-0672c45b.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-6bae2da7.js">
-	<link rel="modulepreload" href="/_app/pages/post/prime/index.svx-6bfc5d43.js">
+	<link rel="modulepreload" href="/_app/pages/post/prime/index.svx-1263cc4c.js">
 	<link rel="modulepreload" href="/_app/chunks/post-f0963b8b.js">
 	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js">
-	<link rel="modulepreload" href="/_app/chunks/CodeBlock-7a3c3e1d.js"><script type="module">
-		import { start } from "/_app/start-4944aae0.js";
+	<link rel="modulepreload" href="/_app/chunks/CodeBlock-7a3c3e1d.js">
+	<link rel="modulepreload" href="/_app/chunks/Update-31e56738.js"><script type="module">
+		import { start } from "/_app/start-8061d000.js";
 		start({
 			target: document.body,
 			paths: {"base":"","assets":""},
@@ -58,7 +60,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-0672c45b.js"),
-						import("/_app/pages/post/prime/index.svx-6bfc5d43.js")
+						import("/_app/pages/post/prime/index.svx-1263cc4c.js")
 				],
 				url: new URL("http://sveltekit-prerender/post/prime"),
 				params: {}
@@ -99,8 +101,11 @@
     <div class="post__tags svelte-f0w9v3"><div class="post__tag svelte-f0w9v3">code</div><div class="post__tag svelte-f0w9v3">art</div><div class="post__tag svelte-f0w9v3">math</div></div>
   <main class="post__content svelte-f0w9v3"><p><img src="/assets/post/prime/primes.png" alt="primes"></p>
 <p>I made this in March of 2014. I was playing around with pygame and was learning how to assign colors to specific pixels. Composite numbers are black, twin primes are green, and other primes are blue. Pixels are enumerated from 0 starting at the top left and read like a book. Note: ‘2’ should be blue, but I never fixed that.</p>
-<p>EDIT: 2019-10-06<br>
-I created a JavaScript version that uses HTML5 canvas, and the ‘2’ bug is fixed. It prompts you to enter a width and height of the image (defaults to 300x300), and then prompts for download.</p>
+<section class="update svelte-1t7np6d"><div class="update__header svelte-1t7np6d"><span class="update__title svelte-1t7np6d">UPDATE</span>
+    <span class="update__date svelte-1t7np6d">Sat, 5 October 2019</span></div>
+  <div class="update__content svelte-1t7np6d">I created a JavaScript version that uses HTML5 canvas, and the &#39;2&#39; bug is fixed. It prompts you to enter a width and height of the image (defaults to 300x300), and then prompts for download.
+</div>
+</section>
 <h3 id="new-js-version"><a href="#new-js-version">New JS Version</a></h3>
 <div class="code-block svelte-oky0o3"><div class="filename svelte-oky0o3">primes.js</div>
   <div class="lang svelte-oky0o3">javascript</div>

@@ -1,6 +1,6 @@
-const timestamp = 1645865844975;
+const timestamp = 1645866452839;
 const build = [
-  "/_app/start-4944aae0.js",
+  "/_app/start-8061d000.js",
   "/_app/pages/__layout.svelte-0672c45b.js",
   "/_app/assets/pages/__layout.svelte-f15e5ea8.css",
   "/_app/pages/__error.svelte-51e86b38.js",
@@ -31,7 +31,7 @@ const build = [
   "/_app/assets/pages/about.svx-1abb1717.css",
   "/_app/pages/post/index.svelte-c6195fcb.js",
   "/_app/assets/pages/post/index.svelte-32092644.css",
-  "/_app/pages/post/youtube-speeds-faster-than-2x/index.svx-ccb7f31a.js",
+  "/_app/pages/post/youtube-speeds-faster-than-2x/index.svx-67f9078e.js",
   "/_app/pages/post/milk-tea-doppelgangers/index.svx-9531bcb7.js",
   "/_app/pages/post/january-retrospective/index.svx-da65db9d.js",
   "/_app/pages/post/calendar-progress/index.svx-2adcd1a4.js",
@@ -87,7 +87,7 @@ const build = [
   "/_app/pages/post/imslp/index.svx-269faed5.js",
   "/_app/pages/post/lingo/index.svx-ac20e0b6.js",
   "/_app/pages/post/point/index.svx-5a5762b9.js",
-  "/_app/pages/post/prime/index.svx-6bfc5d43.js",
+  "/_app/pages/post/prime/index.svx-1263cc4c.js",
   "/_app/pages/post/grey/index.svx-26153b3f.js",
   "/_app/pages/post/late/index.svx-905af87d.js",
   "/_app/pages/post/logo/index.svx-984e9d57.js",

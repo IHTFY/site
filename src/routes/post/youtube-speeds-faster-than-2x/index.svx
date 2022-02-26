@@ -11,6 +11,7 @@ tags:
 
 <script>
   import CodeBlock from '$lib/components/CodeBlock.svelte';
+  import Update from '$lib/components/Update.svelte';
 </script>
 
 I remember speeding up books on tape to chipmunk speeds so I could get through them faster. Today, my podcast app does this without the pitch distortion, and it can even trim out the silent parts.
@@ -31,7 +32,10 @@ I wrote a little JavaScript code that will let you type in whatever speed you wa
 
 ## Making a Bookmarklet
 
-UPDATE: I've made [a page](https://ihtfy.github.io/JavaScript-Bookmarklets/) that lists some of the bookmarklets I've made. The custom video speed is the 1st one.
+<Update date="2019-11-14">
+
+I've made [a page](https://ihtfy.github.io/JavaScript-Bookmarklets/) that lists some of the bookmarklets I've made. The custom video speed is the 1st one.
+</Update>
 
 First, make a new bookmark. In chrome, you can use `ctrl + d`. You can do it on any page, but before you click "Done", click on "More...".
 

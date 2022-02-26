@@ -12,14 +12,16 @@ tags:
 
 <script>
   import CodeBlock from '$lib/components/CodeBlock.svelte';
+  import Update from "$lib/components/Update.svelte"
 </script>
 
 ![primes](/assets/post/prime/primes.png)
 
 I made this in March of 2014. I was playing around with pygame and was learning how to assign colors to specific pixels. Composite numbers are black, twin primes are green, and other primes are blue. Pixels are enumerated from 0 starting at the top left and read like a book. Note: '2' should be blue, but I never fixed that.
 
-EDIT: 2019-10-06  
+<Update date="2019-10-06"> 
 I created a JavaScript version that uses HTML5 canvas, and the '2' bug is fixed. It prompts you to enter a width and height of the image (defaults to 300x300), and then prompts for download.
+</Update>
 
 ### New JS Version
 
