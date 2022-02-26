@@ -9,11 +9,17 @@ tags:
   - tutorial
 ---
 
+<script>
+  import CodeBlock from '$lib/components/CodeBlock.svelte';
+</script>
+
 SoundCloud is notorious for having songs deleted - often by the original uploader. Most of these songs are not easily found elsewhere on the internet. To download them, you can use a very powerful free tool: [youtube-dl](https://ytdl-org.github.io/youtube-dl/download.html)
 
 On Windows, you can just download the exe. If you double-click on the file, it will just have a black window popup and then close; that's because it's a command line tool. To use it properly, you can either use the Command Prompt (press the windows key, then type "cmd"), or my preference, PowerShell (windows key, then type "powershell").
 
 Now if you drag the exe file onto the terminal and press enter, you'll see:
+
+<CodeBlock lang="shell">
 
 ```shell
 Usage: youtube-dl.exe [OPTIONS] URL [URL...]
@@ -21,6 +27,7 @@ Usage: youtube-dl.exe [OPTIONS] URL [URL...]
 youtube-dl.exe: error: You must provide at least one URL.
 Type youtube-dl --help to see a list of all options.
 ```
+</CodeBlock>
 
 That's because you need to give it a URL to download. In our case, we want to use our SoundCloud Likes playlist. Checkout the huge list of [supported sites](https://ytdl-org.github.io/youtube-dl/supportedsites.html); basically everything but paid streaming sites like Netflix etc.
 
@@ -38,6 +45,8 @@ Create a new text file, and name it `SCBackup.bat`
 
 Add the following code inside the file, replacing `SOUNDCLOUD_USERNAME` and `PATH_TO_YOUR_MUSIC_FOLDER`.
 
+<CodeBlock filename="SCBackup.bat" lang="batch">
+
 ```batch
 @ECHO OFF
 SET uid=SOUNDCLOUD_USERNAME
@@ -47,6 +56,7 @@ SET ytStr="%dest%%%(uploader)s - %%(title)s (%%(id)s).%%(ext)s"
 ECHO %ytStr%
 START youtube-dl.exe https://soundcloud.com/%uid%/likes --output %ytStr% -ciw
 ```
+</CodeBlock>
 
 You also need to change the `youtube-dl.exe` to the full path of the exe, or you can add `youtube-dl` to your Windows Path.
 

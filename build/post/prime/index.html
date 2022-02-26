@@ -36,14 +36,16 @@
 	<link rel="stylesheet" href="/_app/assets/prism-night-owl-c9ab7466.css">
 	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
 	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
-	<link rel="modulepreload" href="/_app/start-13d11455.js">
+	<link rel="stylesheet" href="/_app/assets/CodeBlock-a4490bc0.css">
+	<link rel="modulepreload" href="/_app/start-4944aae0.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-4e826582.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-0672c45b.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-6bae2da7.js">
-	<link rel="modulepreload" href="/_app/pages/post/prime/index.svx-232b1ee7.js">
+	<link rel="modulepreload" href="/_app/pages/post/prime/index.svx-6bfc5d43.js">
 	<link rel="modulepreload" href="/_app/chunks/post-f0963b8b.js">
-	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js"><script type="module">
-		import { start } from "/_app/start-13d11455.js";
+	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js">
+	<link rel="modulepreload" href="/_app/chunks/CodeBlock-7a3c3e1d.js"><script type="module">
+		import { start } from "/_app/start-4944aae0.js";
 		start({
 			target: document.body,
 			paths: {"base":"","assets":""},
@@ -56,7 +58,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-0672c45b.js"),
-						import("/_app/pages/post/prime/index.svx-232b1ee7.js")
+						import("/_app/pages/post/prime/index.svx-6bfc5d43.js")
 				],
 				url: new URL("http://sveltekit-prerender/post/prime"),
 				params: {}
@@ -100,7 +102,9 @@
 <p>EDIT: 2019-10-06<br>
 I created a JavaScript version that uses HTML5 canvas, and the ‘2’ bug is fixed. It prompts you to enter a width and height of the image (defaults to 300x300), and then prompts for download.</p>
 <h3 id="new-js-version"><a href="#new-js-version">New JS Version</a></h3>
-<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">primesUpTo</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+<div class="code-block svelte-oky0o3"><div class="filename svelte-oky0o3">primes.js</div>
+  <div class="lang svelte-oky0o3">javascript</div>
+  <pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">primesUpTo</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
   <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
   <span class="token keyword">const</span> primes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
   <span class="token keyword">let</span> n <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
@@ -161,10 +165,13 @@ ctx<span class="token punctuation">.</span><span class="token function">putImage
   link<span class="token punctuation">.</span>href <span class="token operator">=</span> canvas<span class="token punctuation">.</span><span class="token function">toDataURL</span><span class="token punctuation">(</span><span class="token string">'image/octet-stream'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   link<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+</div>
 <h3 id="a-4k-version"><a href="#a-4k-version">A 4K Version</a></h3>
 <p><a href="/assets/post/prime/prime4096x2190.png">Click Here</a> You might need to refresh the page.</p>
 <h3 id="old-python-version"><a href="#old-python-version">Old Python Version</a></h3>
-<pre class="language-python"><!-- HTML_TAG_START --><code class="language-python"><span class="token keyword">import</span> pygame<span class="token punctuation">,</span> sys
+<div class="code-block svelte-oky0o3"><div class="filename svelte-oky0o3">primes.py</div>
+  <div class="lang svelte-oky0o3">python</div>
+  <pre class="language-python"><!-- HTML_TAG_START --><code class="language-python"><span class="token keyword">import</span> pygame<span class="token punctuation">,</span> sys
 <span class="token keyword">from</span> pygame<span class="token punctuation">.</span><span class="token builtin">locals</span>
 <span class="token keyword">import</span> <span class="token operator">*</span>
 
@@ -273,7 +280,8 @@ fpsClock<span class="token punctuation">.</span>tick<span class="token punctuati
 pygame<span class="token punctuation">.</span>image<span class="token punctuation">.</span>save<span class="token punctuation">(</span>DISPLAYSURF<span class="token punctuation">,</span> <span class="token string">"primes.png"</span><span class="token punctuation">)</span>
 
 <span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
-  main<span class="token punctuation">(</span><span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre></main></section>
+  main<span class="token punctuation">(</span><span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
+</div></main></section>
 
 
 </div>

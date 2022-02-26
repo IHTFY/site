@@ -9,6 +9,10 @@ tags:
   - design
 ---
 
+<script>
+  import CodeBlock from '$lib/components/CodeBlock.svelte';
+</script>
+
 I'll try starting with Elianiva's site, since the dev server works as far as I can tell. The changes I want to make are:
 
 ## From Matt:
@@ -32,10 +36,12 @@ I tried doing dynamic routing with `[slug]` again but it didn't work. I think th
 
 Using Windows shell, I ran
 
+<CodeBlock lang="shell">
 
 ```shell
 for /R %x in (*.md) do ren "%x" *.svx
 ```
+</CodeBlock>
 
 to rename all the markdown files.
 

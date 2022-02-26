@@ -9,6 +9,10 @@ tags:
   - design
 ---
 
+<script>
+  import CodeBlock from '$lib/components/CodeBlock.svelte';
+</script>
+
 I'm going to try migrating this site from WordPress to a SvelteKit site hosted on GitHub. I'm paying $99 per year to host on wordpress.com; there's a cheaper plan now, but I don't see any way to downgrade - only upgrade. It's also very limiting: I can't add an SVG image, custom JS (expected), but even the additional CSS rules are very limited because the theme overrides them.
 
 My hope is to export this site data. Find a way to "load" it into a SvelteKit site, then I'll go through all the posts by hand and make sure everything is working correctly. I used to host a Jekyll blog site on gh pages, but it kept breaking because GitHub would update dependencies automatically.
@@ -25,19 +29,28 @@ The formatting of the XML is pretty cluttered; lots of "wp" comments and "wp:...
 
 From Windows PowerShell, I go to the folder containing all my data.
 
+<CodeBlock lang="shell">
+
 ```shell
 cd ./Downloads/wp20220218
 ```
+</CodeBlock>
 
 Then I run the command:
 
-```bash
+<CodeBlock lang="shell">
+
+```shell
 npm wordpress-export-to-markdown
 ```
+</CodeBlock>
+
 
 I renamed the XML file to `export.xml`, and kept the default output folder name. These are the settings I used:
 
-```bash
+<CodeBlock lang="shell">
+
+```shell
 Starting wizard…  
 ? Path to WordPress export file? export.xml  
 ? Path to output folder? output  
@@ -49,6 +62,7 @@ Starting wizard…
 ? Save images scraped from post body content? Yes  
 ? Include custom post types and pages? No
 ```
+</CodeBlock>
 
 Now I have a folder called `output` filled with folders for each post named like: YYYY-MM-DD-PostTitle. Inside one of these folders is an `index.md` file which contains the text and formatting of the post. There is also a folder called `images` which contains any images from that post.
 

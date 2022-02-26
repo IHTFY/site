@@ -9,6 +9,10 @@ tags:
   - tutorial
 ---
 
+<script>
+  import CodeBlock from '$lib/components/CodeBlock.svelte';
+</script>
+
 This is somewhat related to my [previous post](https://blog.ihtfy.com/post/soundcloud-likes/) about downloading all of my SoundCloud liked songs. I have another batch file that I use to save livestreams. It doesn't work for YouTube livestreams and probably not Twitch either. Often news sites or other random sites will work.
 
 Go to the stream and open your internet browser's developer tools - in Chrome, `ctrl` + `shift` + `j`. Click the "Network" tab. You can optionally filter to the "Fetch/XHR" traffic as well. Now, refresh the page and click play on the video if necessary. You will hopefully find a file that ends in .m3u8. Common filenames are `index.m3u8`, `playlist.m3u8`, or `manifest.m3u8`. Sometimes the file extension is just .m3u.
@@ -31,6 +35,8 @@ I'm on Windows, so I downloaded the .exe. I would recommend putting it in your P
 
 Next, we'll make the batch file. Make a new text file and add this inside of it:
 
+<CodeBlock filename="streamDL.bat" lang="batch">
+
 ```batch
 @ECHO OFF
 SET /p url=Stream Link: 
@@ -38,6 +44,7 @@ SET /p name=Filename:
 ECHO saving in downloads
 START ffmpeg -protocol\_whitelist file,http,https,tcp,tls,crypto -i "%URL%" -codec copy "C:\\Users\\Frankie\\Downloads\\%name%.mkv"
 ```
+</CodeBlock>
 
 You can change the path on the last line. The `%name%` is a variable which comes from the prompt in line 3. I'm saving as an `mkv` file, but you could change this to mp4 or something else; from what I recall, it may be faster to save as an mkv.
 

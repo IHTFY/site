@@ -10,6 +10,10 @@ tags:
   - math
 ---
 
+<script>
+  import CodeBlock from '$lib/components/CodeBlock.svelte';
+</script>
+
 I made this in June of 2014. I was using processing (a java library) to make mosaic and pointillism style images from existing pictures.
 
 ### Cloud
@@ -67,6 +71,8 @@ Random circles
 
 
 ### Source:
+
+<CodeBlock filename="points.pde" lang="processing">
 
 ```java
 PImage bg;
@@ -148,3 +154,4 @@ void keyPressed() {
   }
 }
 ```
+</CodeBlock>

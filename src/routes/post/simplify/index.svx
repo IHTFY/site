@@ -8,11 +8,19 @@ tags:
   - code
 ---
 
+<script>
+  import CodeBlock from '$lib/components/CodeBlock.svelte';
+  import Update from "$lib/components/Update.svelte"
+</script>
+
+
 I simplified my logo a bit. It looks pretty much the same, but the underlying svg is much smaller.
 
 I originally made the logo in Adobe Illustrator. I made the original path, then expanded it, then filled it in, then hid the original path. This left the svg with some unnecessary information.
 
 I wrote the new version by hand. It's just a path with a stroke width and rounded joints and ends like you'd expect.
+
+<CodeBlock filename="logo.svg" lang="svg">
 
 ```svg
 <svg
@@ -29,7 +37,7 @@ I wrote the new version by hand. It's just a path with a stroke width and rounde
   />
 </svg>
 ```
-
+</CodeBlock>
 
 The `viewBox` is like the canvas; it goes from (0, 0) to (14, 14). The actual path is a bit smaller, but I have to accommodate for the stroke width. I also gave some extra margin on the sides to make it a square, since I'm using this as a favicon and logo.
 
@@ -39,7 +47,11 @@ I used Illustrator to export the image as different sized PNGs - ranging from 16
 
 I tried to add the svg to this post, but WordPress doesn't let me do that - very lame.
 
-Edit 2022-02-24: Not on WordPress anymore :)
+<Update date="2022-02-24">
+Not on WordPress anymore :)
+</Update>
+
+
 <svg
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 14 14"

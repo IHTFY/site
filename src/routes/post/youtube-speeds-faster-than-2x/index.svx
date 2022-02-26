@@ -9,6 +9,10 @@ tags:
   - tutorial
 ---
 
+<script>
+  import CodeBlock from '$lib/components/CodeBlock.svelte';
+</script>
+
 I remember speeding up books on tape to chipmunk speeds so I could get through them faster. Today, my podcast app does this without the pitch distortion, and it can even trim out the silent parts.
 
 YouTube recently added a slider to select a custom speed between 0.25x and 2x at 0.05x increments.
@@ -37,6 +41,8 @@ I like the Name to be short so I use this: ⏩
 
 Then paste the following code into the URL. To copy it, double click anywhere in the code, then use `ctrl + c`.
 
+<CodeBlock filename="⏩" lang="javascript">
+
 ```javascript
 javascript: {
   if (document.getElementsByTagName("video").length) {
@@ -51,6 +57,7 @@ javascript: {
   }
 };
 ```
+</CodeBlock>
 
 ![save](/assets/post/youtube-speeds-faster-than-2x/save-1.png)
 
@@ -68,6 +75,8 @@ I use this as the Name: ⏭️
 
 And here's the code for the URL:
 
+<CodeBlock filename="⏭️" lang="javascript">
+
 ```javascript
 javascript: {
   if (document.getElementsByTagName("video").length) {
@@ -79,8 +88,11 @@ javascript: {
   }
 };
 ```
+</CodeBlock>
 
 Here's another one that has a little meter to show the current speed.
+
+<CodeBlock filename="⏩" lang="javascript">
 
 ```javascript
 javascript: {
@@ -99,8 +111,11 @@ javascript: {
   }
 };
 ```
+</CodeBlock>
 
 Here's one that just sets the playhead to the end of the video.
+
+<CodeBlock filename="⏭️" lang="javascript">
 
 ```javascript
 javascript: {
@@ -108,3 +123,4 @@ javascript: {
   v.currentTime = v.duration;
 };
 ```
+</CodeBlock>
