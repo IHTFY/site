@@ -36,14 +36,18 @@
 	<link rel="stylesheet" href="/_app/assets/prism-night-owl-c9ab7466.css">
 	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
 	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
-	<link rel="modulepreload" href="/_app/start-13d11455.js">
+	<link rel="stylesheet" href="/_app/assets/CodeBlock-a4490bc0.css">
+	<link rel="stylesheet" href="/_app/assets/Update-cf9b15e3.css">
+	<link rel="modulepreload" href="/_app/start-8061d000.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-4e826582.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-0672c45b.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-6bae2da7.js">
-	<link rel="modulepreload" href="/_app/pages/post/youtube-speeds-faster-than-2x/index.svx-0554afd2.js">
+	<link rel="modulepreload" href="/_app/pages/post/youtube-speeds-faster-than-2x/index.svx-67f9078e.js">
 	<link rel="modulepreload" href="/_app/chunks/post-f0963b8b.js">
-	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js"><script type="module">
-		import { start } from "/_app/start-13d11455.js";
+	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js">
+	<link rel="modulepreload" href="/_app/chunks/CodeBlock-7a3c3e1d.js">
+	<link rel="modulepreload" href="/_app/chunks/Update-31e56738.js"><script type="module">
+		import { start } from "/_app/start-8061d000.js";
 		start({
 			target: document.body,
 			paths: {"base":"","assets":""},
@@ -56,7 +60,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-0672c45b.js"),
-						import("/_app/pages/post/youtube-speeds-faster-than-2x/index.svx-0554afd2.js")
+						import("/_app/pages/post/youtube-speeds-faster-than-2x/index.svx-67f9078e.js")
 				],
 				url: new URL("http://sveltekit-prerender/post/youtube-speeds-faster-than-2x"),
 				params: {}
@@ -104,12 +108,17 @@
 <p>But you can do more. It’s possible to choose any speed between 0x and 16x by changing the value of the video’s <code>playbackRate</code> property.</p>
 <p>I wrote a little JavaScript code that will let you type in whatever speed you want. It works for lots of other sites too, like Netflix, Twitter, and Facebook.</p>
 <h2 id="making-a-bookmarklet"><a href="#making-a-bookmarklet">Making a Bookmarklet</a></h2>
-<p>UPDATE: I’ve made <a href="https://ihtfy.github.io/JavaScript-Bookmarklets/" rel="nofollow">a page</a> that lists some of the bookmarklets I’ve made. The custom video speed is the 1st one.</p>
+<section class="update svelte-1t7np6d"><div class="update__header svelte-1t7np6d"><span class="update__title svelte-1t7np6d">UPDATE</span>
+    <span class="update__date svelte-1t7np6d">Wed, 13 November 2019</span></div>
+  <div class="update__content svelte-1t7np6d"><p>I’ve made <a href="https://ihtfy.github.io/JavaScript-Bookmarklets/" rel="nofollow">a page</a> that lists some of the bookmarklets I’ve made. The custom video speed is the 1st one.</p></div>
+</section>
 <p>First, make a new bookmark. In chrome, you can use <code>ctrl + d</code>. You can do it on any page, but before you click “Done”, click on “More…“.</p>
 <p><img src="/assets/post/youtube-speeds-faster-than-2x/bookmark-2.png" alt="bookmark"></p>
 <p>I like the Name to be short so I use this: ⏩</p>
 <p>Then paste the following code into the URL. To copy it, double click anywhere in the code, then use <code>ctrl + c</code>.</p>
-<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token literal-property property">javascript</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+<div class="code-block svelte-oky0o3"><div class="filename svelte-oky0o3">⏩</div>
+  <div class="lang svelte-oky0o3">javascript</div>
+  <pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token literal-property property">javascript</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
   <span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">"video"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
     <span class="token keyword">const</span> videos <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">"video"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token keyword">const</span> currentSpeed <span class="token operator">=</span> videos<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>playbackRate<span class="token punctuation">;</span>
@@ -121,6 +130,7 @@
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Can't find a video."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+</div>
 <p><img src="/assets/post/youtube-speeds-faster-than-2x/save-1.png" alt="save"></p>
 <p>The Name and URL fields</p>
 <p>When you’re watching a YouTube video, you can click the bookmarklet you just made, and it will let you type in the speed.</p>
@@ -129,7 +139,9 @@
 <p>Here’s another version of the code that just toggles the speed between 1x and 16x. If an ad is playing (even an unskippable one), you can play it at 16x to get through it quickly.</p>
 <p>I use this as the Name: ⏭️</p>
 <p>And here’s the code for the URL:</p>
-<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token literal-property property">javascript</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+<div class="code-block svelte-oky0o3"><div class="filename svelte-oky0o3">⏭️</div>
+  <div class="lang svelte-oky0o3">javascript</div>
+  <pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token literal-property property">javascript</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
   <span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">"video"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
     <span class="token keyword">const</span> videos <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">"video"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token keyword">const</span> currentSpeed <span class="token operator">=</span> videos<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>playbackRate<span class="token punctuation">;</span>
@@ -138,8 +150,11 @@
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Can't find a video."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+</div>
 <p>Here’s another one that has a little meter to show the current speed.</p>
-<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token literal-property property">javascript</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+<div class="code-block svelte-oky0o3"><div class="filename svelte-oky0o3">⏩</div>
+  <div class="lang svelte-oky0o3">javascript</div>
+  <pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token literal-property property">javascript</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
   <span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">"video"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
     <span class="token keyword">const</span> videos <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">"video"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token keyword">const</span> currentSpeed <span class="token operator">=</span> videos<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>playbackRate<span class="token punctuation">;</span>
@@ -154,11 +169,15 @@
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Can't find a video."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+</div>
 <p>Here’s one that just sets the playhead to the end of the video.</p>
-<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token literal-property property">javascript</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+<div class="code-block svelte-oky0o3"><div class="filename svelte-oky0o3">⏭️</div>
+  <div class="lang svelte-oky0o3">javascript</div>
+  <pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token literal-property property">javascript</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
   <span class="token keyword">let</span> v <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">"video"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
   v<span class="token punctuation">.</span>currentTime <span class="token operator">=</span> v<span class="token punctuation">.</span>duration<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre></main></section>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+</div></main></section>
 
 
 </div>

@@ -36,14 +36,16 @@
 	<link rel="stylesheet" href="/_app/assets/prism-night-owl-c9ab7466.css">
 	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
 	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
-	<link rel="modulepreload" href="/_app/start-13d11455.js">
+	<link rel="stylesheet" href="/_app/assets/CodeBlock-a4490bc0.css">
+	<link rel="modulepreload" href="/_app/start-8061d000.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-4e826582.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-0672c45b.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-6bae2da7.js">
-	<link rel="modulepreload" href="/_app/pages/post/livestreams/index.svx-f95c2649.js">
+	<link rel="modulepreload" href="/_app/pages/post/livestreams/index.svx-0ca0e083.js">
 	<link rel="modulepreload" href="/_app/chunks/post-f0963b8b.js">
-	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js"><script type="module">
-		import { start } from "/_app/start-13d11455.js";
+	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js">
+	<link rel="modulepreload" href="/_app/chunks/CodeBlock-7a3c3e1d.js"><script type="module">
+		import { start } from "/_app/start-8061d000.js";
 		start({
 			target: document.body,
 			paths: {"base":"","assets":""},
@@ -56,7 +58,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-0672c45b.js"),
-						import("/_app/pages/post/livestreams/index.svx-f95c2649.js")
+						import("/_app/pages/post/livestreams/index.svx-0ca0e083.js")
 				],
 				url: new URL("http://sveltekit-prerender/post/livestreams"),
 				params: {}
@@ -106,11 +108,14 @@
 <p>FFmpeg is another command line tool to convert videos and tons of <a href="https://ffmpeg.org/about.html" rel="nofollow">other manipulation</a>. It’s free, very powerful, and used in almost every video conversion tool you’ve ever used.</p>
 <p>I’m on Windows, so I downloaded the .exe. I would recommend putting it in your Path again. Instructions for that are at the bottom of my <a href="https://blog.ihtfy.com/post/soundcloud-likes/" rel="nofollow">SoundCloud post</a>. Adding the folder with the ffmpeg.exe will allow you to run FFmpeg by typing <code>ffmpeg</code> in the command line. It’s possible the installation will add it to your path anyway, but you may need to restart your computer for it to take effect.</p>
 <p>Next, we’ll make the batch file. Make a new text file and add this inside of it:</p>
-<pre class="language-batch"><!-- HTML_TAG_START --><code class="language-batch"><span class="token operator">@</span><span class="token command"><span class="token keyword">ECHO</span> OFF</span>
+<div class="code-block svelte-oky0o3"><div class="filename svelte-oky0o3">streamDL.bat</div>
+  <div class="lang svelte-oky0o3">batch</div>
+  <pre class="language-batch"><!-- HTML_TAG_START --><code class="language-batch"><span class="token operator">@</span><span class="token command"><span class="token keyword">ECHO</span> OFF</span>
 <span class="token command"><span class="token keyword">SET</span> <span class="token parameter attr-name">/p</span> <span class="token variable">url</span><span class="token operator">=</span>Stream Link: </span>
 <span class="token command"><span class="token keyword">SET</span> <span class="token parameter attr-name">/p</span> <span class="token variable">name</span><span class="token operator">=</span>Filename: </span>
 <span class="token command"><span class="token keyword">ECHO</span> saving in downloads</span>
 <span class="token command"><span class="token keyword">START</span> ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto <span class="token parameter attr-name">-i</span> <span class="token string">"%URL%"</span> -codec copy <span class="token string">"C:\Users\Frankie\Downloads\%name%.mkv"</span></span></code><!-- HTML_TAG_END --></pre>
+</div>
 <p>You can change the path on the last line. The <code>%name%</code> is a variable which comes from the prompt in line 3. I’m saving as an <code>mkv</code> file, but you could change this to mp4 or something else; from what I recall, it may be faster to save as an mkv.</p>
 <p>Save that text file as a <code>.bat</code> file, like <code>streamDL.bat</code>. Now if you double-click it, it will as you to paste in the stream link that you copied before. Next add a filename - no file extension needed. Then it runs the ffmpeg command:</p>
 <p>ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -i “%URL%” -codec copy “yourFilename.mkv”</p>

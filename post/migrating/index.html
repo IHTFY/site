@@ -36,14 +36,16 @@
 	<link rel="stylesheet" href="/_app/assets/prism-night-owl-c9ab7466.css">
 	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
 	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
-	<link rel="modulepreload" href="/_app/start-13d11455.js">
+	<link rel="stylesheet" href="/_app/assets/CodeBlock-a4490bc0.css">
+	<link rel="modulepreload" href="/_app/start-8061d000.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-4e826582.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-0672c45b.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-6bae2da7.js">
-	<link rel="modulepreload" href="/_app/pages/post/migrating/index.svx-3a2169f4.js">
+	<link rel="modulepreload" href="/_app/pages/post/migrating/index.svx-0d0bc3f8.js">
 	<link rel="modulepreload" href="/_app/chunks/post-f0963b8b.js">
-	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js"><script type="module">
-		import { start } from "/_app/start-13d11455.js";
+	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js">
+	<link rel="modulepreload" href="/_app/chunks/CodeBlock-7a3c3e1d.js"><script type="module">
+		import { start } from "/_app/start-8061d000.js";
 		start({
 			target: document.body,
 			paths: {"base":"","assets":""},
@@ -56,7 +58,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-0672c45b.js"),
-						import("/_app/pages/post/migrating/index.svx-3a2169f4.js")
+						import("/_app/pages/post/migrating/index.svx-0d0bc3f8.js")
 				],
 				url: new URL("http://sveltekit-prerender/post/migrating"),
 				params: {}
@@ -103,11 +105,19 @@
 <p>I went to <code>https://wordpress.com/export/frankiemercado.com</code> to export all my website content. This gave me a big XML file with all my posts. The images are nested inside of month and year folders, so one file may be at <code>./2022/01/image.jpg</code>.</p>
 <p>The formatting of the XML is pretty cluttered; lots of “wp” comments and “wp:…” tags which is to be expected. I think I’d like my site to have each post structured as markdown. When I searched for “wordpress to markdown” I find <a href="https://github.com/lonekorean/wordpress-export-to-markdown" rel="nofollow">this script</a>.</p>
 <p>From Windows PowerShell, I go to the folder containing all my data.</p>
-<pre class="language-shell"><!-- HTML_TAG_START --><code class="language-shell"><span class="token builtin class-name">cd</span> ./Downloads/wp20220218</code><!-- HTML_TAG_END --></pre>
+<div class="code-block svelte-oky0o3">
+  <div class="lang svelte-oky0o3">shell</div>
+  <pre class="language-shell"><!-- HTML_TAG_START --><code class="language-shell"><span class="token builtin class-name">cd</span> ./Downloads/wp20220218</code><!-- HTML_TAG_END --></pre>
+</div>
 <p>Then I run the command:</p>
-<pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash"><span class="token function">npm</span> wordpress-export-to-markdown</code><!-- HTML_TAG_END --></pre>
+<div class="code-block svelte-oky0o3">
+  <div class="lang svelte-oky0o3">shell</div>
+  <pre class="language-shell"><!-- HTML_TAG_START --><code class="language-shell"><span class="token function">npm</span> wordpress-export-to-markdown</code><!-- HTML_TAG_END --></pre>
+</div>
 <p>I renamed the XML file to <code>export.xml</code>, and kept the default output folder name. These are the settings I used:</p>
-<pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash">Starting wizard…  
+<div class="code-block svelte-oky0o3">
+  <div class="lang svelte-oky0o3">shell</div>
+  <pre class="language-shell"><!-- HTML_TAG_START --><code class="language-shell">Starting wizard…  
 ? Path to WordPress <span class="token builtin class-name">export</span> file? export.xml  
 ? Path to output folder? output  
 ? Create year folders? No  
@@ -117,6 +127,7 @@
 ? Save images attached to posts? Yes  
 ? Save images scraped from post body content? Yes  
 ? Include custom post types and pages? No</code><!-- HTML_TAG_END --></pre>
+</div>
 <p>Now I have a folder called <code>output</code> filled with folders for each post named like: YYYY-MM-DD-PostTitle. Inside one of these folders is an <code>index.md</code> file which contains the text and formatting of the post. There is also a folder called <code>images</code> which contains any images from that post.</p>
 <h2 id="new-theme"><a href="#new-theme">New Theme</a></h2>
 <p>Next, I need to find a new theme to use.</p>

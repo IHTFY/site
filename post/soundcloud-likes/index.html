@@ -36,14 +36,16 @@
 	<link rel="stylesheet" href="/_app/assets/prism-night-owl-c9ab7466.css">
 	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
 	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
-	<link rel="modulepreload" href="/_app/start-13d11455.js">
+	<link rel="stylesheet" href="/_app/assets/CodeBlock-a4490bc0.css">
+	<link rel="modulepreload" href="/_app/start-8061d000.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-4e826582.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-0672c45b.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-6bae2da7.js">
-	<link rel="modulepreload" href="/_app/pages/post/soundcloud-likes/index.svx-c672706b.js">
+	<link rel="modulepreload" href="/_app/pages/post/soundcloud-likes/index.svx-82f63fd3.js">
 	<link rel="modulepreload" href="/_app/chunks/post-f0963b8b.js">
-	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js"><script type="module">
-		import { start } from "/_app/start-13d11455.js";
+	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js">
+	<link rel="modulepreload" href="/_app/chunks/CodeBlock-7a3c3e1d.js"><script type="module">
+		import { start } from "/_app/start-8061d000.js";
 		start({
 			target: document.body,
 			paths: {"base":"","assets":""},
@@ -56,7 +58,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-0672c45b.js"),
-						import("/_app/pages/post/soundcloud-likes/index.svx-c672706b.js")
+						import("/_app/pages/post/soundcloud-likes/index.svx-82f63fd3.js")
 				],
 				url: new URL("http://sveltekit-prerender/post/soundcloud-likes"),
 				params: {}
@@ -98,10 +100,13 @@
   <main class="post__content svelte-f0w9v3"><p>SoundCloud is notorious for having songs deleted - often by the original uploader. Most of these songs are not easily found elsewhere on the internet. To download them, you can use a very powerful free tool: <a href="https://ytdl-org.github.io/youtube-dl/download.html" rel="nofollow">youtube-dl</a></p>
 <p>On Windows, you can just download the exe. If you double-click on the file, it will just have a black window popup and then close; that’s because it’s a command line tool. To use it properly, you can either use the Command Prompt (press the windows key, then type “cmd”), or my preference, PowerShell (windows key, then type “powershell”).</p>
 <p>Now if you drag the exe file onto the terminal and press enter, you’ll see:</p>
-<pre class="language-shell"><!-- HTML_TAG_START --><code class="language-shell">Usage: youtube-dl.exe <span class="token punctuation">[</span>OPTIONS<span class="token punctuation">]</span> URL <span class="token punctuation">[</span>URL<span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+<div class="code-block svelte-oky0o3">
+  <div class="lang svelte-oky0o3">shell</div>
+  <pre class="language-shell"><!-- HTML_TAG_START --><code class="language-shell">Usage: youtube-dl.exe <span class="token punctuation">[</span>OPTIONS<span class="token punctuation">]</span> URL <span class="token punctuation">[</span>URL<span class="token punctuation">..</span>.<span class="token punctuation">]</span>
 
 youtube-dl.exe: error: You must provide at least one URL.
 Type youtube-dl --help to see a list of all options.</code><!-- HTML_TAG_END --></pre>
+</div>
 <p>That’s because you need to give it a URL to download. In our case, we want to use our SoundCloud Likes playlist. Checkout the huge list of <a href="https://ytdl-org.github.io/youtube-dl/supportedsites.html" rel="nofollow">supported sites</a>; basically everything but paid streaming sites like Netflix etc.</p>
 <p>My SoundCloud likes are at <a href="https://soundcloud.com/IHTFY/likes" rel="nofollow">https://soundcloud.com/IHTFY/likes</a>, so you would just need to change your user ID.</p>
 <p>Before you do that, where are the files going to be downloaded to? By default, the terminal opens to <code>C:\Users\YourName</code>. If you want to download to a different folder, you could make one (or find an existing one) and navigate your terminal to it using the <code>cd</code> command which stands for “change directory”.</p>
@@ -110,13 +115,16 @@ Type youtube-dl --help to see a list of all options.</code><!-- HTML_TAG_END -->
 <p>There’s a bit more we can do to automate this. We could make a batch file (.bat) that when double-clicked, automatically downloads all of your likes to the specified folder.</p>
 <p>Create a new text file, and name it <code>SCBackup.bat</code></p>
 <p>Add the following code inside the file, replacing <code>SOUNDCLOUD_USERNAME</code> and <code>PATH_TO_YOUR_MUSIC_FOLDER</code>.</p>
-<pre class="language-batch"><!-- HTML_TAG_START --><code class="language-batch"><span class="token operator">@</span><span class="token command"><span class="token keyword">ECHO</span> OFF</span>
+<div class="code-block svelte-oky0o3"><div class="filename svelte-oky0o3">SCBackup.bat</div>
+  <div class="lang svelte-oky0o3">batch</div>
+  <pre class="language-batch"><!-- HTML_TAG_START --><code class="language-batch"><span class="token operator">@</span><span class="token command"><span class="token keyword">ECHO</span> OFF</span>
 <span class="token command"><span class="token keyword">SET</span> <span class="token variable">uid</span><span class="token operator">=</span>SOUNDCLOUD<span class="token operator">_</span>USERNAME</span>
 <span class="token command"><span class="token keyword">SET</span> <span class="token variable">dest</span><span class="token operator">=</span>PATH<span class="token operator">_</span>TO<span class="token operator">_</span>YOUR<span class="token operator">_</span>MUSIC<span class="token operator">_</span>FOLDER\<span class="token variable">%uid%</span> soundcloud likes\</span>
 <span class="token command"><span class="token keyword">ECHO</span> saving in <span class="token variable">%dest%</span></span>
 <span class="token command"><span class="token keyword">SET</span> <span class="token variable">ytStr</span><span class="token operator">=</span>"<span class="token variable">%dest%</span><span class="token operator">%</span><span class="token operator">%</span><span class="token punctuation">(</span>uploader</span><span class="token punctuation">)</span>s - %%<span class="token punctuation">(</span><span class="token command"><span class="token keyword">title</span></span><span class="token punctuation">)</span>s <span class="token punctuation">(</span>%%<span class="token punctuation">(</span><span class="token command"><span class="token keyword">id</span></span><span class="token punctuation">)</span>s<span class="token punctuation">)</span>.%%<span class="token punctuation">(</span><span class="token command"><span class="token keyword">ext</span></span><span class="token punctuation">)</span>s"
 <span class="token command"><span class="token keyword">ECHO</span> <span class="token variable">%ytStr%</span></span>
 <span class="token command"><span class="token keyword">START</span> youtube-dl.exe https://soundcloud.com/<span class="token variable">%uid%</span><span class="token parameter attr-name">/likes</span> <span class="token parameter attr-name">--output</span> <span class="token variable">%ytStr%</span> -ciw</span></code><!-- HTML_TAG_END --></pre>
+</div>
 <p>You also need to change the <code>youtube-dl.exe</code> to the full path of the exe, or you can add <code>youtube-dl</code> to your Windows Path.</p>
 <p>Press Windows key, then type “environment”. You should see “Edit environment variables for your account”. Click that, and it will open up a window with 2 tables. In the top one, User variables, click the <code>Path</code> variable, then click <code>Edit...</code>.</p>
 <p>Next, you want to add the folder that contains the <code>youtube-dl.exe</code> file. Click <code>Browse</code>, and find that folder, then click <code>OK</code> to close each window.</p>

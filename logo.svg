@@ -1,15 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 14">
 	<style>
-		path {
-			stroke: #f23c4a;
-		}
-
-		@media (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme:dark) {
 			path {
-				stroke: #2e4bbd;
+				stroke: #2e4bbd
 			}
 		}
 	</style>
-	<path d="M4 2l8 5l0 6l-10-12l10 0l-10 12l0-6l8-5" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"
-		fill="none" />
+	<path d="M4 2l8 5v6L2 1h10L2 13V7l8-5" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" fill="none"
+		stroke="#f23c4a" />
 </svg>

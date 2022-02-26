@@ -36,14 +36,18 @@
 	<link rel="stylesheet" href="/_app/assets/prism-night-owl-c9ab7466.css">
 	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
 	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
-	<link rel="modulepreload" href="/_app/start-13d11455.js">
+	<link rel="stylesheet" href="/_app/assets/CodeBlock-a4490bc0.css">
+	<link rel="stylesheet" href="/_app/assets/Update-cf9b15e3.css">
+	<link rel="modulepreload" href="/_app/start-8061d000.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-4e826582.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-0672c45b.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-6bae2da7.js">
-	<link rel="modulepreload" href="/_app/pages/post/simplify/index.svx-e5a656ee.js">
+	<link rel="modulepreload" href="/_app/pages/post/simplify/index.svx-79668d90.js">
 	<link rel="modulepreload" href="/_app/chunks/post-f0963b8b.js">
-	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js"><script type="module">
-		import { start } from "/_app/start-13d11455.js";
+	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js">
+	<link rel="modulepreload" href="/_app/chunks/CodeBlock-7a3c3e1d.js">
+	<link rel="modulepreload" href="/_app/chunks/Update-31e56738.js"><script type="module">
+		import { start } from "/_app/start-8061d000.js";
 		start({
 			target: document.body,
 			paths: {"base":"","assets":""},
@@ -56,7 +60,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-0672c45b.js"),
-						import("/_app/pages/post/simplify/index.svx-e5a656ee.js")
+						import("/_app/pages/post/simplify/index.svx-79668d90.js")
 				],
 				url: new URL("http://sveltekit-prerender/post/simplify"),
 				params: {}
@@ -98,7 +102,9 @@
   <main class="post__content svelte-f0w9v3"><p>I simplified my logo a bit. It looks pretty much the same, but the underlying svg is much smaller.</p>
 <p>I originally made the logo in Adobe Illustrator. I made the original path, then expanded it, then filled it in, then hid the original path. This left the svg with some unnecessary information.</p>
 <p>I wrote the new version by hand. It’s just a path with a stroke width and rounded joints and ends like you’d expect.</p>
-<pre class="language-svg"><!-- HTML_TAG_START --><code class="language-svg"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<div class="code-block svelte-oky0o3"><div class="filename svelte-oky0o3">logo.svg</div>
+  <div class="lang svelte-oky0o3">svg</div>
+  <pre class="language-svg"><!-- HTML_TAG_START --><code class="language-svg"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
   <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span>
   <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 14 14<span class="token punctuation">"</span></span>
 <span class="token punctuation">></span></span>
@@ -111,11 +117,16 @@
     <span class="token attr-name">stroke-linejoin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span>
   <span class="token punctuation">/></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+</div>
 <p>The <code>viewBox</code> is like the canvas; it goes from (0, 0) to (14, 14). The actual path is a bit smaller, but I have to accommodate for the stroke width. I also gave some extra margin on the sides to make it a square, since I’m using this as a favicon and logo.</p>
 <p>It starts at the coordinate (4, 2), then draws a line segment that’s right 8 units and down 5 units. Then it goes straight down for 6 units, and so on.</p>
 <p>I used Illustrator to export the image as different sized PNGs - ranging from 16 to 2048 pixels wide.</p>
 <p>I tried to add the svg to this post, but WordPress doesn’t let me do that - very lame.</p>
-<p>Edit 2022-02-24: Not on WordPress anymore :)</p>
+<section class="update svelte-1t7np6d"><div class="update__header svelte-1t7np6d"><span class="update__title svelte-1t7np6d">UPDATE</span>
+    <span class="update__date svelte-1t7np6d">Wed, 23 February 2022</span></div>
+  <div class="update__content svelte-1t7np6d">Not on WordPress anymore :)
+</div>
+</section>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M4 2l8 5l0 6l-10-12l10 0l-10 12l0-6l8-5" fill="none" stroke="#21326D" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></main></section>
 
 

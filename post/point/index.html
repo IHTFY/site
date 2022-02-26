@@ -36,14 +36,16 @@
 	<link rel="stylesheet" href="/_app/assets/prism-night-owl-c9ab7466.css">
 	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
 	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
-	<link rel="modulepreload" href="/_app/start-13d11455.js">
+	<link rel="stylesheet" href="/_app/assets/CodeBlock-a4490bc0.css">
+	<link rel="modulepreload" href="/_app/start-8061d000.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-4e826582.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-0672c45b.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-6bae2da7.js">
-	<link rel="modulepreload" href="/_app/pages/post/point/index.svx-80b1b838.js">
+	<link rel="modulepreload" href="/_app/pages/post/point/index.svx-5a5762b9.js">
 	<link rel="modulepreload" href="/_app/chunks/post-f0963b8b.js">
-	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js"><script type="module">
-		import { start } from "/_app/start-13d11455.js";
+	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js">
+	<link rel="modulepreload" href="/_app/chunks/CodeBlock-7a3c3e1d.js"><script type="module">
+		import { start } from "/_app/start-8061d000.js";
 		start({
 			target: document.body,
 			paths: {"base":"","assets":""},
@@ -56,7 +58,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-0672c45b.js"),
-						import("/_app/pages/post/point/index.svx-80b1b838.js")
+						import("/_app/pages/post/point/index.svx-5a5762b9.js")
 				],
 				url: new URL("http://sveltekit-prerender/post/point"),
 				params: {}
@@ -124,7 +126,9 @@
 <img src="/assets/post/point/capped-bb.jpg" alt="capped-bb"></p>
 <p><a href="https://youtu.be/BCXYKs8LsZQ" rel="nofollow"><img src="http://i3.ytimg.com/vi/BCXYKs8LsZQ/maxresdefault.jpg" alt="Annealed Mosaic - Breaking Bad"></a></p>
 <h3 id="source"><a href="#source">Source:</a></h3>
-<pre class="language-java"><!-- HTML_TAG_START --><code class="language-java"><span class="token class-name">PImage</span> bg<span class="token punctuation">;</span>
+<div class="code-block svelte-oky0o3"><div class="filename svelte-oky0o3">points.pde</div>
+  <div class="lang svelte-oky0o3">processing</div>
+  <pre class="language-java"><!-- HTML_TAG_START --><code class="language-java"><span class="token class-name">PImage</span> bg<span class="token punctuation">;</span>
 <span class="token class-name">String</span> img<span class="token punctuation">;</span>
 <span class="token keyword">float</span> min<span class="token punctuation">;</span>
 <span class="token keyword">float</span> max<span class="token punctuation">;</span>
@@ -201,7 +205,8 @@
   <span class="token keyword">if</span> <span class="token punctuation">(</span>key <span class="token operator">==</span> <span class="token char">'p'</span> <span class="token operator">||</span> key <span class="token operator">==</span> <span class="token char">'P'</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
     <span class="token function">saveFrame</span><span class="token punctuation">(</span><span class="token string">"./images/Capped-"</span> <span class="token operator">+</span> img<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// output image</span>
   <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre></main></section>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+</div></main></section>
 
 
 </div>
