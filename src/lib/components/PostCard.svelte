@@ -64,10 +64,6 @@ a {
   grid-template-rows: 3.5rem 2rem 5.5rem 1fr;
   z-index: 2;
 }
-.card:hover {
-  transform: scale(1.01);
-  transition-duration: 100ms;
-}
 
 .card__img {
   position: relative;
@@ -76,19 +72,6 @@ a {
   height: 12rem;
   object-fit: cover;
   background-color: var(--color-borders);
-}
-
-.card:hover .card__img {
-  animation: card-img-hover infinite 2s linear;
-}
-
-@keyframes card-img-hover {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
 }
 
 .card__title {
@@ -152,8 +135,26 @@ a {
 }
 
 @media only screen and (min-width: 480px) {
-  .card__details:hover .card__title {
+  .card:hover {
+    transform: scale(1.01);
+    transition-duration: 100ms;
+  }
+
+  .card:hover .card__title {
     color: var(--color-shine);
+  }
+
+  .card:hover .card__img {
+    animation: color-shift infinite 2s linear;
+  }
+
+  @keyframes color-shift {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
   }
 }
 </style>

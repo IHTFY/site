@@ -9,10 +9,10 @@
     </a>
   </div>
   <div class="header__right">
-    <span class="header__greet">Hey there,</span>
-    <span class="header__name"> I'm Frankie!</span>
+    <span class="header__greet">IHTFY</span>
+    <span class="header__name"> I'm Frankie</span>
     <span class="header__role">
-      I write code, do math, make music, and eat food.
+      I write code, do math, make music, and play with fire.
     </span>
     <p class="header__desc">
       This is my hub where you can find almost all my online stuff. I've been
