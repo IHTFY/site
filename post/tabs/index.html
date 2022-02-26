@@ -36,14 +36,16 @@
 	<link rel="stylesheet" href="/_app/assets/prism-night-owl-c9ab7466.css">
 	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
 	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
-	<link rel="modulepreload" href="/_app/start-8061d000.js">
+	<link rel="stylesheet" href="/_app/assets/Update-cf9b15e3.css">
+	<link rel="modulepreload" href="/_app/start-200339bc.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-4e826582.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-0672c45b.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-6bae2da7.js">
-	<link rel="modulepreload" href="/_app/pages/post/tabs/index.svx-79b35c6d.js">
-	<link rel="modulepreload" href="/_app/chunks/post-f0963b8b.js">
-	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js"><script type="module">
-		import { start } from "/_app/start-8061d000.js";
+	<link rel="modulepreload" href="/_app/pages/post/tabs/index.svx-15c98764.js">
+	<link rel="modulepreload" href="/_app/chunks/post-373b22db.js">
+	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js">
+	<link rel="modulepreload" href="/_app/chunks/Update-0e5b801e.js"><script type="module">
+		import { start } from "/_app/start-200339bc.js";
 		start({
 			target: document.body,
 			paths: {"base":"","assets":""},
@@ -56,7 +58,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-0672c45b.js"),
-						import("/_app/pages/post/tabs/index.svx-79b35c6d.js")
+						import("/_app/pages/post/tabs/index.svx-15c98764.js")
 				],
 				url: new URL("http://sveltekit-prerender/post/tabs"),
 				params: {}
@@ -90,16 +92,18 @@
   <div class="svelte-tfxsok">
 
 <section class="post svelte-f0w9v3"><h1 class="post__title svelte-f0w9v3">Tabs</h1>
-    <span class="post__date svelte-f0w9v3">Posted on
-      Saturday,
-      January 8, 2022</span>
-    <a class="post__edit svelte-f0w9v3" href="mailto:siteEdit@ihtfy.com?subject=Edit%20/post/tabs" target="_blank" rel="norel noreferrer">Suggest An Edit</a>
-    <div class="post__tags svelte-f0w9v3"><div class="post__tag svelte-f0w9v3">code</div></div>
+  <span class="post__date svelte-f0w9v3">Posted on
+    Saturday,
+    January 8, 2022</span>
+  <a class="post__edit svelte-f0w9v3" href="mailto:siteEdit@ihtfy.com?subject=Edit%20/post/tabs" target="_blank" rel="norel noreferrer">Suggest An Edit</a>
+  <div class="post__tags svelte-f0w9v3"><div class="post__tag svelte-f0w9v3">code</div></div>
   <main class="post__content svelte-f0w9v3"><p>I added some changes to my <a href="https://empire.ihtfy.com/" rel="nofollow">Empire</a> game; most noticeably, navigation tabs. I also added a button to peek at your secret nickname, and I added some color and avatars to the Lobby. Adding the tabs was actually a bit complicated since the logic flow of the game relied on it being impossible to go back and resubmit forms, etc.</p>
 <p>My family played over Christmas, and it worked pretty well. My sister said she played it again with her in-laws, and they had fun too. Hopefully everyone will enjoy the little improvements I made.</p>
 <p>The whole game could use a visual makeover, namely a consistent color palette. There’s also a glitch when going to the 2nd tab on mobile: the client size gets larger than the screen/html/body. Clicking the share link fixes one of the overflow directions, and going to another tab and back eliminates it. I think it may be an issue with <a href="https://materializecss.com/" rel="nofollow">materializeCSS</a>, but I’m not sure.</p>
-<blockquote><p>I noticed the label was extending past the edge of the screen. I think there’s an issue calculating its size since it has a transition. I just hid the overflow on the parent element - <code>.input-field</code></p>
-<p>2022-01-09</p></blockquote>
+<section class="update svelte-1t7np6d"><div class="update__header svelte-1t7np6d"><span class="update__title svelte-1t7np6d">UPDATE</span>
+    <span class="update__date svelte-1t7np6d">Sun, January 9, 2022</span></div>
+  <div class="update__content svelte-1t7np6d"><p>I noticed the label was extending past the edge of the screen. I think there’s an issue calculating its size since it has a transition. I just hid the overflow on the parent element - <code>.input-field</code></p></div>
+</section>
 <p>I started making the site years ago, before I was comfortable using a framework or even npm packages. I mainly wanted to try using a database and cloud functions using firebase, which I think I accomplished. Since then, I’ve used <a href="https://svelte.dev/" rel="nofollow">Svelte</a> to make a <a href="https://optics.ihtfy.com/" rel="nofollow">card game</a>, React on another game I’m working on with a friend, and I also played around with <a href="https://preactjs.com/" rel="nofollow">Preact</a>.</p>
 <p>I’ve used plenty of npm packages in my projects too. Some projects were intended to become tutorial videos, so I like using CDNs because they keep the codebase small and setup simple which is nice for explainers.</p></main></section>
 

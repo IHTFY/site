@@ -36,14 +36,14 @@
 	<link rel="stylesheet" href="/_app/assets/prism-night-owl-c9ab7466.css">
 	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
 	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
-	<link rel="modulepreload" href="/_app/start-8061d000.js">
+	<link rel="modulepreload" href="/_app/start-200339bc.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-4e826582.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-0672c45b.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-6bae2da7.js">
-	<link rel="modulepreload" href="/_app/pages/post/compression/index.svx-add26e5e.js">
-	<link rel="modulepreload" href="/_app/chunks/post-f0963b8b.js">
+	<link rel="modulepreload" href="/_app/pages/post/compression/index.svx-a6c8a878.js">
+	<link rel="modulepreload" href="/_app/chunks/post-373b22db.js">
 	<link rel="modulepreload" href="/_app/chunks/Progress-83a8291b.js"><script type="module">
-		import { start } from "/_app/start-8061d000.js";
+		import { start } from "/_app/start-200339bc.js";
 		start({
 			target: document.body,
 			paths: {"base":"","assets":""},
@@ -56,7 +56,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-0672c45b.js"),
-						import("/_app/pages/post/compression/index.svx-add26e5e.js")
+						import("/_app/pages/post/compression/index.svx-a6c8a878.js")
 				],
 				url: new URL("http://sveltekit-prerender/post/compression"),
 				params: {}
@@ -90,11 +90,11 @@
   <div class="svelte-tfxsok">
 
 <section class="post svelte-f0w9v3"><h1 class="post__title svelte-f0w9v3">compression</h1>
-    <span class="post__date svelte-f0w9v3">Posted on
-      Saturday,
-      February 12, 2022</span>
-    <a class="post__edit svelte-f0w9v3" href="mailto:siteEdit@ihtfy.com?subject=Edit%20/post/compression" target="_blank" rel="norel noreferrer">Suggest An Edit</a>
-    <div class="post__tags svelte-f0w9v3"><div class="post__tag svelte-f0w9v3">code</div><div class="post__tag svelte-f0w9v3">tutorial</div></div>
+  <span class="post__date svelte-f0w9v3">Posted on
+    Saturday,
+    February 12, 2022</span>
+  <a class="post__edit svelte-f0w9v3" href="mailto:siteEdit@ihtfy.com?subject=Edit%20/post/compression" target="_blank" rel="norel noreferrer">Suggest An Edit</a>
+  <div class="post__tags svelte-f0w9v3"><div class="post__tag svelte-f0w9v3">code</div><div class="post__tag svelte-f0w9v3">tutorial</div></div>
   <main class="post__content svelte-f0w9v3"><p>I was getting a warning on a coding project that each page was more than 1MB in size. The data is a list of coordinates, stored as a big string. I was able to reduce the size of the data to 20% the original size by rounding to whole numbers. Then I used <a href="https://www.npmjs.com/package/lz-string" rel="nofollow">this LZ compression library</a> to reduce it to 5% the orignal size.</p>
 <p>LZ is a lossless compression algorithm, which means you get the exact original input when you decompress. It works by:</p>
 <ol><li>List all the characters used by the data and store it in “dictionary”</li>
