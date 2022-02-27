@@ -88,11 +88,6 @@ export let type: 'posts' | 'projects';
   font-family: var(--font-heading);
   font-size: 1.125rem;
   letter-spacing: 0.02em;
-  transition: transform ease-out 0.2s;
-}
-
-.section__button:hover {
-  transform: translate3d(0, 0.15rem, 0);
 }
 
 :global(.section__pattern) {
@@ -102,6 +97,18 @@ export let type: 'posts' | 'projects';
   left: -2rem;
   width: 14rem;
   height: 10rem;
+}
+
+.section__button:hover {
+  animation: color-shift 2s linear infinite;
+}
+@keyframes color-shift {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 @media only screen and (max-width: 480px) {
