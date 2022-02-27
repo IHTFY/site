@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#20263a" />
+    <meta name="supported-color-scheme" content="dark light" />
+    <meta name="color-scheme" content="light dark" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://blog.ihtfy.com/rss.xml"
+    />
+
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
+    <link rel="icon" href="/logo.svg" />
+    <link rel="mask-icon" href="/logo.svg" color="#000000"/>
+    <link rel="apple-touch-icon" href="/logo192.png" />
+
+    <meta http-equiv="content-security-policy" content=""><title>Hotel ACs | IHTFY</title><script data-svelte="svelte-1xtfmqk">// set dark mode correctly before everythings get rendered
+  // thanks https://github.com/pveyes
+  try {
+    // prettier-ignore
+    const { matches: isDarkMode } = window.matchMedia( "(prefers-color-scheme: dark)")
+
+    const theme = localStorage.getItem('theme');
+    let preference = theme || (isDarkMode ? 'dark' : 'light');
+
+    // prettier-ignore
+    if (preference) document.documentElement.setAttribute("data-theme", preference)
+  } catch (err) {
+    console.error(err);
+  }
+  </script><link rel="canonical" href="https://blog.ihtfy.com//post/hotel-acs" data-svelte="svelte-1r0yd13"><meta name="description" content="How to hack hotel air conditioning" data-svelte="svelte-1r0yd13"><meta name="keywords" content="personal,website,blog,article" data-svelte="svelte-1r0yd13"><meta property="og:type" content="website" data-svelte="svelte-1r0yd13"><meta property="og:url" content="https://blog.ihtfy.com//post/hotel-acs" data-svelte="svelte-1r0yd13"><meta property="og:title" content="Hotel ACs" data-svelte="svelte-1r0yd13"><meta property="og:description" content="How to hack hotel air conditioning" data-svelte="svelte-1r0yd13"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/51877647?s=240&amp;v=4" data-svelte="svelte-1r0yd13"><meta property="twitter:card" content="summary" data-svelte="svelte-1r0yd13"><meta property="twitter:url" content="https://blog.ihtfy.com//post/hotel-acs" data-svelte="svelte-1r0yd13"><meta property="twitter:title" content="Hotel ACs" data-svelte="svelte-1r0yd13"><meta property="twitter:description" content="How to hack hotel air conditioning" data-svelte="svelte-1r0yd13">
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-222ff49e.css">
+	<link rel="stylesheet" href="/_app/assets/prism-night-owl-c9ab7466.css">
+	<link rel="stylesheet" href="/_app/assets/post-6c424622.css">
+	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
+	<link rel="modulepreload" href="/_app/start-355b8495.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-4e826582.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-457702de.js">
+	<link rel="modulepreload" href="/_app/chunks/stores-e638db0f.js">
+	<link rel="modulepreload" href="/_app/pages/post/hotel-acs/index.svx-d1ca4e11.js">
+	<link rel="modulepreload" href="/_app/chunks/post-3ebb664d.js">
+	<link rel="modulepreload" href="/_app/chunks/Progress-16f77af8.js">
+				<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/service-worker.js');
+		}
+	</script>
+  </head>
+  <body>
+    <div id="svelte">
+
+
+
+
+<nav class="navbar svelte-1xlbyhi"><div class="navbar__container svelte-1xlbyhi"><div class="navbar__title svelte-1xlbyhi"><a href="/" aria-label="logo" class="svelte-1xlbyhi"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 14 14" class="logo__icon" fill="none" stroke="#21326D"><path d="M4 2l8 5l0 6l-10-12l10 0l-10 12l0-6l8-5" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"></path></svg></a></div>
+    <ul class="navbar__items svelte-1xlbyhi"><li class="navbar__item svelte-1xlbyhi" data-testid="home"><a href="/" class="svelte-1xlbyhi">Home</a></li>
+      <li class="navbar__item svelte-1xlbyhi" data-testid="posts"><a href="/post" class="svelte-1xlbyhi">Posts</a></li>
+      <li class="navbar__item svelte-1xlbyhi" data-testid="projects"><a href="/project" class="svelte-1xlbyhi">Projects</a></li>
+      <li class="navbar__item svelte-1xlbyhi" data-testid="about"><a href="/about" class="svelte-1xlbyhi">About</a></li>
+      <li class="navbar__item svelte-1xlbyhi"><input id="toggle" class="toggle svelte-1ksug19" type="checkbox"></li></ul>
+    <div class="navbar__hamburger svelte-1xlbyhi" data-testid="hamburger-navigation"><input class="navbar__checkbox svelte-1xlbyhi" type="checkbox"  aria-label="toggle menu">
+      <span class="navbar__hamburger_item--1 svelte-1xlbyhi"></span>
+      <span class="navbar__hamburger_item--2 svelte-1xlbyhi"></span>
+      <span class="navbar__hamburger_item--3 svelte-1xlbyhi"></span></div></div></nav>
+
+<main class="svelte-tfxsok">
+  <div class="svelte-tfxsok">
+
+<section class="post svelte-f0w9v3"><h1 class="post__title svelte-f0w9v3">Hotel ACs</h1>
+  <span class="post__date svelte-f0w9v3">Posted on
+    Tuesday,
+    January 11, 2022</span>
+  <a class="post__edit svelte-f0w9v3" href="mailto:siteEdit@ihtfy.com?subject=Edit%20/post/hotel-acs" target="_blank" rel="norel noreferrer">Suggest An Edit</a>
+  <div class="post__tags svelte-f0w9v3"><div class="post__tag svelte-f0w9v3">hack</div><div class="post__tag svelte-f0w9v3">project</div><div class="post__tag svelte-f0w9v3">tutorial</div></div>
+  <main class="post__content svelte-f0w9v3"><p>A lot of hotels use the same air conditioning units. Sometimes the control is set by a faulty thermostat or somewhere outside of the room. It can also be annoying to have intermittent fan noise while you’re trying to sleep.</p>
+<p><img src="/assets/post/hotel-acs/20220111_220422_remastered.jpg" alt="ac panel"></p>
+<p>Common AC Control</p>
+<p>If it looks like this and says “on”, you can set it to manual control by doing the following:</p>
+<ul><li>Hold ”+” and ”-”</li>
+<li>While holding, double click “OFF”</li>
+<li>The display will change to ”–”</li>
+<li>Click “HEAT”</li>
+<li>The display will briefly show “C1”, then “LS”</li>
+<li>Press the ”+” or ”-” until the display shows “0”</li>
+<li>Press “OFF” to select</li></ul>
+<p>And that’s it. You can use the buttons on the unit to control the AC in your room.</p>
+<p>Before you check out, you can follow the same steps to change the unit from “0” back to “LS”.</p></main></section>
+
+
+</div>
+  <footer class="svelte-10ww2eq"><div class="icons svelte-10ww2eq"><a href="https://www.youtube.com/user/ihopethisfindsyou" target="_blank" rel="norel noreferrer" aria-label="youtube" class="svelte-10ww2eq"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path fill="currentColor" d="m164.4 121.3l-48-32a8.3 8.3 0 0 0-8.2-.4A8 8 0 0 0 104 96v64a8 8 0 0 0 4.2 7.1a8.5 8.5 0 0 0 3.8.9a8.4 8.4 0 0 0 4.4-1.3l48-32a8 8 0 0 0 0-13.4ZM120 145.1v-34.2l25.6 17.1Zm114.3-75.3a23.5 23.5 0 0 0-14.5-16.3C185.6 40.3 131 40.4 128 40.4s-57.6-.1-91.8 13.1a23.5 23.5 0 0 0-14.5 16.3C19.1 79.7 16 97.9 16 128s3.1 48.3 5.7 58.2a23.5 23.5 0 0 0 14.5 16.3c32.8 12.7 84.2 13.1 91.1 13.1h1.4c6.9 0 58.3-.4 91.1-13.1a23.5 23.5 0 0 0 14.5-16.3c2.6-9.9 5.7-28.1 5.7-58.2s-3.1-48.3-5.7-58.2Zm-15.5 112.4a7.8 7.8 0 0 1-4.7 5.4c-31.7 12.2-85.5 12-86.1 12h-.1c-.5 0-54.3.2-86-12a7.8 7.8 0 0 1-4.7-5.4c-2.4-9.1-5.2-25.8-5.2-54.2s2.8-45.1 5.2-54.2a7.8 7.8 0 0 1 4.7-5.4c30.5-11.7 81.7-12 85.9-12h.2c.6 0 54.4-.2 86.1 12a7.8 7.8 0 0 1 4.7 5.4c2.4 9.1 5.2 25.8 5.2 54.2s-2.8 45.1-5.2 54.2Z"/><!-- HTML_TAG_END --></svg></a>
+    <a href="https://github.com/IHTFY/" target="_blank" rel="norel noreferrer" aria-label="github" class="svelte-10ww2eq"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path fill="currentColor" d="M216 216a16 16 0 0 1-16-16v-8a32.1 32.1 0 0 0-14.8-27a55.8 55.8 0 0 0 22.8-45v-8a58 58 0 0 0-7.7-28.3a59.9 59.9 0 0 0-5.4-47.7a7.8 7.8 0 0 0-6.9-4a59.7 59.7 0 0 0-48 24h-24a59.7 59.7 0 0 0-48-24a7.8 7.8 0 0 0-6.9 4a59.9 59.9 0 0 0-5.4 47.7A58 58 0 0 0 48 112v8a55.8 55.8 0 0 0 22.8 45A32.1 32.1 0 0 0 56 192v8a16 16 0 0 1-16 16a8 8 0 0 0 0 16a32.1 32.1 0 0 0 32-32v-8a16 16 0 0 1 16-16h12v40a16 16 0 0 1-16 16a8 8 0 0 0 0 16a32.1 32.1 0 0 0 32-32v-40h24v40a32.1 32.1 0 0 0 32 32a8 8 0 0 0 0-16a16 16 0 0 1-16-16v-40h12a16 16 0 0 1 16 16v8a32.1 32.1 0 0 0 32 32a8 8 0 0 0 0-16ZM64 120v-8a42.7 42.7 0 0 1 6.9-22.5a7.9 7.9 0 0 0 1.1-7.7a43.7 43.7 0 0 1 .8-33.5a43.6 43.6 0 0 1 32.3 20a8 8 0 0 0 6.7 3.7h32.4a8 8 0 0 0 6.7-3.7a43.6 43.6 0 0 1 32.3-20a43.7 43.7 0 0 1 .8 33.5a8.2 8.2 0 0 0 1.1 7.7A42.7 42.7 0 0 1 192 112v8a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40Z"/><!-- HTML_TAG_END --></svg></a>
+    <a href="https://www.instagram.com/ihtfy/" target="_blank" rel="norel noreferrer" aria-label="instagram" class="svelte-10ww2eq"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path fill="currentColor" d="M128 80a48 48 0 1 0 48 48a48 48 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32a32.1 32.1 0 0 1-32 32Zm44-132H84a56 56 0 0 0-56 56v88a56 56 0 0 0 56 56h88a56 56 0 0 0 56-56V84a56 56 0 0 0-56-56Zm40 144a40 40 0 0 1-40 40H84a40 40 0 0 1-40-40V84a40 40 0 0 1 40-40h88a40 40 0 0 1 40 40Zm-20-96a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z"/><!-- HTML_TAG_END --></svg></a>
+    <a href="https://twitter.com/@ihtfy/" target="_blank" rel="norel noreferrer" aria-label="twitter" class="svelte-10ww2eq"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path fill="currentColor" d="M247.4 68.9A8 8 0 0 0 240 64h-30.4a47.8 47.8 0 0 0-75.2-10.1A47.7 47.7 0 0 0 120 88v6.1C79.3 83.5 46 50.7 45.7 50.3a8 8 0 0 0-8.1-1.9a8.1 8.1 0 0 0-5.5 6.2c-8.7 48.2 5.8 80.5 19.5 99.1a108.6 108.6 0 0 0 24.7 24.4c-15.3 17.3-38.9 26.3-39.1 26.4a8 8 0 0 0-3.9 11.9c.8 1.2 3.8 5.1 11.1 8.8c9.1 4.5 21.1 6.8 35.6 6.8c70.5 0 129.5-54.3 135.5-124.2l30.2-30.1a8.4 8.4 0 0 0 1.7-8.8Zm-45.3 29.7a7.8 7.8 0 0 0-2.3 5.2C195.7 166.7 143.1 216 80 216c-10.6 0-18-1.4-23.2-3.1c11.5-6.2 27.5-17 37.9-32.5a8 8 0 0 0 1-6.4a8.1 8.1 0 0 0-4.1-5.1c-.1-.1-14.9-7.8-27.6-25.3c-14.4-19.8-20.5-43.9-18.1-71.7c15.8 13 46 34.2 80.8 40a8.1 8.1 0 0 0 6.5-1.8a8.2 8.2 0 0 0 2.8-6.1V88a32 32 0 0 1 61.3-12.8a8.1 8.1 0 0 0 7.4 4.8h16Z"/><!-- HTML_TAG_END --></svg></a>
+    <a href="https://www.tiktok.com/@ihtfy" target="_blank" rel="norel noreferrer" aria-label="tiktok" class="svelte-10ww2eq"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path fill="currentColor" d="M224 76a48 48 0 0 1-48-48a8 8 0 0 0-8-8h-40a8 8 0 0 0-8 8v128a20 20 0 1 1-28.6-18.1a7.9 7.9 0 0 0 4.6-7.2V89.1a7.8 7.8 0 0 0-2.9-6.2a8 8 0 0 0-6.5-1.7A76 76 0 1 0 176 156v-35.7a103.2 103.2 0 0 0 48 11.7a8 8 0 0 0 8-8V84a8 8 0 0 0-8-8Zm-8 39.6a87.4 87.4 0 0 1-43.3-16.1A8.1 8.1 0 0 0 160 106v50a60 60 0 1 1-80-56.6v26.7a36 36 0 1 0 56 29.9V36h24.5A64.1 64.1 0 0 0 216 91.5Z"/><!-- HTML_TAG_END --></svg></a>
+    <a href="mailto:site@ihtfy.com" target="_blank" rel="norel noreferrer" aria-label="email" class="svelte-10ww2eq"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path fill="currentColor" d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8Zm-83.9 74L128 133.1L52.6 64h150.8Zm-41.4 6L40 181.8V74.2Zm11.8 10.9l12.1 11a8 8 0 0 0 10.8 0l12.1-11l57.9 53.1H52.6Zm46.8-10.9L216 74.2v107.6Z"/><!-- HTML_TAG_END --></svg></a></div>
+  <p class="svelte-10ww2eq">Copyright © 2022
+    <a class="hl svelte-10ww2eq" href="https://github.com/IHTFY/">IHTFY</a></p>
+</footer>
+</main>
+
+
+		<script type="module" data-hydrate="ssy7he">
+		import { start } from "/_app/start-355b8495.js";
+		start({
+			target: document.querySelector('[data-hydrate="ssy7he"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-457702de.js"),
+						import("/_app/pages/post/hotel-acs/index.svx-d1ca4e11.js")
+				],
+				params: {}
+			}
+		});
+	</script></div>
+  </body>
+</html>
