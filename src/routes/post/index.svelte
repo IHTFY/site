@@ -1,7 +1,7 @@
 <script context="module">
 export const prerender = true;
 export async function load({ fetch }) {
-  const posts = await (await fetch(`/api/post.json`)).json();
+  const posts = await (await fetch(`/api/post.json?limit=-1`)).json();
   return { props: { posts } };
 }
 </script>
