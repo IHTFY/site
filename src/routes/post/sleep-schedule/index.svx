@@ -2,7 +2,6 @@
 draft: false
 title: "sleep schedule"
 date: "2022-01-20"
-coverImage: "image_editor_output_image-862649385-1642747108548.jpg"
 desc: I stay up
 tags:
   - random

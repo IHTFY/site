@@ -9,7 +9,6 @@ export interface ResourceMetadata {
   draft: boolean;
   title: string;
   date: string;
-  coverImage: string;
   desc: string;
   tags: Array<string>;
   demo: string;

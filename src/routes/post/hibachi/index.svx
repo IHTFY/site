@@ -2,7 +2,6 @@
 draft: false
 title: "Hibachi"
 date: "2022-01-03"
-coverImage: "20220103_220815.jpg"
 desc: Went out to a hibachi place
 tags:
   - food

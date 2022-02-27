@@ -2,7 +2,6 @@
 draft: false
 title: "globes"
 date: "2015-09-15"
-coverImage: "beach.jpg"
 desc: Spherical panoramas
 tags:
   - photography

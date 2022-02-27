@@ -131,6 +131,7 @@ html,
 body {
   height: 100%;
   height: 100%;
+  transition: 250ms;
 }
 
 html {

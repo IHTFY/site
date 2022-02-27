@@ -2,7 +2,6 @@
 draft: false
 title: "standalone"
 date: "2022-01-09"
-coverImage: "standalone.jpg"
 desc: Making Empire an installable app
 tags:
   - code

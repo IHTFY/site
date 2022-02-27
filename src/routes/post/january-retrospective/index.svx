@@ -2,7 +2,6 @@
 draft: false
 title: "january retrospective"
 date: "2022-01-31"
-coverImage: "january-retrospective.jpg"
 desc: How did I do in January?
 tags:
   - review

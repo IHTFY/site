@@ -2,7 +2,6 @@
 draft: false
 title: "point"
 date: "2016-01-07"
-coverImage: "points2000x1500.png"
 desc: Gernerative art using Processing
 tags:
   - code

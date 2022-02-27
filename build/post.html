@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#20263a" />
+    <meta name="supported-color-scheme" content="dark light" />
+    <meta name="color-scheme" content="light dark" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://blog.ihtfy.com/rss.xml"
+    />
+
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
+    <link rel="icon" href="/logo.svg" />
+    <link rel="mask-icon" href="/logo.svg" color="#000000"/>
+    <link rel="apple-touch-icon" href="/logo192.png" />
+
+    <meta http-equiv="content-security-policy" content=""><title>Posts | IHTFY</title><script data-svelte="svelte-1xtfmqk">// set dark mode correctly before everythings get rendered
+  // thanks https://github.com/pveyes
+  try {
+    // prettier-ignore
+    const { matches: isDarkMode } = window.matchMedia( "(prefers-color-scheme: dark)")
+
+    const theme = localStorage.getItem('theme');
+    let preference = theme || (isDarkMode ? 'dark' : 'light');
+
+    // prettier-ignore
+    if (preference) document.documentElement.setAttribute("data-theme", preference)
+  } catch (err) {
+    console.error(err);
+  }
+  </script><link rel="canonical" href="https://blog.ihtfy.com//post" data-svelte="svelte-1r0yd13"><meta name="description" content="IHTFY&#39;s personal website" data-svelte="svelte-1r0yd13"><meta name="keywords" content="personal,website,blog,article" data-svelte="svelte-1r0yd13"><meta property="og:type" content="website" data-svelte="svelte-1r0yd13"><meta property="og:url" content="https://blog.ihtfy.com//post" data-svelte="svelte-1r0yd13"><meta property="og:title" content="Posts" data-svelte="svelte-1r0yd13"><meta property="og:description" content="IHTFY&#39;s personal website" data-svelte="svelte-1r0yd13"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/51877647?s=240&amp;v=4" data-svelte="svelte-1r0yd13"><meta property="twitter:card" content="summary" data-svelte="svelte-1r0yd13"><meta property="twitter:url" content="https://blog.ihtfy.com//post" data-svelte="svelte-1r0yd13"><meta property="twitter:title" content="Posts" data-svelte="svelte-1r0yd13"><meta property="twitter:description" content="IHTFY&#39;s personal website" data-svelte="svelte-1r0yd13">
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-222ff49e.css">
+	<link rel="stylesheet" href="/_app/assets/pages/post/index.svelte-32092644.css">
+	<link rel="stylesheet" href="/_app/assets/Progress-a5e343ff.css">
+	<link rel="stylesheet" href="/_app/assets/PostCard-84d8ee75.css">
+	<link rel="modulepreload" href="/_app/start-355b8495.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-4e826582.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-457702de.js">
+	<link rel="modulepreload" href="/_app/chunks/stores-e638db0f.js">
+	<link rel="modulepreload" href="/_app/pages/post/index.svelte-fde9b449.js">
+	<link rel="modulepreload" href="/_app/chunks/Progress-16f77af8.js">
+	<link rel="modulepreload" href="/_app/chunks/PostCard-89968b26.js">
+				<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/service-worker.js');
+		}
+	</script>
+  </head>
+  <body>
+    <div id="svelte">
+
+
+
+
+<nav class="navbar svelte-1xlbyhi"><div class="navbar__container svelte-1xlbyhi"><div class="navbar__title svelte-1xlbyhi"><a href="/" aria-label="logo" class="svelte-1xlbyhi"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 14 14" class="logo__icon" fill="none" stroke="#21326D"><path d="M4 2l8 5l0 6l-10-12l10 0l-10 12l0-6l8-5" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"></path></svg></a></div>
+    <ul class="navbar__items svelte-1xlbyhi"><li class="navbar__item svelte-1xlbyhi" data-testid="home"><a href="/" class="svelte-1xlbyhi">Home</a></li>
+      <li class="navbar__item svelte-1xlbyhi" data-testid="posts"><a href="/post" class="svelte-1xlbyhi">Posts</a></li>
+      <li class="navbar__item svelte-1xlbyhi" data-testid="projects"><a href="/project" class="svelte-1xlbyhi">Projects</a></li>
+      <li class="navbar__item svelte-1xlbyhi" data-testid="about"><a href="/about" class="svelte-1xlbyhi">About</a></li>
+      <li class="navbar__item svelte-1xlbyhi"><input id="toggle" class="toggle svelte-1ksug19" type="checkbox"></li></ul>
+    <div class="navbar__hamburger svelte-1xlbyhi" data-testid="hamburger-navigation"><input class="navbar__checkbox svelte-1xlbyhi" type="checkbox"  aria-label="toggle menu">
+      <span class="navbar__hamburger_item--1 svelte-1xlbyhi"></span>
+      <span class="navbar__hamburger_item--2 svelte-1xlbyhi"></span>
+      <span class="navbar__hamburger_item--3 svelte-1xlbyhi"></span></div></div></nav>
+
+<main class="svelte-tfxsok">
+  <div class="svelte-tfxsok">
+
+<section class="posts svelte-14y56hp"><h1 class="posts__title svelte-14y56hp">All Posts</h1>
+  <div class="post__input svelte-14y56hp"><input class="input__box svelte-14y56hp" id="posts__input" type="text" placeholder="Find post... (start with # to find tags)" aria-label="search post">
+    </div>
+  
+  <div class="posts__cards svelte-14y56hp"><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/parallel" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/parallel/cover.jpg" alt="parallel" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">parallel</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 25, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->A funny way to screenshot a page<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">website</span><span class="card__tag svelte-h2xrrj" data-testid="tag">design</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/plan" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/plan/cover.jpg" alt="plan" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">plan</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 24, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Working on my new site<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">design</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/another" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/another/cover.jpg" alt="another" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">another</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 23, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Redesigning my website<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">website</span><span class="card__tag svelte-h2xrrj" data-testid="tag">design</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/cents" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/cents/cover.jpg" alt="cents" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">cents</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 22, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Thinking about ads<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">design</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/vortex" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/vortex/cover.jpg" alt="vortex" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">vortex</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 21, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Finished the vortex math thing<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">math</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/overflow" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/overflow/cover.jpg" alt="overflow" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">overflow</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 20, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Working on a Mathologer challenge<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">math</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/migrating" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/migrating/cover.jpg" alt="migrating" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">migrating</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 19, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Moving my site to github<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">design</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/simplify" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/simplify/cover.jpg" alt="simplify" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">simplify</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 18, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Compressing my SVG logo<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">design</span><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/theming" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/theming/cover.jpg" alt="theming" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">theming</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 17, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Remaking the calendar maker<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">design</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/reredo" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/reredo/cover.jpg" alt="reredo" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">reredo</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 16, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Redoing the calendar maker again<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">design</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/late" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/late/cover.jpg" alt="late" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">late</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 15, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Posting late<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/forgot" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/forgot/cover.jpg" alt="forgot" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">forgot</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 14, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->I forgot to post<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/pseudorandom" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/pseudorandom/cover.jpg" alt="pseudorandom" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">pseudorandom</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 13, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Playing around with crypto - No, not currency<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">math</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/compression" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/compression/cover.jpg" alt="compression" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">compression</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 12, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->How LZ string compression works<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">tutorial</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/calendar-progress" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/calendar-progress/cover.jpg" alt="calendar progress" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">calendar progress</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 11, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Working on a calendar maker<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/plates" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/plates/cover.jpg" alt="plates" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">plates</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 10, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Installing a tow hook mounted license plate<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">project</span><span class="card__tag svelte-h2xrrj" data-testid="tag">review</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/cheese" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/cheese/cover.jpg" alt="cheese" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">cheese</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 9, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->12 year aged cheese<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span><span class="card__tag svelte-h2xrrj" data-testid="tag">photography</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/cat" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/cat/cover.jpg" alt="cat" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">cat</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 8, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->A cat ate a birdie<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/shortner" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/shortner/cover.jpg" alt="shortner" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">shortner</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 7, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->How to get custom short URLs<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/anodize" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/anodize/cover.jpg" alt="anodize" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">anodize</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 6, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Taking a blow torch to a paperclip<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">science</span><span class="card__tag svelte-h2xrrj" data-testid="tag">experiment</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/hdd" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/hdd/cover.jpg" alt="hdd" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">hdd</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 5, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Testing some external hard drives<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">review</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/redo" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/redo/cover.jpg" alt="redo" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">redo</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 4, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Restarting the calendar maker<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">design</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/livestreams" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/livestreams/cover.jpg" alt="livestreams" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">livestreams</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 3, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->How to save livestreams<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">tutorial</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/soundcloud-likes" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/soundcloud-likes/cover.jpg" alt="soundcloud likes" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">soundcloud likes</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 2, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->How to archive all your soundcloud likes<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">tutorial</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/lingo" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/lingo/cover.jpg" alt="lingo" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">lingo</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">February 1, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Wordle is trending<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">gaming</span><span class="card__tag svelte-h2xrrj" data-testid="tag">review</span><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/january-retrospective" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/january-retrospective/cover.jpg" alt="january retrospective" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">january retrospective</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 31, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->How did I do in January?<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">review</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/imslp" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/imslp/cover.jpg" alt="imslp" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">imslp</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 30, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->The place for classical sheet music<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">music</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/444" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/444/cover.jpg" alt="444" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">444</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 29, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Wendy's 4 for 4<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/logo" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/logo/cover.jpg" alt="logo" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">logo</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 28, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Thinking of a new logo<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">design</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/fractal" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/fractal/cover.jpg" alt="fractal" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">fractal</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 27, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Making a fractal viewer to arbitrary depth<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">math</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/asphalt" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/asphalt/cover.jpg" alt="asphalt" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">asphalt</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 26, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->An iPad racing game<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">gaming</span><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/dash-cam" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/dash-cam/cover.jpg" alt="dash cam" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">dash cam</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 25, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Installing a dash cam<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/panorama-scroll" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/panorama-scroll/cover.jpg" alt="panorama scroll" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">panorama scroll</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 24, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->A funny way to screenshot a page<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">hack</span><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/watching-videos" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/watching-videos/cover.jpg" alt="watching videos" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">watching videos</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 23, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Learning about sveltekit<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/headache" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/headache/cover.jpg" alt="headache" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">headache</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 22, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Head hurts<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/oil-change" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/oil-change/cover.jpg" alt="oil change" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">oil change</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 21, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->My car hit 100000<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/sleep-schedule" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/sleep-schedule/cover.jpg" alt="sleep schedule" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">sleep schedule</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 20, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->I stay up<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/blank" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/blank/cover.jpg" alt="blank" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">blank</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 19, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/milk-tea-doppelgangers" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/milk-tea-doppelgangers/cover.jpg" alt="milk tea doppelgangers" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">milk tea doppelgangers</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 18, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Milktea is cereal milk<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span><span class="card__tag svelte-h2xrrj" data-testid="tag">food</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/sveltekit" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/sveltekit/cover.jpg" alt="sveltekit" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">sveltekit</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 17, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->About to start the calendar maker<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/lazy-sunday" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/lazy-sunday/cover.jpg" alt="lazy sunday" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">lazy sunday</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 16, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Not a real post<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/chess-engine" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/chess-engine/cover.jpg" alt="chess engine" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">chess engine</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 15, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Making a chess engine<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/pwa" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/pwa/cover.jpg" alt="PWA" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">PWA</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 14, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Making the Knight Puzzle a PWA<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">gaming</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/offline" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/offline/cover.jpg" alt="offline" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">offline</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 13, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Turning Optics into a PWA<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">gaming</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/days-go-by" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/days-go-by/cover.jpg" alt="days go by" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">days go by</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 12, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->A sunset<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span><span class="card__tag svelte-h2xrrj" data-testid="tag">photography</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/hotel-acs" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/hotel-acs/cover.jpg" alt="Hotel ACs" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">Hotel ACs</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 11, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->How to hack hotel air conditioning<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">hack</span><span class="card__tag svelte-h2xrrj" data-testid="tag">project</span><span class="card__tag svelte-h2xrrj" data-testid="tag">tutorial</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/hotel-tvs" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/hotel-tvs/cover.jpg" alt="hotel tvs" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">hotel tvs</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 10, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Hacking the hotel TV<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">hack</span><span class="card__tag svelte-h2xrrj" data-testid="tag">tutorial</span><span class="card__tag svelte-h2xrrj" data-testid="tag">experiment</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/standalone" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/standalone/cover.jpg" alt="standalone" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">standalone</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 9, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Making Empire an installable app<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">gaming</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/tabs" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/tabs/cover.jpg" alt="Tabs" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">Tabs</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 8, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Adding navigation to Empire<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/taco-dip" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/taco-dip/cover.jpg" alt="Taco Dip" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">Taco Dip</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 7, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->I made taco dip<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">food</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/drunken-crawfish" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/drunken-crawfish/cover.jpg" alt="Drunken Crawfish" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">Drunken Crawfish</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 6, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Stix Grill & Bar in Fremont, CA<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span><span class="card__tag svelte-h2xrrj" data-testid="tag">food</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/early-bird" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/early-bird/cover.jpg" alt="Early Bird" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">Early Bird</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 5, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Installing car floor mats<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/westward" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/westward/cover.jpg" alt="Westward" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">Westward</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 4, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Flew back to California<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/hibachi" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/hibachi/cover.jpg" alt="Hibachi" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">Hibachi</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 3, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Went out to a hibachi place<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">food</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/winter-drone" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/winter-drone/cover.jpg" alt="Winter Drone" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">Winter Drone</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 2, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->I took pictures from the sky<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">photography</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/happy-new-year" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/happy-new-year/cover.jpg" alt="Happy New Year" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">Happy New Year</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 1, 2022</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Starting daily posts<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">random</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/games" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/games/cover.jpg" alt="Games" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">Games</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">July 15, 2021</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Here are some web games I've made<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">gaming</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/knight" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/knight/cover.jpg" alt="Knight" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">Knight</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">March 15, 2021</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->I made a chess puzzle game<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">gaming</span><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/workout" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/workout/cover.jpg" alt="Workout" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">Workout</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">March 15, 2021</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->I made a workout tracker<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/youtube-speeds-faster-than-2x" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/youtube-speeds-faster-than-2x/cover.jpg" alt="YouTube Speeds Faster Than 2x" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">YouTube Speeds Faster Than 2x</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">June 8, 2019</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->How to watch YouTube even faster<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">tutorial</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/grey" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/grey/cover.jpg" alt="grey" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">grey</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">September 29, 2017</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->A tiny planet<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">photography</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/albinogator" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/albinogator/cover.jpg" alt="albinogator" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">albinogator</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">August 22, 2017</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->A panorama of an alligator<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">photography</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/point" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/point/cover.jpg" alt="point" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">point</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">January 7, 2016</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Gernerative art using Processing<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">art</span><span class="card__tag svelte-h2xrrj" data-testid="tag">math</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/ana-raw" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/ana-raw/cover.jpg" alt="ana raw" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">ana raw</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">October 18, 2015</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->More music I made for another of my sister's fashion shows<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">music</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/ana-mke" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/ana-mke/cover.jpg" alt="ana mke" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">ana mke</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">September 28, 2015</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Music I made for my sister's fashion show in 2015<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">music</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/globes" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/globes/cover.jpg" alt="globes" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">globes</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">September 15, 2015</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Spherical panoramas<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">photography</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/prime" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/prime/cover.jpg" alt="prime" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">prime</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">August 29, 2015</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->Plotting twin primes<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">code</span><span class="card__tag svelte-h2xrrj" data-testid="tag">art</span><span class="card__tag svelte-h2xrrj" data-testid="tag">math</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/mmfunk" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/mmfunk/cover.jpg" alt="mmfunk" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">mmfunk</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">August 3, 2015</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->The first remix I made<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">music</span></div></div></a>
+</div><div class="card svelte-h2xrrj"><a rel="prefetch" href="/post/wire" class="svelte-h2xrrj"><img class="card__img svelte-h2xrrj" src="/assets/post/wire/cover.jpg" alt="wire" loading="lazy" data-testid="img">
+    <div class="card__details svelte-h2xrrj"><span class="card__title svelte-h2xrrj" data-testid="title">wire</span>
+      <div class="card__date svelte-h2xrrj"><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" className="date__icon"><!-- HTML_TAG_START --><path fill="currentColor" d="M208 28h-20v-8a12 12 0 0 0-24 0v8H92v-8a12 12 0 0 0-24 0v8H48a20.1 20.1 0 0 0-20 20v160a20.1 20.1 0 0 0 20 20h160a20.1 20.1 0 0 0 20-20V48a20.1 20.1 0 0 0-20-20Zm-4 24v24H52V52ZM52 204V100h152v104Z"/><!-- HTML_TAG_END --></svg>
+        <span class="date__label" data-testid="date">July 27, 2015</span></div>
+      <p class="card__desc svelte-h2xrrj" data-testid="desc"><!-- HTML_TAG_START -->My first wire wrappings<!-- HTML_TAG_END --></p>
+      <div class="card__tags svelte-h2xrrj"><span class="card__tag svelte-h2xrrj" data-testid="tag">art</span></div></div></a>
+</div></div></section>
+
+
+</div>
+  <footer class="svelte-10ww2eq"><div class="icons svelte-10ww2eq"><a href="https://www.youtube.com/user/ihopethisfindsyou" target="_blank" rel="norel noreferrer" aria-label="youtube" class="svelte-10ww2eq"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path fill="currentColor" d="m164.4 121.3l-48-32a8.3 8.3 0 0 0-8.2-.4A8 8 0 0 0 104 96v64a8 8 0 0 0 4.2 7.1a8.5 8.5 0 0 0 3.8.9a8.4 8.4 0 0 0 4.4-1.3l48-32a8 8 0 0 0 0-13.4ZM120 145.1v-34.2l25.6 17.1Zm114.3-75.3a23.5 23.5 0 0 0-14.5-16.3C185.6 40.3 131 40.4 128 40.4s-57.6-.1-91.8 13.1a23.5 23.5 0 0 0-14.5 16.3C19.1 79.7 16 97.9 16 128s3.1 48.3 5.7 58.2a23.5 23.5 0 0 0 14.5 16.3c32.8 12.7 84.2 13.1 91.1 13.1h1.4c6.9 0 58.3-.4 91.1-13.1a23.5 23.5 0 0 0 14.5-16.3c2.6-9.9 5.7-28.1 5.7-58.2s-3.1-48.3-5.7-58.2Zm-15.5 112.4a7.8 7.8 0 0 1-4.7 5.4c-31.7 12.2-85.5 12-86.1 12h-.1c-.5 0-54.3.2-86-12a7.8 7.8 0 0 1-4.7-5.4c-2.4-9.1-5.2-25.8-5.2-54.2s2.8-45.1 5.2-54.2a7.8 7.8 0 0 1 4.7-5.4c30.5-11.7 81.7-12 85.9-12h.2c.6 0 54.4-.2 86.1 12a7.8 7.8 0 0 1 4.7 5.4c2.4 9.1 5.2 25.8 5.2 54.2s-2.8 45.1-5.2 54.2Z"/><!-- HTML_TAG_END --></svg></a>
+    <a href="https://github.com/IHTFY/" target="_blank" rel="norel noreferrer" aria-label="github" class="svelte-10ww2eq"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path fill="currentColor" d="M216 216a16 16 0 0 1-16-16v-8a32.1 32.1 0 0 0-14.8-27a55.8 55.8 0 0 0 22.8-45v-8a58 58 0 0 0-7.7-28.3a59.9 59.9 0 0 0-5.4-47.7a7.8 7.8 0 0 0-6.9-4a59.7 59.7 0 0 0-48 24h-24a59.7 59.7 0 0 0-48-24a7.8 7.8 0 0 0-6.9 4a59.9 59.9 0 0 0-5.4 47.7A58 58 0 0 0 48 112v8a55.8 55.8 0 0 0 22.8 45A32.1 32.1 0 0 0 56 192v8a16 16 0 0 1-16 16a8 8 0 0 0 0 16a32.1 32.1 0 0 0 32-32v-8a16 16 0 0 1 16-16h12v40a16 16 0 0 1-16 16a8 8 0 0 0 0 16a32.1 32.1 0 0 0 32-32v-40h24v40a32.1 32.1 0 0 0 32 32a8 8 0 0 0 0-16a16 16 0 0 1-16-16v-40h12a16 16 0 0 1 16 16v8a32.1 32.1 0 0 0 32 32a8 8 0 0 0 0-16ZM64 120v-8a42.7 42.7 0 0 1 6.9-22.5a7.9 7.9 0 0 0 1.1-7.7a43.7 43.7 0 0 1 .8-33.5a43.6 43.6 0 0 1 32.3 20a8 8 0 0 0 6.7 3.7h32.4a8 8 0 0 0 6.7-3.7a43.6 43.6 0 0 1 32.3-20a43.7 43.7 0 0 1 .8 33.5a8.2 8.2 0 0 0 1.1 7.7A42.7 42.7 0 0 1 192 112v8a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40Z"/><!-- HTML_TAG_END --></svg></a>
+    <a href="https://www.instagram.com/ihtfy/" target="_blank" rel="norel noreferrer" aria-label="instagram" class="svelte-10ww2eq"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path fill="currentColor" d="M128 80a48 48 0 1 0 48 48a48 48 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32a32.1 32.1 0 0 1-32 32Zm44-132H84a56 56 0 0 0-56 56v88a56 56 0 0 0 56 56h88a56 56 0 0 0 56-56V84a56 56 0 0 0-56-56Zm40 144a40 40 0 0 1-40 40H84a40 40 0 0 1-40-40V84a40 40 0 0 1 40-40h88a40 40 0 0 1 40 40Zm-20-96a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z"/><!-- HTML_TAG_END --></svg></a>
+    <a href="https://twitter.com/@ihtfy/" target="_blank" rel="norel noreferrer" aria-label="twitter" class="svelte-10ww2eq"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path fill="currentColor" d="M247.4 68.9A8 8 0 0 0 240 64h-30.4a47.8 47.8 0 0 0-75.2-10.1A47.7 47.7 0 0 0 120 88v6.1C79.3 83.5 46 50.7 45.7 50.3a8 8 0 0 0-8.1-1.9a8.1 8.1 0 0 0-5.5 6.2c-8.7 48.2 5.8 80.5 19.5 99.1a108.6 108.6 0 0 0 24.7 24.4c-15.3 17.3-38.9 26.3-39.1 26.4a8 8 0 0 0-3.9 11.9c.8 1.2 3.8 5.1 11.1 8.8c9.1 4.5 21.1 6.8 35.6 6.8c70.5 0 129.5-54.3 135.5-124.2l30.2-30.1a8.4 8.4 0 0 0 1.7-8.8Zm-45.3 29.7a7.8 7.8 0 0 0-2.3 5.2C195.7 166.7 143.1 216 80 216c-10.6 0-18-1.4-23.2-3.1c11.5-6.2 27.5-17 37.9-32.5a8 8 0 0 0 1-6.4a8.1 8.1 0 0 0-4.1-5.1c-.1-.1-14.9-7.8-27.6-25.3c-14.4-19.8-20.5-43.9-18.1-71.7c15.8 13 46 34.2 80.8 40a8.1 8.1 0 0 0 6.5-1.8a8.2 8.2 0 0 0 2.8-6.1V88a32 32 0 0 1 61.3-12.8a8.1 8.1 0 0 0 7.4 4.8h16Z"/><!-- HTML_TAG_END --></svg></a>
+    <a href="https://www.tiktok.com/@ihtfy" target="_blank" rel="norel noreferrer" aria-label="tiktok" class="svelte-10ww2eq"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path fill="currentColor" d="M224 76a48 48 0 0 1-48-48a8 8 0 0 0-8-8h-40a8 8 0 0 0-8 8v128a20 20 0 1 1-28.6-18.1a7.9 7.9 0 0 0 4.6-7.2V89.1a7.8 7.8 0 0 0-2.9-6.2a8 8 0 0 0-6.5-1.7A76 76 0 1 0 176 156v-35.7a103.2 103.2 0 0 0 48 11.7a8 8 0 0 0 8-8V84a8 8 0 0 0-8-8Zm-8 39.6a87.4 87.4 0 0 1-43.3-16.1A8.1 8.1 0 0 0 160 106v50a60 60 0 1 1-80-56.6v26.7a36 36 0 1 0 56 29.9V36h24.5A64.1 64.1 0 0 0 216 91.5Z"/><!-- HTML_TAG_END --></svg></a>
+    <a href="mailto:site@ihtfy.com" target="_blank" rel="norel noreferrer" aria-label="email" class="svelte-10ww2eq"><svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><!-- HTML_TAG_START --><path fill="currentColor" d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8Zm-83.9 74L128 133.1L52.6 64h150.8Zm-41.4 6L40 181.8V74.2Zm11.8 10.9l12.1 11a8 8 0 0 0 10.8 0l12.1-11l57.9 53.1H52.6Zm46.8-10.9L216 74.2v107.6Z"/><!-- HTML_TAG_END --></svg></a></div>
+  <p class="svelte-10ww2eq">Copyright © 2022
+    <a class="hl svelte-10ww2eq" href="https://github.com/IHTFY/">IHTFY</a></p>
+</footer>
+</main>
+
+
+		<script type="module" data-hydrate="1tnwmhw">
+		import { start } from "/_app/start-355b8495.js";
+		start({
+			target: document.querySelector('[data-hydrate="1tnwmhw"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-457702de.js"),
+						import("/_app/pages/post/index.svelte-fde9b449.js")
+				],
+				params: {}
+			}
+		});
+	</script><script type="application/json" data-type="svelte-data" data-url="/api/post.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"[{\"draft\":false,\"title\":\"parallel\",\"date\":\"2022-02-25\",\"desc\":\"A funny way to screenshot a page\",\"tags\":[\"website\",\"design\"],\"slug\":\"parallel\"},{\"draft\":false,\"title\":\"plan\",\"date\":\"2022-02-24\",\"desc\":\"Working on my new site\",\"tags\":[\"code\",\"design\"],\"slug\":\"plan\"},{\"draft\":false,\"title\":\"another\",\"date\":\"2022-02-23\",\"desc\":\"Redesigning my website\",\"tags\":[\"code\",\"website\",\"design\"],\"slug\":\"another\"},{\"draft\":false,\"title\":\"cents\",\"date\":\"2022-02-22\",\"desc\":\"Thinking about ads\",\"tags\":[\"design\"],\"slug\":\"cents\"},{\"draft\":false,\"title\":\"vortex\",\"date\":\"2022-02-21\",\"desc\":\"Finished the vortex math thing\",\"tags\":[\"code\",\"math\"],\"slug\":\"vortex\"},{\"draft\":false,\"title\":\"overflow\",\"date\":\"2022-02-20\",\"desc\":\"Working on a Mathologer challenge\",\"tags\":[\"code\",\"math\"],\"slug\":\"overflow\"},{\"draft\":false,\"title\":\"migrating\",\"date\":\"2022-02-19\",\"desc\":\"Moving my site to github\",\"tags\":[\"code\",\"design\"],\"slug\":\"migrating\"},{\"draft\":false,\"title\":\"simplify\",\"date\":\"2022-02-18\",\"desc\":\"Compressing my SVG logo\",\"tags\":[\"design\",\"code\"],\"slug\":\"simplify\"},{\"draft\":false,\"title\":\"theming\",\"date\":\"2022-02-17\",\"desc\":\"Remaking the calendar maker\",\"tags\":[\"code\",\"design\"],\"slug\":\"theming\"},{\"draft\":false,\"title\":\"reredo\",\"date\":\"2022-02-16\",\"desc\":\"Redoing the calendar maker again\",\"tags\":[\"code\",\"design\"],\"slug\":\"reredo\"},{\"draft\":false,\"title\":\"late\",\"date\":\"2022-02-15\",\"desc\":\"Posting late\",\"tags\":[\"random\"],\"slug\":\"late\"},{\"draft\":false,\"title\":\"forgot\",\"date\":\"2022-02-14\",\"desc\":\"I forgot to post\",\"tags\":[\"random\"],\"slug\":\"forgot\"},{\"draft\":false,\"title\":\"pseudorandom\",\"date\":\"2022-02-13\",\"desc\":\"Playing around with crypto - No, not currency\",\"tags\":[\"code\",\"math\"],\"slug\":\"pseudorandom\"},{\"draft\":false,\"title\":\"compression\",\"date\":\"2022-02-12\",\"desc\":\"How LZ string compression works\",\"tags\":[\"code\",\"tutorial\"],\"slug\":\"compression\"},{\"draft\":false,\"title\":\"calendar progress\",\"date\":\"2022-02-11\",\"desc\":\"Working on a calendar maker\",\"tags\":[\"code\"],\"slug\":\"calendar-progress\"},{\"draft\":false,\"title\":\"plates\",\"date\":\"2022-02-10\",\"desc\":\"Installing a tow hook mounted license plate\",\"tags\":[\"project\",\"review\"],\"slug\":\"plates\"},{\"draft\":false,\"title\":\"cheese\",\"date\":\"2022-02-09\",\"desc\":\"12 year aged cheese\",\"tags\":[\"random\",\"photography\"],\"slug\":\"cheese\"},{\"draft\":false,\"title\":\"cat\",\"date\":\"2022-02-08\",\"desc\":\"A cat ate a birdie\",\"tags\":[\"random\"],\"slug\":\"cat\"},{\"draft\":false,\"title\":\"shortner\",\"date\":\"2022-02-07\",\"desc\":\"How to get custom short URLs\",\"tags\":[\"code\"],\"slug\":\"shortner\"},{\"draft\":false,\"title\":\"anodize\",\"date\":\"2022-02-06\",\"desc\":\"Taking a blow torch to a paperclip\",\"tags\":[\"science\",\"experiment\"],\"slug\":\"anodize\"},{\"draft\":false,\"title\":\"hdd\",\"date\":\"2022-02-05\",\"desc\":\"Testing some external hard drives\",\"tags\":[\"review\"],\"slug\":\"hdd\"},{\"draft\":false,\"title\":\"redo\",\"date\":\"2022-02-04\",\"desc\":\"Restarting the calendar maker\",\"tags\":[\"code\",\"design\"],\"slug\":\"redo\"},{\"draft\":false,\"title\":\"livestreams\",\"date\":\"2022-02-03\",\"desc\":\"How to save livestreams\",\"tags\":[\"code\",\"tutorial\"],\"slug\":\"livestreams\"},{\"draft\":false,\"title\":\"soundcloud likes\",\"date\":\"2022-02-02\",\"desc\":\"How to archive all your soundcloud likes\",\"tags\":[\"code\",\"tutorial\"],\"slug\":\"soundcloud-likes\"},{\"draft\":false,\"title\":\"lingo\",\"date\":\"2022-02-01\",\"desc\":\"Wordle is trending\",\"tags\":[\"gaming\",\"review\",\"code\"],\"slug\":\"lingo\"},{\"draft\":false,\"title\":\"january retrospective\",\"date\":\"2022-01-31\",\"desc\":\"How did I do in January?\",\"tags\":[\"review\"],\"slug\":\"january-retrospective\"},{\"draft\":false,\"title\":\"imslp\",\"date\":\"2022-01-30\",\"desc\":\"The place for classical sheet music\",\"tags\":[\"music\"],\"slug\":\"imslp\"},{\"draft\":false,\"title\":\"444\",\"date\":\"2022-01-29\",\"desc\":\"Wendy's 4 for 4\",\"tags\":[\"random\"],\"slug\":\"444\"},{\"draft\":false,\"title\":\"logo\",\"date\":\"2022-01-28\",\"desc\":\"Thinking of a new logo\",\"tags\":[\"design\"],\"slug\":\"logo\"},{\"draft\":false,\"title\":\"fractal\",\"date\":\"2022-01-27\",\"desc\":\"Making a fractal viewer to arbitrary depth\",\"tags\":[\"code\",\"math\"],\"slug\":\"fractal\"},{\"draft\":false,\"title\":\"asphalt\",\"date\":\"2022-01-26\",\"desc\":\"An iPad racing game\",\"tags\":[\"gaming\",\"random\"],\"slug\":\"asphalt\"},{\"draft\":false,\"title\":\"dash cam\",\"date\":\"2022-01-25\",\"desc\":\"Installing a dash cam\",\"tags\":[\"random\"],\"slug\":\"dash-cam\"},{\"draft\":false,\"title\":\"panorama scroll\",\"date\":\"2022-01-24\",\"desc\":\"A funny way to screenshot a page\",\"tags\":[\"hack\",\"random\"],\"slug\":\"panorama-scroll\"},{\"draft\":false,\"title\":\"watching videos\",\"date\":\"2022-01-23\",\"desc\":\"Learning about sveltekit\",\"tags\":[\"code\"],\"slug\":\"watching-videos\"},{\"draft\":false,\"title\":\"headache\",\"date\":\"2022-01-22\",\"desc\":\"Head hurts\",\"tags\":[\"random\"],\"slug\":\"headache\"},{\"draft\":false,\"title\":\"oil change\",\"date\":\"2022-01-21\",\"desc\":\"My car hit 100000\",\"tags\":[\"random\"],\"slug\":\"oil-change\"},{\"draft\":false,\"title\":\"sleep schedule\",\"date\":\"2022-01-20\",\"desc\":\"I stay up\",\"tags\":[\"random\"],\"slug\":\"sleep-schedule\"},{\"draft\":false,\"title\":\"blank\",\"date\":\"2022-01-19\",\"desc\":\"\",\"tags\":[\"random\"],\"slug\":\"blank\"},{\"draft\":false,\"title\":\"milk tea doppelgangers\",\"date\":\"2022-01-18\",\"desc\":\"Milktea is cereal milk\",\"tags\":[\"random\",\"food\"],\"slug\":\"milk-tea-doppelgangers\"},{\"draft\":false,\"title\":\"sveltekit\",\"date\":\"2022-01-17\",\"desc\":\"About to start the calendar maker\",\"tags\":[\"code\"],\"slug\":\"sveltekit\"},{\"draft\":false,\"title\":\"lazy sunday\",\"date\":\"2022-01-16\",\"desc\":\"Not a real post\",\"tags\":[\"random\"],\"slug\":\"lazy-sunday\"},{\"draft\":false,\"title\":\"chess engine\",\"date\":\"2022-01-15\",\"desc\":\"Making a chess engine\",\"tags\":[\"code\"],\"slug\":\"chess-engine\"},{\"draft\":false,\"title\":\"PWA\",\"date\":\"2022-01-14\",\"desc\":\"Making the Knight Puzzle a PWA\",\"tags\":[\"code\",\"gaming\"],\"slug\":\"pwa\"},{\"draft\":false,\"title\":\"offline\",\"date\":\"2022-01-13\",\"desc\":\"Turning Optics into a PWA\",\"tags\":[\"code\",\"gaming\"],\"slug\":\"offline\"},{\"draft\":false,\"title\":\"days go by\",\"date\":\"2022-01-12\",\"desc\":\"A sunset\",\"tags\":[\"random\",\"photography\"],\"slug\":\"days-go-by\"},{\"draft\":false,\"title\":\"Hotel ACs\",\"date\":\"2022-01-11\",\"desc\":\"How to hack hotel air conditioning\",\"tags\":[\"hack\",\"project\",\"tutorial\"],\"slug\":\"hotel-acs\"},{\"draft\":false,\"title\":\"hotel tvs\",\"date\":\"2022-01-10\",\"desc\":\"Hacking the hotel TV\",\"tags\":[\"hack\",\"tutorial\",\"experiment\"],\"slug\":\"hotel-tvs\"},{\"draft\":false,\"title\":\"standalone\",\"date\":\"2022-01-09\",\"desc\":\"Making Empire an installable app\",\"tags\":[\"code\",\"gaming\"],\"slug\":\"standalone\"},{\"draft\":false,\"title\":\"Tabs\",\"date\":\"2022-01-08\",\"desc\":\"Adding navigation to Empire\",\"tags\":[\"code\"],\"slug\":\"tabs\"},{\"draft\":false,\"title\":\"Taco Dip\",\"date\":\"2022-01-07\",\"desc\":\"I made taco dip\",\"tags\":[\"food\"],\"slug\":\"taco-dip\"},{\"draft\":false,\"title\":\"Drunken Crawfish\",\"date\":\"2022-01-06\",\"desc\":\"Stix Grill & Bar in Fremont, CA\",\"tags\":[\"random\",\"food\"],\"slug\":\"drunken-crawfish\"},{\"draft\":false,\"title\":\"Early Bird\",\"date\":\"2022-01-05\",\"desc\":\"Installing car floor mats\",\"tags\":[\"random\"],\"slug\":\"early-bird\"},{\"draft\":false,\"title\":\"Westward\",\"date\":\"2022-01-04\",\"desc\":\"Flew back to California\",\"tags\":[\"random\"],\"slug\":\"westward\"},{\"draft\":false,\"title\":\"Hibachi\",\"date\":\"2022-01-03\",\"desc\":\"Went out to a hibachi place\",\"tags\":[\"food\"],\"slug\":\"hibachi\"},{\"draft\":false,\"title\":\"Winter Drone\",\"date\":\"2022-01-02\",\"desc\":\"I took pictures from the sky\",\"tags\":[\"photography\"],\"slug\":\"winter-drone\"},{\"draft\":false,\"title\":\"Happy New Year\",\"date\":\"2022-01-01\",\"desc\":\"Starting daily posts\",\"tags\":[\"random\"],\"slug\":\"happy-new-year\"},{\"draft\":false,\"title\":\"Games\",\"date\":\"2021-07-15\",\"desc\":\"Here are some web games I've made\",\"tags\":[\"code\",\"gaming\"],\"slug\":\"games\"},{\"draft\":false,\"title\":\"Knight\",\"date\":\"2021-03-15\",\"desc\":\"I made a chess puzzle game\",\"tags\":[\"gaming\",\"code\"],\"slug\":\"knight\"},{\"draft\":false,\"title\":\"Workout\",\"date\":\"2021-03-15\",\"desc\":\"I made a workout tracker\",\"tags\":[\"code\"],\"slug\":\"workout\"},{\"draft\":false,\"title\":\"YouTube Speeds Faster Than 2x\",\"date\":\"2019-06-08\",\"desc\":\"How to watch YouTube even faster\",\"tags\":[\"code\",\"tutorial\"],\"slug\":\"youtube-speeds-faster-than-2x\"},{\"draft\":false,\"title\":\"grey\",\"date\":\"2017-09-29\",\"desc\":\"A tiny planet\",\"tags\":[\"photography\"],\"slug\":\"grey\"},{\"draft\":false,\"title\":\"albinogator\",\"date\":\"2017-08-22\",\"desc\":\"A panorama of an alligator\",\"tags\":[\"photography\"],\"slug\":\"albinogator\"},{\"draft\":false,\"title\":\"point\",\"date\":\"2016-01-07\",\"desc\":\"Gernerative art using Processing\",\"tags\":[\"code\",\"art\",\"math\"],\"slug\":\"point\"},{\"draft\":false,\"title\":\"ana raw\",\"date\":\"2015-10-18\",\"desc\":\"More music I made for another of my sister's fashion shows\",\"tags\":[\"music\"],\"slug\":\"ana-raw\"},{\"draft\":false,\"title\":\"ana mke\",\"date\":\"2015-09-28\",\"desc\":\"Music I made for my sister's fashion show in 2015\",\"tags\":[\"music\"],\"slug\":\"ana-mke\"},{\"draft\":false,\"title\":\"globes\",\"date\":\"2015-09-15\",\"desc\":\"Spherical panoramas\",\"tags\":[\"photography\"],\"slug\":\"globes\"},{\"draft\":false,\"title\":\"prime\",\"date\":\"2015-08-29\",\"desc\":\"Plotting twin primes\",\"tags\":[\"code\",\"art\",\"math\"],\"slug\":\"prime\"},{\"draft\":false,\"title\":\"mmfunk\",\"date\":\"2015-08-03\",\"desc\":\"The first remix I made\",\"tags\":[\"music\"],\"slug\":\"mmfunk\"},{\"draft\":false,\"title\":\"wire\",\"date\":\"2015-07-27\",\"desc\":\"My first wire wrappings\",\"tags\":[\"art\"],\"slug\":\"wire\"}]"}</script></div>
+  </body>
+</html>

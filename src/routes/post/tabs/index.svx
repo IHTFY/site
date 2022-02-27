@@ -2,7 +2,6 @@
 draft: false
 title: "Tabs"
 date: "2022-01-08"
-coverImage: "tabs-1.jpg"
 desc: Adding navigation to Empire
 tags:
   - code

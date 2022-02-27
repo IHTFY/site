@@ -1,6 +1,6 @@
 <script lang="ts">
 import { fly, fade } from 'svelte/transition';
-import Moon from '$lib/components/Moon.svelte';
+import DarkSwitch from '$lib/components/DarkSwitch.svelte';
 import Logo from '$lib/icons/Logo.svelte';
 
 export let segment: string;
@@ -46,7 +46,7 @@ const toggleNav = () => {
         <a href="/about">About</a>
       </li>
       <li class="navbar__item">
-        <Moon />
+        <DarkSwitch />
       </li>
     </ul>
     <div
@@ -87,7 +87,7 @@ const toggleNav = () => {
         <a href="/about" on:click={toggleNav}>About</a>
       </li>
       <li class="navbar__mobile_item">
-        <Moon />
+        <DarkSwitch />
       </li>
     </ul>
   </div>

@@ -2,7 +2,6 @@
 draft: false
 title: "sveltekit"
 date: "2022-01-17"
-coverImage: "sveltekit.jpg"
 desc: About to start the calendar maker
 tags:
   - code

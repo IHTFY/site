@@ -2,7 +2,6 @@
 draft: false
 title: "blank"
 date: "2022-01-19"
-coverImage: "image_editor_output_image-902696991-1642659180485.jpg"
 desc: ""
 tags:
   - random

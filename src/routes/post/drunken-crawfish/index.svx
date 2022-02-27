@@ -2,7 +2,6 @@
 draft: false
 title: "Drunken Crawfish"
 date: "2022-01-06"
-coverImage: "20220106_221345.jpg"
 desc: Stix Grill & Bar in Fremont, CA
 tags:
   - random

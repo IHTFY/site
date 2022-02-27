@@ -2,7 +2,6 @@
 draft: false
 title: "logo"
 date: "2022-01-28"
-coverImage: "logowombo2.jpg"
 desc: Thinking of a new logo
 tags:
   - design

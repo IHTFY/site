@@ -2,7 +2,6 @@
 draft: false
 title: "calendar progress"
 date: "2022-02-11"
-coverImage: "calendar-progress.jpg"
 desc: Working on a calendar maker
 tags:
   - code

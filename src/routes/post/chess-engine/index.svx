@@ -2,7 +2,6 @@
 draft: false
 title: "chess engine"
 date: "2022-01-15"
-coverImage: "image_editor_output_image-1492837878-1642284155420.jpg"
 desc: Making a chess engine
 tags:
   - code

@@ -2,7 +2,6 @@
 draft: false
 title: "pseudorandom"
 date: "2022-02-13"
-coverImage: "pseudorandom.jpg"
 desc: Playing around with crypto - No, not currency
 tags:
   - code

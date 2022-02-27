@@ -2,7 +2,6 @@
 draft: false
 title: "Westward"
 date: "2022-01-04"
-coverImage: "20220104_202419.jpg"
 desc: Flew back to California
 tags:
   - random

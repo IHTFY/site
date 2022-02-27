@@ -2,7 +2,6 @@
 draft: false
 title: "lazy sunday"
 date: "2022-01-16"
-coverImage: "image_editor_output_image981234703-1642385216048.jpg"
 desc: Not a real post
 tags:
   - random

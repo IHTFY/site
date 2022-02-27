@@ -2,7 +2,6 @@
 draft: false
 title: "panorama scroll"
 date: "2022-01-24"
-coverImage: "image_editor_output_image431926342-1643089884637.jpg"
 desc: A funny way to screenshot a page
 tags:
   - hack

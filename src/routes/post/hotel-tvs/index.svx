@@ -2,7 +2,6 @@
 draft: false
 title: "hotel tvs"
 date: "2022-01-10"
-coverImage: "hotel-tvs.jpg"
 desc: Hacking the hotel TV
 tags:
   - hack

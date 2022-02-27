@@ -2,7 +2,6 @@
 draft: false
 title: "Early Bird"
 date: "2022-01-05"
-coverImage: "1641448764281.jpg"
 desc: Installing car floor mats
 tags:
   - random

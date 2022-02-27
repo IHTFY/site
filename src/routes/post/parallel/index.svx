@@ -2,7 +2,6 @@
 draft: false
 title: "parallel"
 date: "2022-02-25"
-coverImage: "parallel.jpg"
 desc: A funny way to screenshot a page
 tags:
   - website

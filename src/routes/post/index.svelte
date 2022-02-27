@@ -111,7 +111,6 @@ function filterPost({ currentTarget: { value } }) {
         desc={post.desc}
         date={post.date}
         tags={post.tags}
-        coverImage={post.coverImage}
       />
     {/each}
   </div>

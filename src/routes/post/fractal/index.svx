@@ -2,7 +2,6 @@
 draft: false
 title: "fractal"
 date: "2022-01-27"
-coverImage: "image_editor_output_image-195184571-1643350305083.jpg"
 desc: Making a fractal viewer to arbitrary depth
 tags:
   - code

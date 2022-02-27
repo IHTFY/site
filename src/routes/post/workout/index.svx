@@ -2,7 +2,6 @@
 draft: false
 title: "Workout"
 date: "2021-03-15"
-coverImage: "workoutthumb.png"
 desc: I made a workout tracker
 tags:
   - code

@@ -2,7 +2,6 @@
 draft: false
 title: "YouTube Speeds Faster Than 2x"
 date: "2019-06-08"
-coverImage: "use-1.png"
 desc: How to watch YouTube even faster
 tags:
   - code

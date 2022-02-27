@@ -2,7 +2,6 @@
 draft: false
 title: "offline"
 date: "2022-01-13"
-coverImage: "offline.jpg"
 desc: Turning Optics into a PWA
 tags:
   - code

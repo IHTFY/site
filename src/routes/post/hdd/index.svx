@@ -2,7 +2,6 @@
 draft: false
 title: "hdd"
 date: "2022-02-05"
-coverImage: "hdd.jpg"
 desc: Testing some external hard drives
 tags:
   - review

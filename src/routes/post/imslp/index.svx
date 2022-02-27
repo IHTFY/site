@@ -2,7 +2,6 @@
 draft: false
 title: "imslp"
 date: "2022-01-30"
-coverImage: "imslp.jpg"
 desc: The place for classical sheet music
 tags:
   - music

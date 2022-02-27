@@ -2,7 +2,6 @@
 draft: false
 title: "cents"
 date: "2022-02-22"
-coverImage: "cents.jpg"
 desc: Thinking about ads
 tags:
   - design

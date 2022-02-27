@@ -2,7 +2,6 @@
 draft: false
 title: "wire"
 date: "2015-07-27"
-coverImage: "z2000x1500.jpg"
 desc: My first wire wrappings
 tags:
   - art

@@ -2,7 +2,6 @@
 draft: false
 title: "theming"
 date: "2022-02-17"
-coverImage: "theming.jpg"
 desc: Remaking the calendar maker
 tags:
   - code

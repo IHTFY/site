@@ -2,7 +2,6 @@
 draft: false
 title: "simplify"
 date: "2022-02-18"
-coverImage: "simplify.jpg"
 desc: Compressing my SVG logo
 tags:
   - design
