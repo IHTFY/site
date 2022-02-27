@@ -17,15 +17,12 @@ export let projects: Array<any>;
 <SEO title="Projects" />
 
 <section class="projects">
-  <a href="/project#personal-projects">
-    <h1 id="personal-projects" class="projects__title">Personal Projects</h1>
+  <a href="/project#games">
+    <h1 id="games" class="projects__title">Games</h1>
   </a>
-  <p class="projects__desc">
-    These are some projects that I do on my free time. Almost all of my Github
-    projects are here, quite proud on some of them.
-  </p>
+  <p class="projects__desc">Web games that I have made.</p>
   <div class="projects__cards">
-    {#each projects.filter(p => p.type === 'personal') as project}
+    {#each projects.filter(p => p.type === 'game') as project}
       <ProjectCard
         title={project.title}
         imgSrc={`/assets/project/${project.slug}/cover.webp`}
@@ -36,16 +33,12 @@ export let projects: Array<any>;
       />
     {/each}
   </div>
-  <a href="/project#school-projects">
-    <h1 id="school-projects" class="projects__title">School Projects</h1>
+  <a href="/project#other">
+    <h1 id="other" class="projects__title">Other</h1>
   </a>
-  <p class="projects__desc">
-    These are some projects that I do for school assignments, not exactly proud
-    of them since I don't like to make these kind of thing. Guess I'd put them
-    here anyway in case anyone needs them for reference or something.
-  </p>
+  <p class="projects__desc">Not games that I have made.</p>
   <div class="projects__cards">
-    {#each projects.filter(p => p.type === 'assignment') as project}
+    {#each projects.filter(p => p.type !== 'game') as project}
       <ProjectCard
         title={project.title}
         imgSrc={`/assets/project/${project.slug}/cover.webp`}
@@ -104,7 +97,7 @@ export let projects: Array<any>;
   margin-bottom: 1rem;
 }
 
-#school-projects {
+#other {
   margin-top: 2rem;
 }
 </style>

@@ -15,7 +15,7 @@ const toggleDarkMode = () =>
     color: hsl(40, 100%, 50%);
   }
   .toggle:hover:checked {
-    color: var(--color-dark-alt-bg);
+    color: var(--color-dark-special-bg);
   }
 }
 .toggle {
@@ -37,20 +37,19 @@ const toggleDarkMode = () =>
 }
 .toggle:checked {
   --ray-size: calc(var(--size) * -0.4);
-  --offset-orthogonal: calc(var(--size) * 0.65);
-  --offset-diagonal: calc(var(--size) * 0.46);
+  --right: calc(var(--size) * 0.65);
+  --left: calc(var(--size) * -0.65);
+  --long-right: calc(var(--size) * 0.46);
+  --long-left: calc(var(--size) * -0.46);
 
   transform: scale(0.75);
   color: hsl(40, 100%, 50%);
-  box-shadow: inset 0 0 0 var(--size),
-    calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
-    var(--offset-orthogonal) 0 0 var(--ray-size),
-    0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size),
-    0 var(--offset-orthogonal) 0 var(--ray-size),
-    calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0
-      var(--ray-size),
-    var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size),
-    calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size),
-    var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
+  box-shadow: inset 0 0 0 var(--size), var(--left) 0 0 var(--ray-size),
+    var(--right) 0 0 var(--ray-size), 0 var(--left) 0 var(--ray-size),
+    0 var(--right) 0 var(--ray-size),
+    var(--long-left) var(--long-left) 0 var(--ray-size),
+    var(--long-right) var(--long-right) 0 var(--ray-size),
+    var(--long-left) var(--long-right) 0 var(--ray-size),
+    var(--long-right) var(--long-left) 0 var(--ray-size);
 }
 </style>

@@ -102,14 +102,6 @@ export let type: 'posts' | 'projects';
 .section__button:hover {
   animation: color-shift 2s linear infinite;
 }
-@keyframes color-shift {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
 
 @media only screen and (max-width: 480px) {
   .section::after {

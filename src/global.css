@@ -151,3 +151,12 @@ html::-webkit-scrollbar {
   background-color: var(--color-special-bg);
   width: 0.5rem;
 }
+
+@keyframes color-shift {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

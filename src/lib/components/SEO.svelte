@@ -12,7 +12,7 @@ export let keywords: string[] = data.keywords;
 </script>
 
 <svelte:head>
-  <title>{title} | {siteName}</title>
+  <title>{siteName} | {title}</title>
   <link rel="canonical" href="{siteUrl}{$page.url.pathname}" />
   <meta name="description" content={desc} />
   <meta name="keywords" content={keywords.join(',').toLowerCase()} />
@@ -26,7 +26,7 @@ export let keywords: string[] = data.keywords;
     property="og:image"
     content={thumbnail
       ? thumbnail.toString()
-      : 'https://avatars3.githubusercontent.com/u/51877647?s=240&v=4'}
+      : 'https://avatars.githubusercontent.com/u/13478274'}
   />
 
   <!-- Twitter -->

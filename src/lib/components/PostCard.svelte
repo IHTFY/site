@@ -147,14 +147,5 @@ a {
   .card:hover .card__img {
     animation: color-shift infinite 2s linear;
   }
-
-  @keyframes color-shift {
-    0% {
-      filter: hue-rotate(0deg);
-    }
-    100% {
-      filter: hue-rotate(360deg);
-    }
-  }
 }
 </style>
